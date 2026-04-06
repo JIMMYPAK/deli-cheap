@@ -1,0 +1,182 @@
+[
+  {
+    "brand": "도미노피자",
+    "app": "쿠팡이츠",
+    "discount": 8500,
+    "min_order": 25900,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": "와우회원"
+  },
+  {
+    "brand": "멕시카나",
+    "app": "쿠팡이츠",
+    "discount": 2000,
+    "min_order": 0,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "brand": "멕시카나",
+    "app": "쿠팡이츠",
+    "discount": 2000,
+    "min_order": 0,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": "와우회원"
+  },
+  {
+    "brand": "뚜레쥬르",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 17000,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "꾸브라꼬숯불치킨",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "치킨인류",
+    "app": "쿠팡이츠",
+    "discount": 2500,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "치킨매니아",
+    "app": "쿠팡이츠",
+    "discount": 2000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원", "메뉴할인"],
+    "special_condition": null
+  },
+  {
+    "brand": "오븐마루치킨",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "오븐에빠진닭",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "맘스터치",
+    "app": "쿠팡이츠",
+    "discount": 4000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": "최대"
+  },
+  {
+    "brand": "돈치킨",
+    "app": "쿠팡이츠",
+    "discount": 2000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "피자헛",
+    "app": "쿠팡이츠",
+    "discount": 6000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "청년피자",
+    "app": "쿠팡이츠",
+    "discount": 4000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "7번가피자",
+    "app": "쿠팡이츠",
+    "discount": 4000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "육회바른연어",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": "최대"
+  },
+  {
+    "brand": "Tim Hortons",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "Mad for Garlic",
+    "app": "쿠팡이츠",
+    "discount": 5000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "jamba",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "PASCUCCI",
+    "app": "쿠팡이츠",
+    "discount": 2000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  },
+  {
+    "brand": "COFFEE@WORKS",
+    "app": "쿠팡이츠",
+    "discount": 3000,
+    "min_order": 0,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null
+  }
+]
