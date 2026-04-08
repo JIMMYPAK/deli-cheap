@@ -2,6 +2,17 @@ import { GroupedDiscount } from '@/types/discount';
 import PlatformBadge from '@/components/common/PlatformBadge';
 import { openDeliveryApp } from '@/utils/deepLink';
 
+const BRAND_DISPLAY_NAMES: Record<string, string> = {
+  'BBQ': '비비큐 (BBQ)',
+  'BHC': '비에이치씨 (BHC)',
+  'COFFEE@WORKS': '커피앳웍스 (COFFEE@WORKS)',
+  'Mad for Garlic': '매드포갈릭 (Mad for Garlic)',
+  'PASCUCCI': '파스쿠찌 (PASCUCCI)',
+  'Tim Hortons': '팀홀튼 (Tim Hortons)',
+  'jamba': '잠바주스 (jamba)',
+  '쉐이크쉑': '쉐이크쉑 (Shake Shack)',
+};
+
 interface DiscountCardProps {
   discount: GroupedDiscount;
 }
@@ -25,7 +36,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
               e.currentTarget.style.display = 'none';
             }}
           />
-          <h3 className="text-lg font-black text-gray-900 tracking-tight">{discount.brandName}</h3>
+          <h3 className="text-lg font-black text-gray-900 tracking-tight">{BRAND_DISPLAY_NAMES[discount.brandName] || discount.brandName}</h3>
         </div>
         <div className="flex flex-col items-end">
           <span className="text-gray-400 text-[10px] font-bold mb-0.5">최대 혜택</span>

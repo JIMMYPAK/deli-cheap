@@ -1,3 +1,12 @@
+Project stack:
+- Next.js 16 (App Router)
+- TypeScript
+- Supabase
+- Node.js scripts for data sync/upload
+
+Data files:
+- BM.json, COUP.json, YO.json, TTANG.json
+- public/data/discounts.json (merged output)
 # Tech Stack: Deli-Cheap MVP
 
 ## Frontend

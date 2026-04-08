@@ -86,17 +86,26 @@ const ttangData = readJson('TTANG.json');
 const allRawData = [...bmData, ...coupData, ...yoData, ...ttangData];
 
 const convertedData = allRawData.map((item, index) => {
+  const isPercentDiscount = typeof item.discount === 'string' && item.discount.includes('%');
+  const parsedDiscount = typeof item.discount === 'number'
+    ? item.discount
+    : Number(String(item.discount).replace(/[^\d]/g, '') || 0);
+  const percentNote = isPercentDiscount ? `정률할인 ${item.discount}` : null;
+  const combinedSpecialCondition = [percentNote, item.special_condition || null]
+    .filter(Boolean)
+    .join(' / ') || null;
+
   return {
     id: `sync-${index}`,
     brandName: item.brand,
     platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : item.app === '땡겨요' ? 'ttangyo' : 'baemin'),
-    discountAmount: item.discount,
+    discountAmount: parsedDiscount,
     minOrderAmount: item.min_order,
     description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),
     category: categoryMap[item.brand] || 'chicken',
     method: item.method,
     deliveryTypes: item.delivery_types || [],
-    specialCondition: item.special_condition || null
+    specialCondition: combinedSpecialCondition
   };
 });
 

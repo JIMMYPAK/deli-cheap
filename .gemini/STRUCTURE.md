@@ -1,3 +1,16 @@
+Place source code under:
+- src/
+- scripts/
+- public/
+
+Coupon extraction outputs must update:
+- BM.json
+- YO.json
+- TTANG.json
+
+After updates, run:
+1) node scripts/sync-all-data.js
+2) node scripts/upload-to-supabase.js
 # Project Structure: Deli-Cheap
 
 ## Root Layout

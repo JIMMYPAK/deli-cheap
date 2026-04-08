@@ -1,26 +1,278 @@
 [
   {
     "app": "땡겨요",
-    "brand": "파리바게뜨",
+    "brand": "4,000원",
     "discount": 4000,
-    "min_order": 12000,
-    "method": "배달",
+    "min_order": 15000,
+    "method": "전체",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "배스킨라빈스",
+    "brand": "ae 4,000원",
+    "discount": 15000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "ae 4,000원",
+    "discount": 4000,
+    "min_order": 16900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 16900,
+    "min_order": 16900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 17000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 17000,
+    "min_order": 17000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
     "discount": 5000,
-    "min_order": 13500,
-    "method": "배달",
+    "min_order": 17900,
+    "method": "전체",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "BBQ",
-    "discount": 6000,
+    "brand": "5,000원",
+    "discount": 17900,
+    "min_order": 17900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "떡볶이참잘하는집 떡참",
+    "discount": 17900,
+    "min_order": 17900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 18000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 4000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "pC",
+    "discount": 18000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 4000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 18000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 19000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 19000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "으I -",
+    "discount": 19000,
+    "min_order": 19000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 19900,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 4000,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 19900,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5, 000%!",
+    "discount": 19900,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5, 000%!",
+    "discount": "00%",
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "PAPA 파파존스",
+    "discount": 20000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5 000%!",
+    "discount": "00%",
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 20000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 4000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "1-228 개",
+    "discount": 20000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "4,000원",
+    "discount": 4000,
     "min_order": 20000,
     "method": "배달",
     "delivery_types": [],
@@ -28,55 +280,181 @@
   },
   {
     "app": "땡겨요",
-    "brand": "BHC",
+    "brand": "3,000원",
+    "discount": 20000,
+    "min_order": 20000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 20000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 21000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "9,000원",
+    "discount": 21000,
+    "min_order": 21000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "9,000원",
+    "discount": 9000,
+    "min_order": 900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "A 2",
+    "discount": 900,
+    "min_order": 900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 21900,
+    "min_order": 21900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
     "discount": 5000,
-    "min_order": 16000,
+    "min_order": 22000,
     "method": "배달",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "교촌치킨",
-    "discount": 4000,
-    "min_order": 16000,
+    "brand": "1 2,000!",
+    "discount": 22000,
+    "min_order": 22000,
     "method": "배달",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "버거킹",
-    "discount": 4000,
-    "min_order": 15000,
+    "brand": "5 000%!",
+    "discount": 24000,
+    "min_order": 24000,
     "method": "배달",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "맥도날드",
+    "brand": "5, 000%!",
+    "discount": "00%",
+    "min_order": 25000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
+    "discount": "00%",
+    "min_order": 25000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "3,000원",
     "discount": 3000,
-    "min_order": 12000,
-    "method": "배달",
+    "min_order": 25000,
+    "method": "전체",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "롯데리아",
-    "discount": 3000,
-    "min_order": 13000,
-    "method": "배달",
+    "brand": "4,000원",
+    "discount": 25000,
+    "min_order": 25000,
+    "method": "전체",
     "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "땡겨요",
-    "brand": "피자헛",
-    "discount": 7000,
-    "min_order": 19900,
-    "method": "배달",
+    "brand": "4,000원",
+    "discount": 4000,
+    "min_order": 28000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 28000,
+    "min_order": 28000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 30000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "영미리",
+    "discount": 30000,
+    "min_order": 30000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "5 000%!",
+    "discount": "00%",
+    "min_order": 30000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "1 0,000!",
+    "discount": 30000,
+    "min_order": 30000,
+    "method": "전체",
     "delivery_types": [],
     "special_condition": null
   }

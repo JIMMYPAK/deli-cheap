@@ -1,12 +1,57 @@
 [
   {
     "app": "배달의민족",
-    "brand": "호식이두마리치킨",
-    "discount": 4000,
-    "min_order": 23000,
+    "brand": "3,000원",
+    "discount": 3000,
+    "min_order": 1550,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
-    "special_condition": "배민클럽 무료배달"
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "— 4 3,000원 즉시",
+    "discount": 18000,
+    "min_order": 1550,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "— 4 3,000원 즉시",
+    "discount": 20000,
+    "min_order": 1550,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "— 4 3,000원 즉시",
+    "discount": 200,
+    "min_order": 313,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "— 4 3,000원 즉시",
+    "discount": 3000,
+    "min_order": 313,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "배짱할인 배민단독 할인가게 장보기-쇼핑",
+    "discount": 20000,
+    "min_order": 313,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
   },
   {
     "app": "배달의민족",
@@ -14,52 +59,199 @@
     "discount": 6000,
     "min_order": 25900,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [
+      "알뜰배달",
+      "한집배달"
+    ],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "반올림피자",
+    "brand": "5,000원",
     "discount": 5000,
-    "min_order": 20900,
+    "min_order": 260,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "동대문엽기떡볶이",
+    "brand": "4 5,000원 즉시",
+    "discount": 18000,
+    "min_order": 260,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 19000,
+    "min_order": 260,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 3400,
+    "min_order": 280,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 5000,
+    "min_order": 280,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 19000,
+    "min_order": 280,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "es 4 3, 0 0 0원 즉시",
+    "discount": 15000,
+    "min_order": 235,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "es 4 3, 0 0 0원 즉시",
+    "discount": 2700,
+    "min_order": 235,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "은 배짱할인",
+    "discount": 14000,
+    "min_order": 235,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "pn 4 2,000원 즉시",
+    "discount": 18500,
+    "min_order": 1113,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "pn 4 2,000원 즉시",
+    "discount": 900,
+    "min_order": 1113,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "pn 4 2,000원 즉시",
     "discount": 2000,
-    "min_order": 14000,
+    "min_order": 1113,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "빅스타피자",
-    "discount": 6000,
-    "min_order": 21900,
+    "brand": "yn 4 2,000원 즉시",
+    "discount": 12900,
+    "min_order": 1113,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "푸라닭",
-    "discount": 3000,
-    "min_order": 19900,
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "투존치킨",
-    "discount": 4000,
-    "min_order": 20900,
+    "brand": "45,0002 즉시",
+    "discount": 18000,
+    "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "45,0002 즉시",
+    "discount": 22000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 11019,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 22000,
+    "min_order": 11019,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 4100,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 5000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 22000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": [],
     "special_condition": null
   },
   {
@@ -68,25 +260,91 @@
     "discount": 5000,
     "min_order": 22900,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [
+      "알뜰배달",
+      "한집배달"
+    ],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "티바두마리치킨",
-    "discount": 4500,
-    "min_order": 22000,
+    "brand": "5,000원",
+    "discount": 5000,
+    "min_order": 18900,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "청년피자",
-    "discount": 4000,
-    "min_order": 19900,
+    "brand": "4 5,000원 즉시",
+    "discount": 18900,
+    "min_order": 18900,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 2700,
+    "min_order": 18900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "4 5,000원 즉시",
+    "discount": 5000,
+    "min_order": 18900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "45,0002 즉시",
+    "discount": 18900,
+    "min_order": 18900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "개 4 2,000원 즉시",
+    "discount": 18500,
+    "min_order": 122,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "개 4 2,000원 즉시",
+    "discount": 13500,
+    "min_order": 122,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "개 4 2,000원 즉시",
+    "discount": 2000,
+    "min_order": 13500,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "개 4 2,000원 즉시",
+    "discount": 13500,
+    "min_order": 13500,
+    "method": "배달",
+    "delivery_types": [],
     "special_condition": null
   },
   {
@@ -95,7 +353,10 @@
     "discount": 5000,
     "min_order": 20000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [
+      "알뜰배달",
+      "한집배달"
+    ],
     "special_condition": null
   },
   {
@@ -104,79 +365,235 @@
     "discount": 4000,
     "min_order": 17000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [
+      "알뜰배달",
+      "한집배달"
+    ],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "노모어피자",
+    "brand": "자담치킨",
+    "discount": 19900,
+    "min_order": 19900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "자담치킨",
     "discount": 3000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "뚜레쥬르",
-    "discount": 4000,
+    "brand": "프랭크버거",
+    "discount": 22000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "프랭크버거",
+    "discount": 3000,
     "min_order": 15000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "쉐이크쉑",
+    "brand": "7ISoIFzFH}2 2/2!",
     "discount": 5000,
-    "min_order": 25000,
+    "min_order": 8,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "두찜",
-    "discount": 4000,
-    "min_order": 23000,
+    "brand": "배스킨라빈스",
+    "discount": 15000,
+    "min_order": 15000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "BHC",
-    "discount": 3000,
-    "min_order": 20000,
+    "brand": "가까운 가게 바로가기",
+    "discount": 18500,
+    "min_order": 18500,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "처갓집양념치킨",
-    "discount": 4000,
-    "min_order": 20000,
+    "brand": "피자알볼로",
+    "discount": 18500,
+    "min_order": 18500,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
     "special_condition": null
   },
   {
     "app": "배달의민족",
-    "brand": "치킨플러스",
-    "discount": 3000,
-    "min_order": 17000,
-    "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
-    "special_condition": null
-  },
-  {
-    "app": "배달의민족",
-    "brand": "오븐마루치킨",
-    "discount": 4000,
+    "brand": "피자알볼로",
+    "discount": 5000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": ["알뜰배달", "한집배달"],
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "BHC 할인",
+    "discount": 18000,
+    "min_order": 18000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "tH EO] TAF 오구샌",
+    "discount": 5000,
+    "min_order": 15000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "멕시카나",
+    "discount": 15000,
+    "min_order": 15000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "멕시카나",
+    "discount": 5000,
+    "min_order": 17900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "호치킨",
+    "discount": 3000,
+    "min_order": 16900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "치킨마루",
+    "discount": 16900,
+    "min_order": 16900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "치킨마루",
+    "discount": 3000,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "호치킨 할인",
+    "discount": 17000,
+    "min_order": 17000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "치킨플러스 할인 킨",
+    "discount": 15000,
+    "min_order": 15000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "또래오래",
+    "discount": 4000,
+    "min_order": 19000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "갓튀긴후라이드",
+    "discount": 5000,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "갓튀긴후라이드",
+    "discount": 30000,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "갓튀긴후라이드",
+    "discount": 18000,
+    "min_order": 18000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "갓튀긴후라이드",
+    "discount": 4000,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "갓튀긴후라이드 할인",
+    "discount": 30000,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "배달의민족",
+    "brand": "BicretSutyll7alZ!",
+    "discount": 4500,
+    "min_order": 30000,
+    "method": "배달",
+    "delivery_types": [],
     "special_condition": null
   }
 ]
