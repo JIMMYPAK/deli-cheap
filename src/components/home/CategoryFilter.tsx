@@ -3,22 +3,27 @@
 import { useState } from 'react';
 import { Category } from '@/types/discount';
 
-const CATEGORIES: { id: Category; name: string; icon: string }[] = [
-  { id: 'chicken', name: '치킨',     icon: '🍗' },
-  { id: 'pizza',   name: '피자',     icon: '🍕' },
-  { id: 'burger',  name: '버거',     icon: '🍔' },
-  { id: 'bakery',  name: '베이커리', icon: '🥐' },
-  { id: 'bunsik',  name: '분식',     icon: '🍢' },
-  { id: 'cafe',    name: '카페',     icon: '☕' },
-  // 이하 펼치기 시 노출
-  { id: 'korean',  name: '한식',     icon: '🍚' },
-  { id: 'chinese', name: '중식',     icon: '🥟' },
-  { id: 'western', name: '양식',     icon: '🍝' },
-  { id: 'japanese',name: '일식',     icon: '🍣' },
-  { id: 'meat',    name: '족발·고기',icon: '🍖' },
+// 기본 노출 5개 (항상 보이는 행)
+const FIRST_ROW: { id: Category; name: string; icon: string }[] = [
+  { id: 'chicken', name: '치킨',       icon: '🍗' },
+  { id: 'pizza',   name: '피자',       icon: '🍕' },
+  { id: 'cafe',    name: '카페/디저트', icon: '☕' },
+  { id: 'burger',  name: '버거/샌드위치', icon: '🍔' },
+  { id: 'korean',  name: '한식',       icon: '🍚' },
 ];
 
-const COLLAPSED_COUNT = 6;
+// 펼치기 시 추가로 보이는 카테고리 (배달 인기 순)
+const SECOND_ROW: { id: Category; name: string; icon: string }[] = [
+  { id: 'bunsik',  name: '분식',           icon: '🍢' },
+  { id: 'chinese', name: '중식',           icon: '🥟' },
+  { id: 'japanese',name: '일식',           icon: '🍣' },
+  { id: 'western', name: '양식',           icon: '🍝' },
+  { id: 'bakery',  name: '베이커리',       icon: '🥐' },
+];
+
+const THIRD_ROW: { id: Category; name: string; icon: string }[] = [
+  { id: 'meat',    name: '족발/보쌈/고기', icon: '🍖' },
+];
 
 interface CategoryFilterProps {
   activeId?: Category;
@@ -29,36 +34,30 @@ export default function CategoryFilter({ activeId, onSelect }: CategoryFilterPro
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="px-4 py-3">
-      {expanded ? (
-        /* ── 펼침: 4열 그리드 ── */
-        <div className="grid grid-cols-4 gap-y-4 gap-x-2">
-          {CATEGORIES.map((cat) => (
-            <CategoryBtn
-              key={cat.id}
-              cat={cat}
-              active={activeId === cat.id}
-              onSelect={onSelect}
-              size="lg"
-            />
-          ))}
-          {/* 접기 버튼 */}
-          <ToggleBtn expanded label="접기" onClick={() => setExpanded(false)} />
-        </div>
-      ) : (
-        /* ── 기본: 7등분 한 줄 ── */
-        <div className="grid grid-cols-7 gap-x-1">
-          {CATEGORIES.slice(0, COLLAPSED_COUNT).map((cat) => (
-            <CategoryBtn
-              key={cat.id}
-              cat={cat}
-              active={activeId === cat.id}
-              onSelect={onSelect}
-              size="sm"
-            />
-          ))}
-          {/* 전체보기 버튼 */}
-          <ToggleBtn expanded={false} label="전체" onClick={() => setExpanded(true)} />
+    <div className="px-4 pt-3 pb-1">
+      {/* 항상 보이는 첫 행: 5개 + 전체 버튼 */}
+      <div className="grid grid-cols-6 gap-x-1 mb-1">
+        {FIRST_ROW.map((cat) => (
+          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+        ))}
+        <ToggleBtn expanded={expanded} onClick={() => setExpanded(v => !v)} />
+      </div>
+
+      {/* 펼쳤을 때만 보이는 추가 행들 */}
+      {expanded && (
+        <div className="mt-1 border-t border-gray-100 pt-2">
+          {/* 2번째 행 */}
+          <div className="grid grid-cols-5 gap-x-1 mb-1">
+            {SECOND_ROW.map((cat) => (
+              <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+            ))}
+          </div>
+          {/* 3번째 행: 족발 + 나머지 자리는 빈칸으로 */}
+          <div className="grid grid-cols-5 gap-x-1">
+            {THIRD_ROW.map((cat) => (
+              <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+            ))}
+          </div>
         </div>
       )}
     </div>
@@ -66,7 +65,7 @@ export default function CategoryFilter({ activeId, onSelect }: CategoryFilterPro
 }
 
 /* ── 카테고리 버튼 ── */
-function CategoryBtn({
+function CatBtn({
   cat,
   active,
   onSelect,
@@ -77,24 +76,19 @@ function CategoryBtn({
   onSelect: (id: Category) => void;
   size: 'sm' | 'lg';
 }) {
-  const iconCls = size === 'sm'
-    ? 'w-10 h-10 rounded-xl text-xl'
-    : 'w-14 h-14 rounded-2xl text-2xl';
-  const textCls = size === 'sm' ? 'text-[10px]' : 'text-[11px]';
-
   return (
     <button
       onClick={() => onSelect(cat.id)}
-      className="flex flex-col items-center gap-1 group"
+      className="flex flex-col items-center gap-1 group py-1"
     >
-      <div className={`${iconCls} flex items-center justify-center transition-all duration-200
+      <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all duration-200
         ${active
-          ? 'bg-baemin text-white shadow-lg shadow-baemin/20 scale-105'
+          ? 'bg-baemin text-white shadow-md shadow-baemin/20 scale-105'
           : 'bg-gray-50 text-gray-400 group-hover:bg-gray-100 group-active:scale-95'}`}
       >
         {cat.icon}
       </div>
-      <span className={`${textCls} font-bold transition-colors truncate w-full text-center
+      <span className={`text-[9px] font-bold transition-colors leading-tight w-full text-center line-clamp-1
         ${active ? 'text-baemin' : 'text-gray-500'}`}
       >
         {cat.name}
@@ -104,28 +98,19 @@ function CategoryBtn({
 }
 
 /* ── 전체보기 / 접기 토글 버튼 ── */
-function ToggleBtn({
-  expanded,
-  label,
-  onClick,
-}: {
-  expanded: boolean;
-  label: string;
-  onClick: () => void;
-}) {
+function ToggleBtn({ expanded, onClick }: { expanded: boolean; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center gap-1 group"
+      className="flex flex-col items-center gap-1 group py-1"
     >
-      <div className={`${expanded ? 'w-14 h-14 rounded-2xl text-lg' : 'w-10 h-10 rounded-xl text-base'}
-        flex items-center justify-center bg-gray-100 text-gray-500
-        group-hover:bg-gray-200 transition-all duration-200 group-active:scale-95`}
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-gray-100 text-gray-500
+        group-hover:bg-gray-200 transition-all duration-200 group-active:scale-95 text-base"
       >
         {expanded ? '▲' : '⊞'}
       </div>
-      <span className={`${expanded ? 'text-[11px]' : 'text-[10px]'} font-bold text-gray-500 truncate w-full text-center`}>
-        {label}
+      <span className="text-[9px] font-bold text-gray-400 leading-tight">
+        {expanded ? '접기' : '전체'}
       </span>
     </button>
   );
