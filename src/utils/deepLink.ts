@@ -43,14 +43,25 @@ export function openDeliveryApp(platform: Platform, brandName: string) {
     return;
   }
 
+  let timeoutId: ReturnType<typeof setTimeout>;
+
+  const handleVisibilityChange = () => {
+    // 앱이 정상적으로 실행되어 브라우저가 백그라운드로 전환되면 폴백 타이머 취소
+    if (document.hidden || document.visibilityState === 'hidden') {
+      clearTimeout(timeoutId);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    }
+  };
+
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+
   // 딥링크 실행 시도
-  const start = Date.now();
   window.location.href = deepLink;
 
-  // 딥링크가 작동하지 않을 경우(앱 미설치 등) 2.5초 후 마켓/웹으로 이동
-  setTimeout(() => {
-    if (Date.now() - start < 3000) {
-      window.open(fallback, '_blank');
-    }
-  }, 2500);
+  // 딥링크가 작동하지 않을 경우(앱 미설치 등) 일정 시간 후 웹으로 이동
+  timeoutId = setTimeout(() => {
+    document.removeEventListener('visibilitychange', handleVisibilityChange);
+    // 팝업 차단을 우회하기 위해 현재 창에서 이동
+    window.location.href = fallback;
+  }, 2000);
 }

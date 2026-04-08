@@ -35,16 +35,28 @@ async function uploadToSupabase() {
       updated_at: new Date().toISOString()
     }));
 
-    // Perform UPSERT using the 'sync_id' as the conflict target
-    const { data, error } = await supabase
+    // 1. Delete all existing data
+    console.log('Clearing old data from Supabase...');
+    const { error: deleteError } = await supabase
       .from('discounts')
-      .upsert(mappedData, { onConflict: 'sync_id' });
+      .delete()
+      .not('sync_id', 'is', null); // Delete all rows
 
-    if (error) {
-      throw error;
+    if (deleteError) {
+      throw new Error(`Failed to delete old data: ${deleteError.message}`);
     }
 
-    console.log('Successfully uploaded and synchronized data with Supabase!');
+    // 2. Insert new data
+    console.log('Inserting new data...');
+    const { error: insertError } = await supabase
+      .from('discounts')
+      .insert(mappedData);
+
+    if (insertError) {
+      throw new Error(`Failed to insert new data: ${insertError.message}`);
+    }
+
+    console.log('Successfully cleared old data and uploaded new data to Supabase!');
   } catch (err) {
     console.error('Error during upload to Supabase:', err.message);
     process.exit(1);

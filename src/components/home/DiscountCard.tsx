@@ -16,7 +16,17 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
       )}
 
       <div className="flex justify-between items-center">
-        <h3 className="text-xl font-black text-gray-900">{discount.brandName}</h3>
+        <div className="flex items-center gap-2">
+          <img 
+            src={`/icons/${discount.brandName}.png`} 
+            alt={`${discount.brandName} 로고`} 
+            className="w-6 h-6 object-contain rounded-md bg-gray-50"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+          <h3 className="text-xl font-black text-gray-900">{discount.brandName}</h3>
+        </div>
         <div className="flex flex-col items-end">
           <span className="text-gray-400 text-[10px] font-bold">최대 할인액</span>
           <span className="text-baemin font-black text-xl">-{discount.totalMaxDiscount.toLocaleString()}원</span>
