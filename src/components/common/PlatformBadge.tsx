@@ -9,6 +9,7 @@ const PLATFORM_MAP = {
   baemin: { name: '배민', color: 'bg-baemin', textColor: 'text-white' },
   yogiyo: { name: '요기요', color: 'bg-yogiyo', textColor: 'text-white' },
   coupang: { name: '쿠팡이츠', color: 'bg-coupang', textColor: 'text-white' },
+  ttangyo: { name: '땡겨요', color: 'bg-ttangyo', textColor: 'text-white' },
 };
 
 export default function PlatformBadge({ platform, size = 'md' }: PlatformBadgeProps) {

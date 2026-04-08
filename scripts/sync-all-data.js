@@ -4,7 +4,8 @@ const path = require('path');
 const platformMap = {
   '배달의민족': 'baemin',
   '요기요': 'yogiyo',
-  '쿠팡이츠': 'coupang'
+  '쿠팡이츠': 'coupang',
+  '땡겨요': 'ttangyo'
 };
 
 const categoryMap = {
@@ -80,14 +81,15 @@ function readJson(filename) {
 const bmData = readJson('BM.json');
 const coupData = readJson('COUP.json');
 const yoData = readJson('YO.json');
+const ttangData = readJson('TTANG.json');
 
-const allRawData = [...bmData, ...coupData, ...yoData];
+const allRawData = [...bmData, ...coupData, ...yoData, ...ttangData];
 
 const convertedData = allRawData.map((item, index) => {
   return {
     id: `sync-${index}`,
     brandName: item.brand,
-    platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : 'baemin'),
+    platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : item.app === '땡겨요' ? 'ttangyo' : 'baemin'),
     discountAmount: item.discount,
     minOrderAmount: item.min_order,
     description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),

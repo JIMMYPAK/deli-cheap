@@ -1,4 +1,4 @@
-export type Platform = 'baemin' | 'yogiyo' | 'coupang';
+export type Platform = 'baemin' | 'yogiyo' | 'coupang' | 'ttangyo';
 
 export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery';
 

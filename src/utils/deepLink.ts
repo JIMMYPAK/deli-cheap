@@ -13,6 +13,9 @@ export function getDeepLink(platform: Platform, brandName: string): string {
     case 'coupang':
       // 쿠팡이츠 브랜드 검색 딥링크
       return `coupangeats://search?q=${encodedBrand}`;
+    case 'ttangyo':
+      // 땡겨요 브랜드 검색 딥링크
+      return `ddangyo://search?keyword=${encodedBrand}`;
     default:
       return '#';
   }
@@ -26,6 +29,8 @@ export function getWebFallback(platform: Platform, _brandName: string): string {
       return `https://www.yogiyo.co.kr/`;
     case 'coupang':
       return `https://www.coupangeats.com/`;
+    case 'ttangyo':
+      return `https://www.ddangyo.com/`;
     default:
       return '#';
   }

@@ -41,7 +41,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
               <div className="flex items-center gap-2">
                 <PlatformBadge platform={platformGroup.platform} size="sm" />
                 <span className="text-[12px] font-bold text-gray-700">
-                  {platformGroup.platform === 'baemin' ? '배달의민족' : platformGroup.platform === 'yogiyo' ? '요기요' : '쿠팡이츠'}
+                  {platformGroup.platform === 'baemin' ? '배달의민족' : platformGroup.platform === 'yogiyo' ? '요기요' : platformGroup.platform === 'ttangyo' ? '땡겨요' : '쿠팡이츠'}
                 </span>
               </div>
               <button 
