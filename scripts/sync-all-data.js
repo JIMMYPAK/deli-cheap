@@ -86,11 +86,11 @@ const categoryMap = {
   'PASCUCCI': 'cafe',
   'Tim Hortons': 'cafe',
   '메가MGC커피': 'cafe',
+  '배스킨라빈스': 'cafe',
 
   // Bakery
   '뚜레쥬르': 'bakery',
   '파리바게뜨': 'bakery',
-  '배스킨라빈스': 'bakery',
 };
 
 function readJson(filename) {

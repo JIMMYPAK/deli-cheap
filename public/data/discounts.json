@@ -774,7 +774,7 @@
     "discountAmount": 3000,
     "minOrderAmount": 13500,
     "description": "요기패스X 중복할인",
-    "category": "bakery",
+    "category": "cafe",
     "method": "전체",
     "deliveryTypes": [
       "요기배달",
@@ -936,7 +936,7 @@
     "discountAmount": 5000,
     "minOrderAmount": 13500,
     "description": "배달 전용 할인",
-    "category": "bakery",
+    "category": "cafe",
     "method": "배달",
     "deliveryTypes": [],
     "specialCondition": null
