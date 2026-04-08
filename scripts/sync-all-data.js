@@ -10,64 +10,75 @@ const platformMap = {
 
 const categoryMap = {
   // Chicken
+  'BBQ': 'chicken',
   'BHC': 'chicken',
-  '호치킨': 'chicken',
-  '치킨마루': 'chicken',
-  '치킨플러스': 'chicken',
-  '본스치킨': 'chicken',
   '갓튀긴후라이드': 'chicken',
+  '교촌치킨': 'chicken',
+  '굽네치킨': 'chicken',
   '꾸브라꼬숯불치킨': 'chicken',
-  '멕시카나': 'chicken',
-  '처갓집양념치킨': 'chicken',
   '기영이숯불두마리치킨': 'chicken',
-  '오븐마루치킨': 'chicken',
-  '오븐마루': 'chicken',
-  '훌랄라참숯바베큐치킨': 'chicken',
-  '훌랄라참숯치킨': 'chicken',
+  '네네치킨': 'chicken',
+  '돈치킨': 'chicken',
   '또래오래': 'chicken',
   '또봉이통닭': 'chicken',
-  '네네치킨': 'chicken',
-  '교촌치킨': 'chicken',
-  '자담치킨': 'chicken',
-  '치킨인류': 'chicken',
-  '치킨매니아': 'chicken',
+  '멕시카나': 'chicken',
+  '본스치킨': 'chicken',
+  '오븐마루': 'chicken',
+  '오븐마루치킨': 'chicken',
   '오븐에빠진닭': 'chicken',
-  '돈치킨': 'chicken',
-  
+  '자담치킨': 'chicken',
+  '지코바치킨': 'chicken',
+  '처갓집양념치킨': 'chicken',
+  '치킨마루': 'chicken',
+  '치킨매니아': 'chicken',
+  '치킨인류': 'chicken',
+  '치킨플러스': 'chicken',
+  '투존치킨': 'chicken',
+  '티바두마리치킨': 'chicken',
+  '푸라닭': 'chicken',
+  '호식이두마리치킨': 'chicken',
+  '호치킨': 'chicken',
+  '훌랄라참숯바베큐치킨': 'chicken',
+  '훌랄라참숯치킨': 'chicken',
+
   // Pizza
-  '프레드피자': 'pizza',
-  '피자헛': 'pizza',
-  '반올림피자': 'pizza',
+  '7번가피자': 'pizza',
   '노모어피자': 'pizza',
   '도미노피자': 'pizza',
+  '반올림피자': 'pizza',
+  '빅스타피자': 'pizza',
+  '유로코피자': 'pizza',
   '청년피자': 'pizza',
-  '7번가피자': 'pizza',
-  
+  '프레드피자': 'pizza',
+  '피자헛': 'pizza',
+  'Mad for Garlic': 'pizza',
+
   // Burger
-  '쉐이크쉑': 'burger',
+  '롯데리아': 'burger',
   '맘스터치': 'burger',
-  
+  '맥도날드': 'burger',
+  '버거킹': 'burger',
+  '쉐이크쉑': 'burger',
+
   // Korean
   '두찜': 'korean',
-  
-  // Bunsik
-  '명랑핫도그': 'korean',
   '동대문엽기떡볶이': 'korean',
-  
+  '명랑핫도그': 'korean',
+  '떡참': 'korean',
+  '포케올데이 샐러드&도시락': 'korean',
+
   // Japanese
   '육회바른연어': 'japanese',
-  
+
   // Cafe
-  'Tim Hortons': 'cafe',
+  'COFFEE@WORKS': 'cafe',
   'jamba': 'cafe',
   'PASCUCCI': 'cafe',
-  'COFFEE@WORKS': 'cafe',
-
-  // Bakery
+  'Tim Hortons': 'cafe',
   '뚜레쥬르': 'cafe',
-
-  // Western
-  'Mad for Garlic': 'pizza'
+  '파리바게뜨': 'cafe',
+  '배스킨라빈스': 'cafe',
+  '메가MGC커피': 'cafe',
 };
 
 function readJson(filename) {
