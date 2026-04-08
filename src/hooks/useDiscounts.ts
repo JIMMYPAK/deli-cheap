@@ -27,8 +27,8 @@ export function useDiscounts() {
         }
 
         const { data, error } = await supabase
-          .from('brands_discount')
-          .select('*');
+          .from('discounts')
+          .select('sync_id, brand_name, platform, discount_amount, min_order_amount, description, category, method, delivery_types, special_condition');
 
         if (error) {
           throw error;
@@ -37,7 +37,19 @@ export function useDiscounts() {
         if (!data || data.length === 0) {
           await loadLocalDiscounts();
         } else {
-          setDiscounts(data);
+          const mappedData: DiscountInfo[] = data.map(item => ({
+            id: item.sync_id,
+            brandName: item.brand_name,
+            platform: item.platform,
+            discountAmount: item.discount_amount,
+            minOrderAmount: item.min_order_amount,
+            description: item.description ?? '',
+            category: item.category,
+            method: item.method,
+            deliveryTypes: item.delivery_types ?? [],
+            specialCondition: item.special_condition ?? null
+          }));
+          setDiscounts(mappedData);
         }
       } catch (supabaseErr) {
         // Supabase 실패 시에도 앱은 로컬 데이터로 동작한다.

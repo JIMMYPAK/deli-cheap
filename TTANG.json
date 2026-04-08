@@ -1,0 +1,83 @@
+[
+  {
+    "app": "땡겨요",
+    "brand": "파리바게뜨",
+    "discount": 4000,
+    "min_order": 12000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "배스킨라빈스",
+    "discount": 5000,
+    "min_order": 13500,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "BBQ",
+    "discount": 6000,
+    "min_order": 20000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "BHC",
+    "discount": 5000,
+    "min_order": 16000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "교촌치킨",
+    "discount": 4000,
+    "min_order": 16000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "버거킹",
+    "discount": 4000,
+    "min_order": 15000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "맥도날드",
+    "discount": 3000,
+    "min_order": 12000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "롯데리아",
+    "discount": 3000,
+    "min_order": 13000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "피자헛",
+    "discount": 7000,
+    "min_order": 19900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null
+  }
+]

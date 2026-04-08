@@ -51,8 +51,8 @@ const categoryMap = {
   '두찜': 'korean',
   
   // Bunsik
-  '명랑핫도그': 'bunsik',
-  '동대문엽기떡볶이': 'bunsik',
+  '명랑핫도그': 'korean',
+  '동대문엽기떡볶이': 'korean',
   
   // Japanese
   '육회바른연어': 'japanese',
@@ -64,10 +64,10 @@ const categoryMap = {
   'COFFEE@WORKS': 'cafe',
 
   // Bakery
-  '뚜레쥬르': 'bakery',
+  '뚜레쥬르': 'cafe',
 
   // Western
-  'Mad for Garlic': 'western'
+  'Mad for Garlic': 'pizza'
 };
 
 function readJson(filename) {
