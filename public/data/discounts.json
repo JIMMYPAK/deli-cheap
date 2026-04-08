@@ -353,7 +353,7 @@
     "discountAmount": 4000,
     "minOrderAmount": 18000,
     "description": "모든 주문 할인",
-    "category": "cafe",
+    "category": "bakery",
     "method": "전체",
     "deliveryTypes": [],
     "specialCondition": null
@@ -437,7 +437,7 @@
     "discountAmount": 3000,
     "minOrderAmount": 18000,
     "description": "모든 주문 할인",
-    "category": "korean",
+    "category": "bunsik",
     "method": "전체",
     "deliveryTypes": [],
     "specialCondition": null
@@ -515,7 +515,7 @@
     "discountAmount": 3000,
     "minOrderAmount": 17000,
     "description": "모든 주문 할인",
-    "category": "cafe",
+    "category": "bakery",
     "method": "전체",
     "deliveryTypes": [
       "배달비 0원"
@@ -670,7 +670,7 @@
     "discountAmount": 3000,
     "minOrderAmount": 0,
     "description": "최대",
-    "category": "korean",
+    "category": "japanese",
     "method": "전체",
     "deliveryTypes": [
       "배달비 0원"
@@ -698,7 +698,7 @@
     "discountAmount": 5000,
     "minOrderAmount": 0,
     "description": "모든 주문 할인",
-    "category": "chinese",
+    "category": "western",
     "method": "전체",
     "deliveryTypes": [
       "배달비 0원"
@@ -754,7 +754,7 @@
     "discountAmount": 2000,
     "minOrderAmount": 20000,
     "description": "요기패스X 중복할인",
-    "category": "korean",
+    "category": "bunsik",
     "method": "전체",
     "deliveryTypes": [
       "요기배달",
@@ -853,7 +853,7 @@
     "discountAmount": 2000,
     "minOrderAmount": 18000,
     "description": "최대 5%",
-    "category": "cafe",
+    "category": "bakery",
     "method": "전체",
     "deliveryTypes": [
       "요기배달",

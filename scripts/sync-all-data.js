@@ -46,19 +46,27 @@ const categoryMap = {
   '쉐이크쉑': 'burger',
   '맘스터치': 'burger',
   
-  // Korean / Snacks
+  // Korean
   '두찜': 'korean',
-  '명랑핫도그': 'korean',
-  '동대문엽기떡볶이': 'korean',
-  '육회바른연어': 'korean',
   
-  // Cafe / Bakery
-  '뚜레쥬르': 'cafe',
+  // Bunsik
+  '명랑핫도그': 'bunsik',
+  '동대문엽기떡볶이': 'bunsik',
+  
+  // Japanese
+  '육회바른연어': 'japanese',
+  
+  // Cafe
   'Tim Hortons': 'cafe',
   'jamba': 'cafe',
   'PASCUCCI': 'cafe',
   'COFFEE@WORKS': 'cafe',
-  'Mad for Garlic': 'chinese' // Actually Italian but putting it somewhere for now
+
+  // Bakery
+  '뚜레쥬르': 'bakery',
+
+  // Western
+  'Mad for Garlic': 'western'
 };
 
 function readJson(filename) {

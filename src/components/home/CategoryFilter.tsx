@@ -4,11 +4,15 @@ const CATEGORIES: { id: Category; name: string; icon: string }[] = [
   { id: 'all', name: '전체', icon: '✨' },
   { id: 'chicken', name: '치킨', icon: '🍗' },
   { id: 'pizza', name: '피자', icon: '🍕' },
-  { id: 'burger', name: '버거', icon: '🍔' },
+  { id: 'burger', name: '버거/샌드위치', icon: '🍔' },
+  { id: 'bakery', name: '베이커리', icon: '🥐' },
+  { id: 'bunsik', name: '분식', icon: '떡' },
+  { id: 'cafe', name: '카페/디저트', icon: '☕' },
   { id: 'korean', name: '한식', icon: '🍚' },
-  { id: 'japanese', name: '일식', icon: '🍣' },
   { id: 'chinese', name: '중식', icon: '🥟' },
-  { id: 'cafe', name: '카페', icon: '☕' },
+  { id: 'western', name: '양식', icon: '🍝' },
+  { id: 'japanese', name: '일식', icon: '🍣' },
+  { id: 'meat', name: '족발/보쌈/고기류', icon: '🍖' },
 ];
 
 interface CategoryFilterProps {

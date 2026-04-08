@@ -1,6 +1,6 @@
 export type Platform = 'baemin' | 'yogiyo' | 'coupang';
 
-export type Category = 'all' | 'chicken' | 'pizza' | 'burger' | 'korean' | 'japanese' | 'chinese' | 'cafe';
+export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery';
 
 export type Method = '배달' | '픽업' | '전체';
 
