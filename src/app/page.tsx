@@ -8,10 +8,10 @@ import { useDiscounts } from '@/hooks/useDiscounts';
 import { GroupedDiscount, Category } from '@/types/discount';
 
 const BRAND_ALIASES: Record<string, string[]> = {
-  '동대문엽기떡볶이': ['엽떡', '엽기떡볶이', '동대문엽떡'],
-  '비에이치씨': ['bhc', '비에이치시'],
+  '동대문엽기떡볶이': ['엽떡', '엽기떡볶이', '동대문엽떡', '엽떡'],
+  'BHC': ['bhc', '비에이치시', '비에이치씨'],
   '교촌치킨': ['교촌'],
-  '비비큐': ['bbq'],
+  'BBQ': ['bbq', '비비큐'],
   '도미노피자': ['도미노'],
   '피자헛': ['핏자헛'],
   '맘스터치': ['맘터'],
@@ -49,21 +49,22 @@ export default function Home() {
   const processedDiscounts = useMemo((): GroupedDiscount[] => {
     // 1. Filter by category and search
     const filtered = discounts.filter(d => {
-      const matchesCategory = selectedCategory === 'all' || d.category === selectedCategory;
+      const searchLower = searchQuery.toLowerCase().trim();
       
-      const searchLower = searchQuery.toLowerCase();
+      // 검색어가 있으면 카테고리 무시하고 전체에서 검색
+      const matchesCategory = searchLower ? true : (selectedCategory === 'all' || d.category === selectedCategory);
+      
       const brandNameLower = d.brandName.toLowerCase();
       
       // Check if direct match
-      let matchesSearch = brandNameLower.includes(searchLower);
+      let matchesSearch = searchLower ? brandNameLower.includes(searchLower) : true;
       
       // Check aliases
       if (!matchesSearch && searchLower) {
         for (const [officialBrand, aliases] of Object.entries(BRAND_ALIASES)) {
           if (
-            (officialBrand.toLowerCase().includes(searchLower) || 
-             aliases.some(alias => alias.toLowerCase().includes(searchLower))) &&
-            brandNameLower.includes(officialBrand.toLowerCase())
+            aliases.some(alias => alias.toLowerCase().includes(searchLower) || searchLower.includes(alias.toLowerCase())) &&
+            (brandNameLower.includes(officialBrand.toLowerCase()) || officialBrand.toLowerCase().includes(brandNameLower))
           ) {
             matchesSearch = true;
             break;
