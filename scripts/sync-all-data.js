@@ -108,20 +108,67 @@ const ttangData = readJson('TTANG.json');
 
 const allRawData = [...bmData, ...coupData, ...yoData, ...ttangData];
 
-const convertedData = allRawData.map((item, index) => {
-  return {
-    id: `sync-${index}`,
-    brandName: item.brand,
-    platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : item.app === '땡겨요' ? 'ttangyo' : 'baemin'),
-    discountAmount: item.discount,
-    minOrderAmount: item.min_order,
-    description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),
-    category: categoryMap[item.brand] || 'chicken',
-    method: item.method,
-    deliveryTypes: item.delivery_types || [],
-    specialCondition: item.special_condition || null
-  };
-});
+function toNumber(value) {
+  if (typeof value === 'number') return value;
+  const digits = String(value || '').replace(/[^\d]/g, '');
+  return digits ? Number(digits) : 0;
+}
+
+function normalizeValidUntil(raw) {
+  if (!raw) return null;
+  const text = String(raw).trim();
+  // YYYY-MM-DD
+  if (/^\d{4}-\d{2}-\d{2}$/.test(text)) return text;
+  // YY.MM.DD or YYYY.MM.DD (+ optional "까지")
+  const dot = text.match(/^(\d{2}|\d{4})\.(\d{1,2})\.(\d{1,2})(?:까지)?$/);
+  if (dot) {
+    const year = dot[1].length === 2 ? `20${dot[1]}` : dot[1];
+    const month = dot[2].padStart(2, '0');
+    const day = dot[3].padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+  // YY/MM/DD or YYYY/MM/DD
+  const slash = text.match(/^(\d{2}|\d{4})\/(\d{1,2})\/(\d{1,2})$/);
+  if (slash) {
+    const year = slash[1].length === 2 ? `20${slash[1]}` : slash[1];
+    const month = slash[2].padStart(2, '0');
+    const day = slash[3].padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+  return null;
+}
+
+function isExpired(validUntil) {
+  if (!validUntil) return false;
+  return validUntil < new Date().toISOString().slice(0, 10);
+}
+
+const convertedData = allRawData
+  .map((item, index) => {
+    const isPercentDiscount = typeof item.discount === 'string' && item.discount.includes('%');
+    const parsedDiscount = toNumber(item.discount);
+    const percentNote = isPercentDiscount ? `정률할인 ${item.discount}` : null;
+    const combinedSpecialCondition = [percentNote, item.special_condition || null]
+      .filter(Boolean)
+      .join(' / ') || null;
+    const validUntil = normalizeValidUntil(item.valid_until || null);
+
+    return {
+      id: `sync-${index}`,
+      brandName: item.brand,
+      platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : item.app === '땡겨요' ? 'ttangyo' : 'baemin'),
+      discountAmount: parsedDiscount,
+      minOrderAmount: toNumber(item.min_order),
+      description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),
+      category: categoryMap[item.brand] || 'chicken',
+      method: item.method,
+      deliveryTypes: item.delivery_types || [],
+      specialCondition: combinedSpecialCondition,
+      validUntil,
+    };
+  })
+  // 만료일이 있으면 자동 제외
+  .filter((item) => !isExpired(item.validUntil));
 
 fs.writeFileSync(
   path.join(process.cwd(), 'public/data/discounts.json'),

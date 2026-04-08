@@ -12,7 +12,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": "배민클럽 무료배달"
+    "specialCondition": "배민클럽 무료배달",
+    "validUntil": null
   },
   {
     "id": "sync-1",
@@ -27,7 +28,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-2",
@@ -42,7 +44,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-3",
@@ -57,7 +60,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-4",
@@ -72,7 +76,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-5",
@@ -87,7 +92,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-6",
@@ -102,7 +108,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-7",
@@ -117,7 +124,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-8",
@@ -132,7 +140,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-9",
@@ -147,7 +156,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-10",
@@ -162,7 +172,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-11",
@@ -177,7 +188,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-12",
@@ -192,7 +204,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-13",
@@ -207,7 +220,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-14",
@@ -222,7 +236,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-15",
@@ -237,7 +252,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-16",
@@ -252,7 +268,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-17",
@@ -267,7 +284,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-18",
@@ -282,7 +300,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-19",
@@ -297,7 +316,8 @@
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-20",
@@ -311,7 +331,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": "와우회원"
+    "specialCondition": "와우회원",
+    "validUntil": null
   },
   {
     "id": "sync-21",
@@ -323,7 +344,8 @@
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-22",
@@ -337,7 +359,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": "와우회원"
+    "specialCondition": "와우회원",
+    "validUntil": null
   },
   {
     "id": "sync-23",
@@ -351,7 +374,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-24",
@@ -365,7 +389,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-25",
@@ -379,7 +404,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-26",
@@ -394,7 +420,8 @@
       "배달비 0원",
       "메뉴할인"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-27",
@@ -408,7 +435,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-28",
@@ -422,7 +450,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-29",
@@ -436,7 +465,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": "최대"
+    "specialCondition": "최대",
+    "validUntil": null
   },
   {
     "id": "sync-30",
@@ -450,7 +480,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-31",
@@ -464,7 +495,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-32",
@@ -478,7 +510,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-33",
@@ -492,7 +525,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-34",
@@ -506,7 +540,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": "최대"
+    "specialCondition": "최대",
+    "validUntil": null
   },
   {
     "id": "sync-35",
@@ -520,7 +555,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-36",
@@ -534,7 +570,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-37",
@@ -548,7 +585,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-38",
@@ -562,7 +600,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-39",
@@ -576,7 +615,8 @@
     "deliveryTypes": [
       "배달비 0원"
     ],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-40",
@@ -591,7 +631,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-41",
@@ -606,7 +647,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-42",
@@ -620,7 +662,8 @@
     "deliveryTypes": [
       "요기배달"
     ],
-    "specialCondition": "최대 5%"
+    "specialCondition": "최대 5%",
+    "validUntil": null
   },
   {
     "id": "sync-43",
@@ -632,7 +675,8 @@
     "category": "pizza",
     "method": "픽업",
     "deliveryTypes": [],
-    "specialCondition": "최대 3%"
+    "specialCondition": "최대 3%",
+    "validUntil": null
   },
   {
     "id": "sync-44",
@@ -646,7 +690,8 @@
     "deliveryTypes": [
       "요기배달"
     ],
-    "specialCondition": "최대 5%"
+    "specialCondition": "최대 5%",
+    "validUntil": null
   },
   {
     "id": "sync-45",
@@ -660,7 +705,8 @@
     "deliveryTypes": [
       "요기배달"
     ],
-    "specialCondition": "최대 5%"
+    "specialCondition": "최대 5%",
+    "validUntil": null
   },
   {
     "id": "sync-46",
@@ -675,7 +721,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "최대 3%"
+    "specialCondition": "최대 3%",
+    "validUntil": null
   },
   {
     "id": "sync-47",
@@ -690,7 +737,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "최대 5%"
+    "specialCondition": "최대 5%",
+    "validUntil": null
   },
   {
     "id": "sync-48",
@@ -705,7 +753,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-49",
@@ -720,7 +769,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-50",
@@ -735,7 +785,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-51",
@@ -750,7 +801,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-52",
@@ -765,7 +817,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-53",
@@ -780,7 +833,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-54",
@@ -795,7 +849,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-55",
@@ -810,7 +865,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-56",
@@ -825,7 +881,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-57",
@@ -840,7 +897,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-58",
@@ -855,7 +913,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-59",
@@ -870,7 +929,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-60",
@@ -885,7 +945,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-61",
@@ -900,7 +961,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-62",
@@ -915,7 +977,8 @@
       "요기배달",
       "가게배달"
     ],
-    "specialCondition": "요기패스X 중복할인"
+    "specialCondition": "요기패스X 중복할인",
+    "validUntil": null
   },
   {
     "id": "sync-63",
@@ -927,7 +990,8 @@
     "category": "bakery",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-64",
@@ -939,7 +1003,8 @@
     "category": "cafe",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-65",
@@ -951,7 +1016,8 @@
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-66",
@@ -963,7 +1029,8 @@
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-67",
@@ -975,7 +1042,8 @@
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-68",
@@ -987,7 +1055,8 @@
     "category": "burger",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-69",
@@ -999,7 +1068,8 @@
     "category": "burger",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-70",
@@ -1011,7 +1081,8 @@
     "category": "burger",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-71",
@@ -1023,6 +1094,7 @@
     "category": "pizza",
     "method": "배달",
     "deliveryTypes": [],
-    "specialCondition": null
+    "specialCondition": null,
+    "validUntil": null
   }
 ]

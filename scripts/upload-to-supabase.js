@@ -32,6 +32,7 @@ async function uploadToSupabase() {
       method: item.method,
       delivery_types: item.deliveryTypes,
       special_condition: item.specialCondition,
+      valid_until: item.validUntil || null,
       updated_at: new Date().toISOString()
     }));
 

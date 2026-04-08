@@ -28,7 +28,7 @@ export function useDiscounts() {
 
         const { data, error } = await supabase
           .from('discounts')
-          .select('sync_id, brand_name, platform, discount_amount, min_order_amount, description, category, method, delivery_types, special_condition');
+          .select('sync_id, brand_name, platform, discount_amount, min_order_amount, description, category, method, delivery_types, special_condition, valid_until');
 
         if (error) {
           throw error;
@@ -47,7 +47,8 @@ export function useDiscounts() {
             category: item.category,
             method: item.method,
             deliveryTypes: item.delivery_types ?? [],
-            specialCondition: item.special_condition ?? null
+            specialCondition: item.special_condition ?? null,
+            validUntil: item.valid_until ?? undefined
           }));
           setDiscounts(mappedData);
         }
