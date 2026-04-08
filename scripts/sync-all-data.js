@@ -41,10 +41,6 @@ const categoryMap = {
   '호치킨': 'chicken',
   '훌랄라참숯바베큐치킨': 'chicken',
   '훌랄라참숯치킨': 'chicken',
-  '동근이숯불두마리치킨': 'chicken',
-  '강정이기가막혀': 'chicken',
-  '치킨더홈': 'chicken',
-  '치킨파티': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',
@@ -56,17 +52,12 @@ const categoryMap = {
   '청년피자': 'pizza',
   '프레드피자': 'pizza',
   '피자헛': 'pizza',
-  '미스터피자': 'pizza',
-  '피자스쿨': 'pizza',
-  '뽕뜨락피자': 'pizza',
-  '피자스톰': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
   '맥도날드': 'burger',
   '버거킹': 'burger',
   '쉐이크쉑': 'burger',
-  '프랭크버거': 'burger',
 
   // Korean
   '두찜': 'korean',
@@ -76,14 +67,9 @@ const categoryMap = {
   '동대문엽기떡볶이': 'bunsik',
   '명랑핫도그': 'bunsik',
   '떡참': 'bunsik',
-  '걸작떡볶이치킨': 'bunsik',
-  '마피아떡볶이': 'bunsik',
 
   // Meat
   '기영이숯불두마리치킨': 'meat',
-  '장충동왕족발보쌈': 'meat',
-  '족발야시장': 'meat',
-  '이가네족발보쌈': 'meat',
 
   // Chinese
   // (브랜드 추가 시 여기에)
@@ -101,8 +87,6 @@ const categoryMap = {
   'Tim Hortons': 'cafe',
   '메가MGC커피': 'cafe',
   '배스킨라빈스': 'cafe',
-  '공차': 'cafe',
-  '던킨': 'cafe',
 
   // Bakery
   '뚜레쥬르': 'bakery',

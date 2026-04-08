@@ -5,14 +5,14 @@
     "platform": "baemin",
     "discountAmount": 4000,
     "minOrderAmount": 23000,
-    "description": "배달 전용 할인",
+    "description": "배민클럽 무료배달",
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [
       "알뜰배달",
       "한집배달"
     ],
-    "specialCondition": null
+    "specialCondition": "배민클럽 무료배달"
   },
   {
     "id": "sync-1",
@@ -301,435 +301,6 @@
   },
   {
     "id": "sync-20",
-    "brandName": "배스킨라빈스",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 17000,
-    "description": "배달 전용 할인",
-    "category": "cafe",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-21",
-    "brandName": "포케올데이 샐러드&도시락",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 14000,
-    "description": "배달 전용 할인",
-    "category": "korean",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-22",
-    "brandName": "기영이숯불두마리치킨",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "meat",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-23",
-    "brandName": "오븐에빠진닭",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-24",
-    "brandName": "돈치킨",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 18000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-25",
-    "brandName": "도미노피자",
-    "platform": "baemin",
-    "discountAmount": 8000,
-    "minOrderAmount": 22000,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-26",
-    "brandName": "치킨매니아",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 22000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-27",
-    "brandName": "치킨인류",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 17000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-28",
-    "brandName": "교촌치킨",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 19000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-29",
-    "brandName": "7번가피자",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 22000,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-30",
-    "brandName": "떡참",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 16000,
-    "description": "배달 전용 할인",
-    "category": "bunsik",
-    "method": "배달",
-    "deliveryTypes": [
-      "알뜰배달",
-      "한집배달"
-    ],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-31",
-    "brandName": "미스터피자",
-    "platform": "baemin",
-    "discountAmount": 6000,
-    "minOrderAmount": 19900,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-32",
-    "brandName": "자담치킨",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 22000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-33",
-    "brandName": "프랭크버거",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 15000,
-    "description": "배달 전용 할인",
-    "category": "burger",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-34",
-    "brandName": "피자스쿨",
-    "platform": "baemin",
-    "discountAmount": 6000,
-    "minOrderAmount": 20900,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-35",
-    "brandName": "동근이숯불두마리치킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 23900,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-36",
-    "brandName": "강정이기가막혀",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-37",
-    "brandName": "치킨더홈",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 21000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-38",
-    "brandName": "걸작떡볶이치킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "bunsik",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-39",
-    "brandName": "장충동왕족발보쌈",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 30000,
-    "description": "배달 전용 할인",
-    "category": "meat",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-40",
-    "brandName": "족발야시장",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 33000,
-    "description": "배달 전용 할인",
-    "category": "meat",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-41",
-    "brandName": "뽕뜨락피자",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 19900,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-42",
-    "brandName": "이가네족발보쌈",
-    "platform": "baemin",
-    "discountAmount": 5000,
-    "minOrderAmount": 30000,
-    "description": "배달 전용 할인",
-    "category": "meat",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-43",
-    "brandName": "공차",
-    "platform": "baemin",
-    "discountAmount": 2000,
-    "minOrderAmount": 13000,
-    "description": "배달 전용 할인",
-    "category": "cafe",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-44",
-    "brandName": "던킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 16000,
-    "description": "배달 전용 할인",
-    "category": "cafe",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-45",
-    "brandName": "치킨파티",
-    "platform": "baemin",
-    "discountAmount": 3500,
-    "minOrderAmount": 23000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-46",
-    "brandName": "마피아떡볶이",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 16000,
-    "description": "배달 전용 할인",
-    "category": "bunsik",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-47",
-    "brandName": "꾸브라꼬숯불치킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-48",
-    "brandName": "피자스톰",
-    "platform": "baemin",
-    "discountAmount": 5000,
-    "minOrderAmount": 19900,
-    "description": "배달 전용 할인",
-    "category": "pizza",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-49",
-    "brandName": "또래오래",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 18000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-50",
-    "brandName": "본스치킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 20000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-51",
-    "brandName": "갓튀긴후라이드",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 18000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-52",
-    "brandName": "훌랄라참숯바베큐치킨",
-    "platform": "baemin",
-    "discountAmount": 4000,
-    "minOrderAmount": 22000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null
-  },
-  {
-    "id": "sync-53",
     "brandName": "도미노피자",
     "platform": "coupang",
     "discountAmount": 8500,
@@ -743,7 +314,7 @@
     "specialCondition": "와우회원"
   },
   {
-    "id": "sync-54",
+    "id": "sync-21",
     "brandName": "멕시카나",
     "platform": "coupang",
     "discountAmount": 2000,
@@ -755,7 +326,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-55",
+    "id": "sync-22",
     "brandName": "멕시카나",
     "platform": "coupang",
     "discountAmount": 2000,
@@ -769,7 +340,7 @@
     "specialCondition": "와우회원"
   },
   {
-    "id": "sync-56",
+    "id": "sync-23",
     "brandName": "뚜레쥬르",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -783,7 +354,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-57",
+    "id": "sync-24",
     "brandName": "꾸브라꼬숯불치킨",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -797,7 +368,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-58",
+    "id": "sync-25",
     "brandName": "치킨인류",
     "platform": "coupang",
     "discountAmount": 2500,
@@ -811,7 +382,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-59",
+    "id": "sync-26",
     "brandName": "치킨매니아",
     "platform": "coupang",
     "discountAmount": 2000,
@@ -826,7 +397,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-60",
+    "id": "sync-27",
     "brandName": "오븐마루치킨",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -840,7 +411,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-61",
+    "id": "sync-28",
     "brandName": "오븐에빠진닭",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -854,7 +425,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-62",
+    "id": "sync-29",
     "brandName": "맘스터치",
     "platform": "coupang",
     "discountAmount": 4000,
@@ -868,7 +439,7 @@
     "specialCondition": "최대"
   },
   {
-    "id": "sync-63",
+    "id": "sync-30",
     "brandName": "돈치킨",
     "platform": "coupang",
     "discountAmount": 2000,
@@ -882,7 +453,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-64",
+    "id": "sync-31",
     "brandName": "피자헛",
     "platform": "coupang",
     "discountAmount": 6000,
@@ -896,7 +467,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-65",
+    "id": "sync-32",
     "brandName": "청년피자",
     "platform": "coupang",
     "discountAmount": 4000,
@@ -910,7 +481,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-66",
+    "id": "sync-33",
     "brandName": "7번가피자",
     "platform": "coupang",
     "discountAmount": 4000,
@@ -924,7 +495,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-67",
+    "id": "sync-34",
     "brandName": "육회바른연어",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -938,7 +509,7 @@
     "specialCondition": "최대"
   },
   {
-    "id": "sync-68",
+    "id": "sync-35",
     "brandName": "Tim Hortons",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -952,7 +523,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-69",
+    "id": "sync-36",
     "brandName": "Mad for Garlic",
     "platform": "coupang",
     "discountAmount": 5000,
@@ -966,7 +537,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-70",
+    "id": "sync-37",
     "brandName": "jamba",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -980,7 +551,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-71",
+    "id": "sync-38",
     "brandName": "PASCUCCI",
     "platform": "coupang",
     "discountAmount": 2000,
@@ -994,7 +565,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-72",
+    "id": "sync-39",
     "brandName": "COFFEE@WORKS",
     "platform": "coupang",
     "discountAmount": 3000,
@@ -1008,7 +579,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-73",
+    "id": "sync-40",
     "brandName": "동대문엽기떡볶이",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1023,7 +594,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-74",
+    "id": "sync-41",
     "brandName": "교촌치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1038,7 +609,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-75",
+    "id": "sync-42",
     "brandName": "피자헛",
     "platform": "yogiyo",
     "discountAmount": 4000,
@@ -1052,7 +623,7 @@
     "specialCondition": "최대 5%"
   },
   {
-    "id": "sync-76",
+    "id": "sync-43",
     "brandName": "피자헛",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1064,7 +635,7 @@
     "specialCondition": "최대 3%"
   },
   {
-    "id": "sync-77",
+    "id": "sync-44",
     "brandName": "오븐마루치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1078,7 +649,7 @@
     "specialCondition": "최대 5%"
   },
   {
-    "id": "sync-78",
+    "id": "sync-45",
     "brandName": "자담치킨",
     "platform": "yogiyo",
     "discountAmount": 4000,
@@ -1092,7 +663,7 @@
     "specialCondition": "최대 5%"
   },
   {
-    "id": "sync-79",
+    "id": "sync-46",
     "brandName": "도미노피자",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1107,7 +678,7 @@
     "specialCondition": "최대 3%"
   },
   {
-    "id": "sync-80",
+    "id": "sync-47",
     "brandName": "뚜레쥬르",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1122,7 +693,7 @@
     "specialCondition": "최대 5%"
   },
   {
-    "id": "sync-81",
+    "id": "sync-48",
     "brandName": "BBQ",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1137,7 +708,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-82",
+    "id": "sync-49",
     "brandName": "BHC",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1152,7 +723,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-83",
+    "id": "sync-50",
     "brandName": "맘스터치",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1167,7 +738,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-84",
+    "id": "sync-51",
     "brandName": "롯데리아",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1182,7 +753,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-85",
+    "id": "sync-52",
     "brandName": "파리바게뜨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1197,7 +768,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-86",
+    "id": "sync-53",
     "brandName": "배스킨라빈스",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1212,7 +783,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-87",
+    "id": "sync-54",
     "brandName": "처갓집양념치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1227,7 +798,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-88",
+    "id": "sync-55",
     "brandName": "네네치킨",
     "platform": "yogiyo",
     "discountAmount": 4000,
@@ -1242,7 +813,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-89",
+    "id": "sync-56",
     "brandName": "멕시카나",
     "platform": "yogiyo",
     "discountAmount": 4000,
@@ -1257,7 +828,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-90",
+    "id": "sync-57",
     "brandName": "푸라닭",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1272,7 +843,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-91",
+    "id": "sync-58",
     "brandName": "굽네치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1287,7 +858,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-92",
+    "id": "sync-59",
     "brandName": "지코바치킨",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -1302,7 +873,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-93",
+    "id": "sync-60",
     "brandName": "치킨마루",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1317,7 +888,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-94",
+    "id": "sync-61",
     "brandName": "본스치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1332,7 +903,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-95",
+    "id": "sync-62",
     "brandName": "호치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
@@ -1347,7 +918,7 @@
     "specialCondition": "요기패스X 중복할인"
   },
   {
-    "id": "sync-96",
+    "id": "sync-63",
     "brandName": "파리바게뜨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -1359,7 +930,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-97",
+    "id": "sync-64",
     "brandName": "배스킨라빈스",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -1371,7 +942,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-98",
+    "id": "sync-65",
     "brandName": "BBQ",
     "platform": "ttangyo",
     "discountAmount": 6000,
@@ -1383,7 +954,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-99",
+    "id": "sync-66",
     "brandName": "BHC",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -1395,7 +966,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-100",
+    "id": "sync-67",
     "brandName": "교촌치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -1407,7 +978,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-101",
+    "id": "sync-68",
     "brandName": "버거킹",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -1419,7 +990,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-102",
+    "id": "sync-69",
     "brandName": "맥도날드",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -1431,7 +1002,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-103",
+    "id": "sync-70",
     "brandName": "롯데리아",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -1443,7 +1014,7 @@
     "specialCondition": null
   },
   {
-    "id": "sync-104",
+    "id": "sync-71",
     "brandName": "피자헛",
     "platform": "ttangyo",
     "discountAmount": 7000,
