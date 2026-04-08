@@ -1,8 +1,3 @@
-Use concise Korean for user-facing status updates.
-Prefer deterministic extraction rules over heuristic guesses.
-When reading coupon screenshots, extract all visible coupon cards top-to-bottom.
-Do not include store-list/review/rating sections as coupon items.
-Exclude expired or already-claimed coupons (e.g., "받기 완료", "종료", "마감").
 # Coding Conventions: Deli-Cheap
 
 ## General Style
