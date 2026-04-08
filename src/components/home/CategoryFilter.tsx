@@ -1,7 +1,6 @@
 import { Category } from '@/types/discount';
 
 const CATEGORIES: { id: Category; name: string; icon: string }[] = [
-  { id: 'all', name: '전체', icon: '✨' },
   { id: 'chicken', name: '치킨', icon: '🍗' },
   { id: 'pizza', name: '피자', icon: '🍕' },
   { id: 'burger', name: '버거/샌드위치', icon: '🍔' },

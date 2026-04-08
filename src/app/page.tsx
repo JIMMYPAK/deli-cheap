@@ -66,7 +66,7 @@ const BRAND_KO_LABEL: Record<string, string> = {
 };
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('all');
+  const [selectedCategory, setSelectedCategory] = useState<Category>('chicken');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const { discounts, loading, error } = useDiscounts();
 
@@ -75,7 +75,7 @@ export default function Home() {
     const init = () => {
       const savedCategory = localStorage.getItem('selectedCategory');
       const savedSearch = localStorage.getItem('searchQuery');
-      if (savedCategory) setSelectedCategory(savedCategory as Category);
+      if (savedCategory && savedCategory !== 'all') setSelectedCategory(savedCategory as Category);
       if (savedSearch) setSearchQuery(savedSearch);
     };
     init();
