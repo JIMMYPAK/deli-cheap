@@ -50,6 +50,11 @@ const BRAND_ALIASES: Record<string, string[]> = {
   '호식이두마리치킨': ['호식이'],
 };
 
+// 특정 브랜드가 추가로 포함될 카테고리 (DB 카테고리 외 추가 노출)
+const EXTRA_CATEGORIES: Record<string, Category[]> = {
+  '맘스터치': ['burger'],
+};
+
 // 영문 브랜드명 → 한글 표기 병기 맵
 const BRAND_KO_LABEL: Record<string, string> = {
   'BBQ': 'BBQ',
@@ -89,7 +94,12 @@ export default function Home() {
       const searchLower = searchQuery.toLowerCase().trim();
       
       // 검색어가 있으면 카테고리 무시하고 전체에서 검색
-      const matchesCategory = searchLower ? true : (selectedCategory === 'all' || d.category === selectedCategory);
+      const extraCategories = EXTRA_CATEGORIES[d.brandName] ?? [];
+      const matchesCategory = searchLower ? true : (
+        selectedCategory === 'all' ||
+        d.category === selectedCategory ||
+        extraCategories.includes(selectedCategory)
+      );
       
       const brandNameLower = d.brandName.toLowerCase();
       // 병기 표시명도 검색 대상에 포함
