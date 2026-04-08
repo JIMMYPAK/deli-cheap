@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import CategoryFilter from '@/components/home/CategoryFilter';
 import DiscountCard from '@/components/home/DiscountCard';
-import ShareButton from '@/components/home/ShareButton';
 import { useDiscounts } from '@/hooks/useDiscounts';
 import { GroupedDiscount, Category } from '@/types/discount';
 
@@ -206,17 +205,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Category Tabs & Share */}
-      <div className="flex items-center justify-between pr-4 gap-2">
-        <div className="flex-1 overflow-hidden">
-          <CategoryFilter 
-            activeId={selectedCategory} 
-            onSelect={(id) => setSelectedCategory(id)} 
-          />
-        </div>
-        <div className="flex-shrink-0">
-          <ShareButton />
-        </div>
+      {/* Category Tabs */}
+      <div className="px-0">
+        <CategoryFilter 
+          activeId={selectedCategory} 
+          onSelect={(id) => setSelectedCategory(id)} 
+        />
       </div>
 
       {/* Content Area */}
