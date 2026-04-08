@@ -7,6 +7,23 @@ import ShareButton from '@/components/home/ShareButton';
 import { useDiscounts } from '@/hooks/useDiscounts';
 import { GroupedDiscount, Category } from '@/types/discount';
 
+const BRAND_ALIASES: Record<string, string[]> = {
+  '동대문엽기떡볶이': ['엽떡', '엽기떡볶이', '동대문엽떡'],
+  '비에이치씨': ['bhc', '비에이치시'],
+  '교촌치킨': ['교촌'],
+  '비비큐': ['bbq'],
+  '도미노피자': ['도미노'],
+  '피자헛': ['핏자헛'],
+  '맘스터치': ['맘터'],
+  '버거킹': ['벜', '버킹'],
+  '맥도날드': ['맥날'],
+  '롯데리아': ['롯리'],
+  '뚜레쥬르': ['뚜쥬'],
+  '파리바게뜨': ['파바', '파리바게트'],
+  '배스킨라빈스': ['베라', '배라', '베스킨라빈스', '배스킨'],
+  '두찜': ['두마리찜닭'],
+};
+
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -33,7 +50,27 @@ export default function Home() {
     // 1. Filter by category and search
     const filtered = discounts.filter(d => {
       const matchesCategory = selectedCategory === 'all' || d.category === selectedCategory;
-      const matchesSearch = d.brandName.toLowerCase().includes(searchQuery.toLowerCase());
+      
+      const searchLower = searchQuery.toLowerCase();
+      const brandNameLower = d.brandName.toLowerCase();
+      
+      // Check if direct match
+      let matchesSearch = brandNameLower.includes(searchLower);
+      
+      // Check aliases
+      if (!matchesSearch && searchLower) {
+        for (const [officialBrand, aliases] of Object.entries(BRAND_ALIASES)) {
+          if (
+            (officialBrand.toLowerCase().includes(searchLower) || 
+             aliases.some(alias => alias.toLowerCase().includes(searchLower))) &&
+            brandNameLower.includes(officialBrand.toLowerCase())
+          ) {
+            matchesSearch = true;
+            break;
+          }
+        }
+      }
+
       return matchesCategory && matchesSearch;
     });
 
@@ -148,11 +185,9 @@ export default function Home() {
             ))}
           </div>
         ) : (
-          <div className="py-12 flex flex-col items-center justify-center text-center text-gray-300">
-            <div className="text-4xl mb-4">🍽️</div>
+          <div className="py-20 flex flex-col items-center justify-center text-center text-gray-400">
             <p className="text-sm font-medium">
-              아쉽게도 &apos;{searchQuery || selectedCategory}&apos; 관련 <br />
-              현재 진행 중인 할인이 없어요.
+              현재 진행 중인 할인이 없습니다.
             </p>
           </div>
         )}
