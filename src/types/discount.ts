@@ -36,6 +36,7 @@ export interface PlatformGroup {
 
 export interface GroupedDiscount {
   id: string;
+  brandKey: string;
   brandName: string;
   category: Category;
   platforms: PlatformGroup[];

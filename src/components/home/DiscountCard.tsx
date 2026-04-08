@@ -18,7 +18,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2.5">
           <img 
-            src={`/icons/${discount.brandName}.png`} 
+            src={`/icons/${discount.brandKey}.png`} 
             alt={`${discount.brandName} 로고`} 
             className="w-7 h-7 object-contain rounded-md bg-gray-50"
             onError={(e) => {

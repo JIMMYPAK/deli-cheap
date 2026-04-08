@@ -132,6 +132,7 @@ export default function Home() {
       if (!brandGroups[brandKey]) {
         brandGroups[brandKey] = {
           id: brandKey,
+          brandKey: brandKey,
           brandName: BRAND_KO_LABEL[d.brandName] ?? d.brandName,
           category: d.category,
           platforms: [],
