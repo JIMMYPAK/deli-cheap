@@ -198,6 +198,11 @@ function buildRankMaps(): Partial<Record<Category, Record<string, number>>> {
 
 const RANK_SCORE_BY_CATEGORY = buildRankMaps();
 
+/** 조사 기반 순위표가 있는 카테고리(치킨·피자·버거·베이커리·분식·카페) */
+export function categoryHasSurveyRank(category: Category): boolean {
+  return Boolean(RANK_SCORE_BY_CATEGORY[category]);
+}
+
 function categorySortIndex(c: Category): number {
   const i = CATEGORY_SORT_ORDER.indexOf(c);
   return i === -1 ? 999 : i;
@@ -211,17 +216,26 @@ function brandRankScore(brandKey: string, category: Category): number {
 }
 
 /**
- * 랭킹순 정렬: 카테고리별 조사 순위 → 목록에 없으면 해당 카테고리 안에서 가나다순.
+ * 랭킹순 모드에서:
+ * - 순위표가 있는 카테고리: 조사 순위 → 미등록 브랜드는 가나다순
+ * - 순위표가 없는 카테고리(한식·중식·일식·양식·고기 등): 조사 랭킹 없이 할인금액 큰 순 → 가나다순
  * 검색으로 카테고리가 섞이면 카테고리 우선순위 후, 같은 카테고리끼리 위 규칙.
  */
 export function compareBrandsByRank(
-  a: Pick<GroupedDiscount, 'brandKey' | 'category'>,
-  b: Pick<GroupedDiscount, 'brandKey' | 'category'>
+  a: Pick<GroupedDiscount, 'brandKey' | 'category' | 'totalMaxDiscount'>,
+  b: Pick<GroupedDiscount, 'brandKey' | 'category' | 'totalMaxDiscount'>
 ): number {
   if (a.category !== b.category) {
     const ca = categorySortIndex(a.category);
     const cb = categorySortIndex(b.category);
     if (ca !== cb) return ca - cb;
+  }
+
+  if (a.category === b.category && !categoryHasSurveyRank(a.category)) {
+    if (b.totalMaxDiscount !== a.totalMaxDiscount) {
+      return b.totalMaxDiscount - a.totalMaxDiscount;
+    }
+    return a.brandKey.localeCompare(b.brandKey, 'ko');
   }
 
   const sa = brandRankScore(a.brandKey, a.category);
