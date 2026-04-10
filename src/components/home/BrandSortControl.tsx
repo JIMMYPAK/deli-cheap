@@ -11,14 +11,18 @@ const OPTIONS: { id: BrandSortMode; label: string }[] = [
 interface BrandSortControlProps {
   value: BrandSortMode;
   onChange: (mode: BrandSortMode) => void;
+  /** false면 한식·중식 등: 할인금액순 / 최소주문만 노출 */
+  showRankOption: boolean;
 }
 
-export default function BrandSortControl({ value, onChange }: BrandSortControlProps) {
+export default function BrandSortControl({ value, onChange, showRankOption }: BrandSortControlProps) {
+  const visible = showRankOption ? OPTIONS : OPTIONS.filter((o) => o.id !== 'rank');
+
   return (
     <div className="px-4 pt-2 pb-1">
       <p className="text-[10px] font-bold text-gray-400 mb-1.5 uppercase tracking-wide">정렬</p>
       <div className="flex flex-wrap gap-1.5">
-        {OPTIONS.map((opt) => (
+        {visible.map((opt) => (
           <button
             key={opt.id}
             type="button"

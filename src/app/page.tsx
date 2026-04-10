@@ -5,7 +5,7 @@ import CategoryFilter from '@/components/home/CategoryFilter';
 import DiscountCard from '@/components/home/DiscountCard';
 import { useDiscounts } from '@/hooks/useDiscounts';
 import { GroupedDiscount, Category, BrandSortMode } from '@/types/discount';
-import { compareBrandsByRank } from '@/constants/brandRank';
+import { compareBrandsByRank, categoryHasSurveyRank } from '@/constants/brandRank';
 import BrandSortControl from '@/components/home/BrandSortControl';
 
 const BRAND_ALIASES: Record<string, string[]> = {
@@ -94,6 +94,15 @@ export default function Home() {
     localStorage.setItem('searchQuery', searchQuery);
     localStorage.setItem('brandSortMode', brandSortMode);
   }, [selectedCategory, searchQuery, brandSortMode]);
+
+  const searchActive = searchQuery.trim().length > 0;
+  const showRankOption =
+    searchActive ||
+    selectedCategory === 'all' ||
+    categoryHasSurveyRank(selectedCategory);
+
+  const effectiveSortMode: BrandSortMode =
+    !showRankOption && brandSortMode === 'rank' ? 'discount' : brandSortMode;
 
   const processedDiscounts = useMemo((): GroupedDiscount[] => {
     // 1. Filter by category and search
@@ -207,13 +216,13 @@ export default function Home() {
     }));
 
     const sorted = [...withBest].sort((a, b) => {
-      if (brandSortMode === 'discount') {
+      if (effectiveSortMode === 'discount') {
         if (b.totalMaxDiscount !== a.totalMaxDiscount) {
           return b.totalMaxDiscount - a.totalMaxDiscount;
         }
         return compareBrandsByRank(a, b);
       }
-      if (brandSortMode === 'minOrder') {
+      if (effectiveSortMode === 'minOrder') {
         if (a.minOrderLowest !== b.minOrderLowest) {
           return a.minOrderLowest - b.minOrderLowest;
         }
@@ -223,7 +232,7 @@ export default function Home() {
     });
 
     return sorted;
-  }, [discounts, selectedCategory, searchQuery, brandSortMode]);
+  }, [discounts, selectedCategory, searchQuery, effectiveSortMode]);
 
   return (
     <div className="flex flex-col">
@@ -249,7 +258,11 @@ export default function Home() {
         />
       </div>
 
-      <BrandSortControl value={brandSortMode} onChange={setBrandSortMode} />
+      <BrandSortControl
+        value={effectiveSortMode}
+        onChange={setBrandSortMode}
+        showRankOption={showRankOption}
+      />
 
       {/* Content Area */}
       <div className="px-4 py-2 flex-1 flex flex-col gap-4">
