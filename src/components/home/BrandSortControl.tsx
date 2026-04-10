@@ -4,14 +4,14 @@ import { BrandSortMode } from '@/types/discount';
 
 const OPTIONS: { id: BrandSortMode; label: string }[] = [
   { id: 'rank', label: '브랜드 랭킹순' },
-  { id: 'discount', label: '할인금액순' },
-  { id: 'minOrder', label: '최소주문 적은 순' },
+  { id: 'discount', label: '할인 금액순' },
+  { id: 'minOrder', label: '최소 주문 금액순' },
 ];
 
 interface BrandSortControlProps {
   value: BrandSortMode;
   onChange: (mode: BrandSortMode) => void;
-  /** false면 한식·중식 등: 할인금액순 / 최소주문만 노출 */
+  /** false면 한식·중식 등: 할인 금액순 / 최소 주문 금액순만 노출 */
   showRankOption: boolean;
 }
 
