@@ -21,7 +21,6 @@ const categoryMap = {
   '돈치킨': 'chicken',
   '또래오래': 'chicken',
   '또봉이통닭': 'chicken',
-  '맘스터치': 'chicken',
   '멕시카나': 'chicken',
   '본스치킨': 'chicken',
   '오븐마루': 'chicken',
@@ -52,33 +51,50 @@ const categoryMap = {
   '청년피자': 'pizza',
   '프레드피자': 'pizza',
   '피자헛': 'pizza',
+  '미스터피자': 'pizza',
+  '아메리칸피자': 'pizza',
+  '파파존스': 'pizza',
+  '피자알볼로': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
   '맥도날드': 'burger',
   '버거킹': 'burger',
   '쉐이크쉑': 'burger',
+  '맘스터치': 'burger',
+  '프랭크버거': 'burger',
+  '오구샌': 'burger',
 
   // Korean
   '두찜': 'korean',
   '포케올데이 샐러드&도시락': 'korean',
+  '포케올데이': 'korean',
+  '계근상': 'korean',
+  '보끄당': 'korean',
+  '큰맘할매순대국': 'korean',
+  '일미리금계찜닭': 'korean',
+  '진교동찜닭': 'korean',
+  '황실김치찜&찌개': 'korean',
+  '슈퍼키친': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',
   '명랑핫도그': 'bunsik',
   '떡참': 'bunsik',
+  '떡볶이참잘하는집': 'bunsik',
 
   // Meat
   '기영이숯불두마리치킨': 'meat',
 
   // Chinese
-  // (브랜드 추가 시 여기에)
+  '마라공방': 'chinese',
 
   // Japanese
   '육회바른연어': 'japanese',
 
   // Western
   'Mad for Garlic': 'western',
+  '아웃백': 'western',
 
   // Cafe
   'COFFEE@WORKS': 'cafe',
@@ -87,6 +103,7 @@ const categoryMap = {
   'Tim Hortons': 'cafe',
   '메가MGC커피': 'cafe',
   '배스킨라빈스': 'cafe',
+  '요아정': 'cafe',
 
   // Bakery
   '뚜레쥬르': 'bakery',

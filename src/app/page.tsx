@@ -4,7 +4,9 @@ import { useState, useEffect, useMemo } from 'react';
 import CategoryFilter from '@/components/home/CategoryFilter';
 import DiscountCard from '@/components/home/DiscountCard';
 import { useDiscounts } from '@/hooks/useDiscounts';
-import { GroupedDiscount, Category } from '@/types/discount';
+import { GroupedDiscount, Category, BrandSortMode } from '@/types/discount';
+import { compareBrandsByRank } from '@/constants/brandRank';
+import BrandSortControl from '@/components/home/BrandSortControl';
 
 const BRAND_ALIASES: Record<string, string[]> = {
   '7번가피자': ['7번가'],
@@ -68,6 +70,7 @@ const BRAND_KO_LABEL: Record<string, string> = {
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('chicken');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [brandSortMode, setBrandSortMode] = useState<BrandSortMode>('rank');
   const { discounts, loading, error } = useDiscounts();
 
   // Load state from localStorage on mount
@@ -75,8 +78,12 @@ export default function Home() {
     const init = () => {
       const savedCategory = localStorage.getItem('selectedCategory');
       const savedSearch = localStorage.getItem('searchQuery');
+      const savedSort = localStorage.getItem('brandSortMode');
       if (savedCategory && savedCategory !== 'all') setSelectedCategory(savedCategory as Category);
       if (savedSearch) setSearchQuery(savedSearch);
+      if (savedSort === 'rank' || savedSort === 'discount' || savedSort === 'minOrder') {
+        setBrandSortMode(savedSort);
+      }
     };
     init();
   }, []);
@@ -85,7 +92,8 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem('selectedCategory', selectedCategory);
     localStorage.setItem('searchQuery', searchQuery);
-  }, [selectedCategory, searchQuery]);
+    localStorage.setItem('brandSortMode', brandSortMode);
+  }, [selectedCategory, searchQuery, brandSortMode]);
 
   const processedDiscounts = useMemo((): GroupedDiscount[] => {
     // 1. Filter by category and search
@@ -137,9 +145,15 @@ export default function Home() {
           category: d.category,
           platforms: [],
           totalMaxDiscount: 0,
+          minOrderLowest: Number.POSITIVE_INFINITY,
           isBest: false
         };
       }
+
+      brandGroups[brandKey].minOrderLowest = Math.min(
+        brandGroups[brandKey].minOrderLowest,
+        d.minOrderAmount
+      );
 
       let platformGroup = brandGroups[brandKey].platforms.find(p => p.platform === d.platform);
       if (!platformGroup) {
@@ -178,17 +192,38 @@ export default function Home() {
       });
     });
 
-    const groups = Object.values(brandGroups);
+    const groups = Object.values(brandGroups).map((g) => ({
+      ...g,
+      minOrderLowest: Number.isFinite(g.minOrderLowest) ? g.minOrderLowest : 0,
+    }));
 
     // 3. Find the maximum discount among all visible brands
     const globalMaxDiscount = groups.reduce((max, g) => Math.max(max, g.totalMaxDiscount), 0);
 
     // 4. Mark isBest for brands that offer the absolute maximum discount in current view (if it's a significant discount)
-    return groups.map(g => ({
+    const withBest = groups.map(g => ({
       ...g,
       isBest: globalMaxDiscount > 0 && g.totalMaxDiscount === globalMaxDiscount && g.totalMaxDiscount >= 4000
     }));
-  }, [discounts, selectedCategory, searchQuery]);
+
+    const sorted = [...withBest].sort((a, b) => {
+      if (brandSortMode === 'discount') {
+        if (b.totalMaxDiscount !== a.totalMaxDiscount) {
+          return b.totalMaxDiscount - a.totalMaxDiscount;
+        }
+        return compareBrandsByRank(a, b);
+      }
+      if (brandSortMode === 'minOrder') {
+        if (a.minOrderLowest !== b.minOrderLowest) {
+          return a.minOrderLowest - b.minOrderLowest;
+        }
+        return compareBrandsByRank(a, b);
+      }
+      return compareBrandsByRank(a, b);
+    });
+
+    return sorted;
+  }, [discounts, selectedCategory, searchQuery, brandSortMode]);
 
   return (
     <div className="flex flex-col">
@@ -213,6 +248,8 @@ export default function Home() {
           onSelect={(id) => setSelectedCategory(id)} 
         />
       </div>
+
+      <BrandSortControl value={brandSortMode} onChange={setBrandSortMode} />
 
       {/* Content Area */}
       <div className="px-4 py-2 flex-1 flex flex-col gap-4">
