@@ -3,7 +3,7 @@
 import { BrandSortMode } from '@/types/discount';
 
 const OPTIONS: { id: BrandSortMode; label: string }[] = [
-  { id: 'rank', label: '랭킹순' },
+  { id: 'rank', label: '브랜드 랭킹순' },
   { id: 'discount', label: '할인금액순' },
   { id: 'minOrder', label: '최소주문 적은 순' },
 ];
