@@ -192,9 +192,33 @@ const convertedData = allRawData
   // 만료일이 있으면 자동 제외
   .filter((item) => !isExpired(item.validUntil));
 
+// 한정수량 쿠폰 유효기간 보정:
+// valid_until이 오늘인 쿠폰은 같은 브랜드의 더 긴 유효기간으로 자동 대체
+const today = new Date().toISOString().slice(0, 10);
+
+const brandMaxValidUntil = {};
+convertedData.forEach(item => {
+  if (item.validUntil && item.validUntil > today) {
+    if (!brandMaxValidUntil[item.brandName] || item.validUntil > brandMaxValidUntil[item.brandName]) {
+      brandMaxValidUntil[item.brandName] = item.validUntil;
+    }
+  }
+});
+
+const finalData = convertedData.map(item => {
+  if (item.validUntil === today && brandMaxValidUntil[item.brandName]) {
+    return { ...item, validUntil: brandMaxValidUntil[item.brandName] };
+  }
+  return item;
+});
+
 fs.writeFileSync(
   path.join(process.cwd(), 'public/data/discounts.json'),
-  JSON.stringify(convertedData, null, 2)
+  JSON.stringify(finalData, null, 2)
 );
 
-console.log(`Successfully merged ${convertedData.length} items to public/data/discounts.json`);
+const extended = finalData.filter(item => item.validUntil && brandMaxValidUntil[item.brandName] && convertedData.find(c => c.id === item.id)?.validUntil === today && item.validUntil !== today);
+if (extended.length > 0) {
+  console.log(`유효기간 보정: ${extended.length}개 쿠폰의 유효기간을 같은 브랜드 기준으로 연장`);
+}
+console.log(`Successfully merged ${finalData.length} items to public/data/discounts.json`);
