@@ -49,24 +49,29 @@ export function openDeliveryApp(platform: Platform, brandName: string) {
   }
 
   let timeoutId: ReturnType<typeof setTimeout>;
+  let cancelled = false;
 
-  const handleVisibilityChange = () => {
-    // 앱이 정상적으로 실행되어 브라우저가 백그라운드로 전환되면 폴백 타이머 취소
-    if (document.hidden || document.visibilityState === 'hidden') {
-      clearTimeout(timeoutId);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    }
+  const cancel = () => {
+    if (cancelled) return;
+    cancelled = true;
+    clearTimeout(timeoutId);
+    document.removeEventListener('visibilitychange', cancel);
+    window.removeEventListener('blur', cancel);
   };
 
-  document.addEventListener('visibilitychange', handleVisibilityChange);
+  // 앱이 열리면 브라우저가 백그라운드로 전환(visibilitychange) 되거나 포커스를 잃음(blur)
+  // 두 이벤트 중 하나라도 감지되면 폴백 타이머 취소
+  document.addEventListener('visibilitychange', cancel);
+  window.addEventListener('blur', cancel);
 
   // 딥링크 실행 시도
   window.location.href = deepLink;
 
-  // 딥링크가 작동하지 않을 경우(앱 미설치 등) 일정 시간 후 웹으로 이동
+  // 앱 미설치 등으로 딥링크가 작동하지 않을 경우 웹으로 이동 (2.5초 대기)
   timeoutId = setTimeout(() => {
-    document.removeEventListener('visibilitychange', handleVisibilityChange);
-    // 팝업 차단을 우회하기 위해 현재 창에서 이동
+    if (cancelled) return;
+    document.removeEventListener('visibilitychange', cancel);
+    window.removeEventListener('blur', cancel);
     window.location.href = fallback;
-  }, 2000);
+  }, 2500);
 }
