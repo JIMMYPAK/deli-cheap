@@ -173,10 +173,13 @@ export default function Home() {
         };
       }
 
-      brandGroups[brandKey].minOrderLowest = Math.min(
-        brandGroups[brandKey].minOrderLowest,
-        d.minOrderAmount
-      );
+      // 적립 혜택(discount:0)은 최소주문금액 계산에서 제외
+      if (d.discountAmount > 0) {
+        brandGroups[brandKey].minOrderLowest = Math.min(
+          brandGroups[brandKey].minOrderLowest,
+          d.minOrderAmount
+        );
+      }
 
       let platformGroup = brandGroups[brandKey].platforms.find(p => p.platform === d.platform);
       if (!platformGroup) {

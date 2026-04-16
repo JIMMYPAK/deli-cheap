@@ -54,47 +54,59 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
 
             {/* Coupons for this platform */}
             <div className="flex flex-col gap-2">
-              {platformGroup.coupons.map((coupon, cIdx) => (
-                <div key={cIdx} className="flex flex-col gap-2 p-3.5 rounded-lg bg-gray-50 border border-gray-100/50 hover:border-gray-200 transition-colors">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className={`text-[10px] px-1.5 py-0.5 rounded flex items-center font-bold ${
-                        coupon.method === '배달' ? 'bg-blue-100/50 text-blue-600' : 
-                        coupon.method === '픽업' ? 'bg-orange-100/50 text-orange-600' : 
-                        'bg-gray-200/50 text-gray-600'
-                      }`}>
-                        {coupon.method}
-                      </span>
+              {platformGroup.coupons.map((coupon, cIdx) => {
+                // 적립 혜택 (discount === 0)
+                if (coupon.discountAmount === 0) {
+                  return (
+                    <div key={cIdx} className="flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-emerald-50 border border-emerald-100">
+                      <span className="text-emerald-600 text-[10px] font-black shrink-0">적립</span>
+                      <span className="text-emerald-700 text-[11px] font-bold">{coupon.specialCondition}</span>
+                    </div>
+                  );
+                }
 
-                      {coupon.specialCondition && (
-                        <span className="bg-red-50 text-red-500 text-[10px] px-1.5 py-0.5 rounded font-bold">
-                          {coupon.specialCondition}
+                return (
+                  <div key={cIdx} className="flex flex-col gap-2 p-3.5 rounded-lg bg-gray-50 border border-gray-100/50 hover:border-gray-200 transition-colors">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded flex items-center font-bold ${
+                          coupon.method === '배달' ? 'bg-blue-100/50 text-blue-600' :
+                          coupon.method === '픽업' ? 'bg-orange-100/50 text-orange-600' :
+                          'bg-gray-200/50 text-gray-600'
+                        }`}>
+                          {coupon.method}
+                        </span>
+
+                        {coupon.specialCondition && (
+                          <span className="bg-red-50 text-red-500 text-[10px] px-1.5 py-0.5 rounded font-bold">
+                            {coupon.specialCondition}
+                          </span>
+                        )}
+
+                        {coupon.deliveryTypes.map((type, tIdx) => (
+                          <span key={tIdx} className="text-[10px] text-gray-500 font-medium">
+                            #{type}
+                          </span>
+                        ))}
+                      </div>
+                      <span className="text-gray-900 font-black text-sm tracking-tight">
+                        -{coupon.discountAmount.toLocaleString()}원
+                      </span>
+                    </div>
+
+                    <div className="flex items-center justify-between text-[11px]">
+                      <span className="text-gray-400 font-medium">
+                        {coupon.minOrderAmount > 0 ? `${coupon.minOrderAmount.toLocaleString()}원 이상 주문 시` : '최소주문금액 없음'}
+                      </span>
+                      {coupon.validUntil && (
+                        <span className="text-gray-400 font-medium">
+                          ~{new Date(coupon.validUntil).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}
                         </span>
                       )}
-
-                      {coupon.deliveryTypes.map((type, tIdx) => (
-                        <span key={tIdx} className="text-[10px] text-gray-500 font-medium">
-                          #{type}
-                        </span>
-                      ))}
                     </div>
-                    <span className="text-gray-900 font-black text-sm tracking-tight">
-                      -{coupon.discountAmount.toLocaleString()}원
-                    </span>
                   </div>
-                  
-                  <div className="flex items-center justify-between text-[11px]">
-                    <span className="text-gray-400 font-medium">
-                      {coupon.minOrderAmount > 0 ? `${coupon.minOrderAmount.toLocaleString()}원 이상 주문 시` : '최소주문금액 없음'}
-                    </span>
-                    {coupon.validUntil && (
-                      <span className="text-gray-400 font-medium">
-                        ~{new Date(coupon.validUntil).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         ))}

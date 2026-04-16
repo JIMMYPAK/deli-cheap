@@ -2668,6 +2668,19 @@
   },
   {
     "id": "sync-200",
+    "brandName": "자담치킨",
+    "platform": "yogiyo",
+    "discountAmount": 0,
+    "minOrderAmount": 0,
+    "description": "브랜드 적립 5%",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": "브랜드 적립 5%",
+    "validUntil": null
+  },
+  {
+    "id": "sync-201",
     "brandName": "맘스터치",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -2683,7 +2696,7 @@
     "validUntil": "2026-04-26"
   },
   {
-    "id": "sync-201",
+    "id": "sync-202",
     "brandName": "BHC",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2699,7 +2712,7 @@
     "validUntil": "2026-05-03"
   },
   {
-    "id": "sync-202",
+    "id": "sync-203",
     "brandName": "메가MGC커피",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2715,7 +2728,7 @@
     "validUntil": "2026-04-19"
   },
   {
-    "id": "sync-203",
+    "id": "sync-204",
     "brandName": "피자알볼로",
     "platform": "ttangyo",
     "discountAmount": 5500,
@@ -2731,7 +2744,7 @@
     "validUntil": "2026-04-26"
   },
   {
-    "id": "sync-204",
+    "id": "sync-205",
     "brandName": "버거킹",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2747,7 +2760,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-205",
+    "id": "sync-206",
     "brandName": "진교동찜닭",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2763,7 +2776,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-206",
+    "id": "sync-207",
     "brandName": "아웃백스테이크하우스",
     "platform": "ttangyo",
     "discountAmount": 10000,
@@ -2779,7 +2792,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-207",
+    "id": "sync-208",
     "brandName": "두찜",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2795,7 +2808,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-208",
+    "id": "sync-209",
     "brandName": "맘스피자",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2811,7 +2824,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-209",
+    "id": "sync-210",
     "brandName": "훌랄라참숯바베큐치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2827,7 +2840,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-210",
+    "id": "sync-211",
     "brandName": "청년피자",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2843,7 +2856,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-211",
+    "id": "sync-212",
     "brandName": "또봉이통닭",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -2859,7 +2872,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-212",
+    "id": "sync-213",
     "brandName": "호식이두마리치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2875,7 +2888,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-213",
+    "id": "sync-214",
     "brandName": "BBQ",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2891,7 +2904,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-214",
+    "id": "sync-215",
     "brandName": "포케올데이",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2907,7 +2920,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-215",
+    "id": "sync-216",
     "brandName": "프레드피자",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2923,7 +2936,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-216",
+    "id": "sync-217",
     "brandName": "왓더버거",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -2939,7 +2952,7 @@
     "validUntil": "2026-04-19"
   },
   {
-    "id": "sync-217",
+    "id": "sync-218",
     "brandName": "7번가피자",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -2955,7 +2968,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-218",
+    "id": "sync-219",
     "brandName": "치킨플러스",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -2971,7 +2984,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-219",
+    "id": "sync-220",
     "brandName": "파파존스",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -2987,7 +3000,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-220",
+    "id": "sync-221",
     "brandName": "멕시카나",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3003,7 +3016,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-221",
+    "id": "sync-222",
     "brandName": "피자헛",
     "platform": "ttangyo",
     "discountAmount": 12000,
@@ -3019,7 +3032,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-222",
+    "id": "sync-223",
     "brandName": "꾸브라꼬숯불치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -3035,7 +3048,7 @@
     "validUntil": "2026-05-03"
   },
   {
-    "id": "sync-224",
+    "id": "sync-225",
     "brandName": "오븐마루치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3051,7 +3064,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-225",
+    "id": "sync-226",
     "brandName": "땅땅치킨",
     "platform": "ttangyo",
     "discountAmount": 6000,
@@ -3067,7 +3080,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-226",
+    "id": "sync-227",
     "brandName": "쉐이크쉑",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3083,7 +3096,7 @@
     "validUntil": "2026-06-30"
   },
   {
-    "id": "sync-227",
+    "id": "sync-228",
     "brandName": "또래오래",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -3099,7 +3112,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-228",
+    "id": "sync-229",
     "brandName": "네네치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3115,7 +3128,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-229",
+    "id": "sync-230",
     "brandName": "바른치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3131,7 +3144,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-230",
+    "id": "sync-231",
     "brandName": "자담치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3147,7 +3160,7 @@
     "validUntil": "2026-04-19"
   },
   {
-    "id": "sync-231",
+    "id": "sync-232",
     "brandName": "떡참",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -3163,7 +3176,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-232",
+    "id": "sync-233",
     "brandName": "기영이숯불두마리치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -3179,7 +3192,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-233",
+    "id": "sync-234",
     "brandName": "보끔당",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -3195,7 +3208,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-234",
+    "id": "sync-235",
     "brandName": "일미리금계찜닭",
     "platform": "ttangyo",
     "discountAmount": 5000,
@@ -3211,7 +3224,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-235",
+    "id": "sync-236",
     "brandName": "부어치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3227,7 +3240,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-236",
+    "id": "sync-237",
     "brandName": "아메리칸피자",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -3243,7 +3256,7 @@
     "validUntil": "2026-12-31"
   },
   {
-    "id": "sync-237",
+    "id": "sync-238",
     "brandName": "오븐에빠진닭",
     "platform": "ttangyo",
     "discountAmount": 4000,
@@ -3259,7 +3272,7 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-238",
+    "id": "sync-239",
     "brandName": "해두리치킨",
     "platform": "ttangyo",
     "discountAmount": 3000,
@@ -3275,7 +3288,7 @@
     "validUntil": "2026-06-30"
   },
   {
-    "id": "sync-239",
+    "id": "sync-240",
     "brandName": "계근상",
     "platform": "ttangyo",
     "discountAmount": 4500,

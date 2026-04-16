@@ -562,5 +562,15 @@
     ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "자담치킨",
+    "discount": 0,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": "브랜드 적립 5%",
+    "valid_until": null
   }
 ]
