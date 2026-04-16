@@ -48,6 +48,11 @@ const categoryMap = {
   '웰덤치킨': 'chicken',
   '땅땅치킨': 'chicken',
   '부어치킨': 'chicken',
+  'bhc': 'chicken',
+  '멕시카나치킨': 'chicken',
+  '꾸브라꼬 숯불치킨': 'chicken',
+  '바른치킨': 'chicken',
+  '해두리치킨': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',
@@ -66,6 +71,8 @@ const categoryMap = {
   '클랩피자': 'pizza',
   '피자에땅': 'pizza',
   '맘스터치피자앤치킨': 'pizza',
+  '맘스터치 피자앤치킨': 'pizza',
+  '맘스피자': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
@@ -78,6 +85,7 @@ const categoryMap = {
   '버거리': 'burger',
   '다운타우너': 'burger',
   '샐러디': 'burger',
+  '왓더버거': 'burger',
 
   // Korean
   '두찜': 'korean',
@@ -99,6 +107,7 @@ const categoryMap = {
   '유가네닭갈비': 'korean',
   '유가네찜닭': 'korean',
   '덮덮밥': 'korean',
+  '보끔당': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',
@@ -121,12 +130,17 @@ const categoryMap = {
 
   // Western
   'Mad for Garlic': 'western',
+  '매드포갈릭': 'western',
   '아웃백': 'western',
+  '아웃백스테이크하우스': 'western',
 
   // Cafe
   'COFFEE@WORKS': 'cafe',
+  '커피앳웍스': 'cafe',
   'jamba': 'cafe',
+  '잠바주스': 'cafe',
   'PASCUCCI': 'cafe',
+  '파스쿠찌': 'cafe',
   'Tim Hortons': 'cafe',
   '메가MGC커피': 'cafe',
   '배스킨라빈스': 'cafe',
@@ -241,12 +255,24 @@ convertedData.forEach(item => {
   }
 });
 
-const finalData = convertedData.map(item => {
-  if (item.validUntil === today && brandMaxValidUntil[item.brandName]) {
-    return { ...item, validUntil: brandMaxValidUntil[item.brandName] };
+// 중복 제거: brandName, platform, discountAmount, minOrderAmount 기준
+// 같은 조건이면 validUntil이 더 긴 것을 우선함
+const dedupedMap = new Map();
+convertedData.forEach(item => {
+  let validUntil = item.validUntil;
+  if (validUntil === today && brandMaxValidUntil[item.brandName]) {
+    validUntil = brandMaxValidUntil[item.brandName];
   }
-  return item;
+  
+  const key = `${item.brandName}|${item.platform}|${item.discountAmount}|${item.minOrderAmount}`;
+  const existing = dedupedMap.get(key);
+  
+  if (!existing || (validUntil && (!existing.validUntil || validUntil > existing.validUntil))) {
+    dedupedMap.set(key, { ...item, validUntil });
+  }
 });
+
+const finalData = Array.from(dedupedMap.values());
 
 fs.writeFileSync(
   path.join(process.cwd(), 'public/data/discounts.json'),
