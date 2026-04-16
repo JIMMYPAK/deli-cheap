@@ -1072,14 +1072,14 @@
     "platform": "baemin",
     "discountAmount": 5000,
     "minOrderAmount": 16000,
-    "description": "모든 주문 할인",
+    "description": "매일 10:00 선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "한집배달",
       "알뜰배달"
     ],
-    "specialCondition": null,
+    "specialCondition": "매일 10:00 선착순",
     "validUntil": "2026-04-19"
   },
   {
@@ -1101,14 +1101,14 @@
     "platform": "baemin",
     "discountAmount": 5000,
     "minOrderAmount": 18000,
-    "description": "모든 주문 할인",
+    "description": "매일 10:00 선착순",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "한집배달",
       "알뜰배달"
     ],
-    "specialCondition": null,
+    "specialCondition": "매일 10:00 선착순",
     "validUntil": "2026-04-19"
   },
   {
@@ -1117,14 +1117,14 @@
     "platform": "baemin",
     "discountAmount": 3000,
     "minOrderAmount": 18000,
-    "description": "모든 주문 할인",
+    "description": "매일 10:00 선착순",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "한집배달",
       "알뜰배달"
     ],
-    "specialCondition": null,
+    "specialCondition": "매일 10:00 선착순",
     "validUntil": "2026-04-19"
   },
   {

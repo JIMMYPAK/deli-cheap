@@ -848,7 +848,7 @@
       "한집배달",
       "알뜰배달"
     ],
-    "special_condition": null,
+    "special_condition": "매일 10:00 선착순",
     "valid_until": "2026-04-16"
   },
   {
@@ -871,7 +871,7 @@
       "한집배달",
       "알뜰배달"
     ],
-    "special_condition": null,
+    "special_condition": "매일 10:00 선착순",
     "valid_until": "2026-04-16"
   },
   {
@@ -884,7 +884,7 @@
       "한집배달",
       "알뜰배달"
     ],
-    "special_condition": null,
+    "special_condition": "매일 10:00 선착순",
     "valid_until": "2026-04-16"
   },
   {
