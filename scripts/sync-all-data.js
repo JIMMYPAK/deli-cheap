@@ -40,6 +40,13 @@ const categoryMap = {
   '호치킨': 'chicken',
   '훌랄라참숯바베큐치킨': 'chicken',
   '훌랄라참숯치킨': 'chicken',
+  '디디치킨': 'chicken',
+  '쌀통닭': 'chicken',
+  '순살몬스터': 'chicken',
+  '아라치치킨': 'chicken',
+  '칠봉통닭': 'chicken',
+  '웰덤치킨': 'chicken',
+  '땅땅치킨': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',
@@ -55,6 +62,8 @@ const categoryMap = {
   '아메리칸피자': 'pizza',
   '파파존스': 'pizza',
   '피자알볼로': 'pizza',
+  '클랩피자': 'pizza',
+  '피자에땅': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
@@ -64,6 +73,8 @@ const categoryMap = {
   '맘스터치': 'burger',
   '프랭크버거': 'burger',
   '오구샌': 'burger',
+  '버거리': 'burger',
+  '다운타우너': 'burger',
 
   // Korean
   '두찜': 'korean',
@@ -76,15 +87,26 @@ const categoryMap = {
   '진교동찜닭': 'korean',
   '황실김치찜&찌개': 'korean',
   '슈퍼키친': 'korean',
+  '방가네 소고기국밥': 'korean',
+  '본초맘죽': 'korean',
+  '국민낙곱새': 'korean',
+  '신밥도둑': 'korean',
+  '마선생얼큰국밥': 'korean',
+  '아구듬뿍알곤마니': 'korean',
+  '유가네닭갈비': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',
   '명랑핫도그': 'bunsik',
   '떡참': 'bunsik',
   '떡볶이참잘하는집': 'bunsik',
+  '기떡찜': 'bunsik',
+  '강다짐': 'bunsik',
+  '지지고': 'bunsik',
 
   // Meat
   '기영이숯불두마리치킨': 'meat',
+  '미스터보쌈&삼겹': 'meat',
 
   // Chinese
   '마라공방': 'chinese',
@@ -104,10 +126,19 @@ const categoryMap = {
   '메가MGC커피': 'cafe',
   '배스킨라빈스': 'cafe',
   '요아정': 'cafe',
+  '벤슨 아이스크림': 'cafe',
+  '토스트카페마리': 'cafe',
+  '읍천리382': 'cafe',
+  '트리플에이커피': 'cafe',
+  '영커피': 'cafe',
+  '샐러리아': 'cafe',
+  '요아잇': 'cafe',
+  '카페인중독': 'cafe',
 
   // Bakery
   '뚜레쥬르': 'bakery',
   '파리바게뜨': 'bakery',
+  '오베이글하우스': 'bakery',
 };
 
 function readJson(filename) {
