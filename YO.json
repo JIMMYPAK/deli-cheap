@@ -81,7 +81,7 @@
   },
   {
     "app": "요기요",
-    "brand": "BHC치킨",
+    "brand": "BHC",
     "discount": 6000,
     "special_condition": "5%할인 최대 3,000원 + 추가할인 3,000원",
     "min_order": 23000,
@@ -111,7 +111,7 @@
   },
   {
     "app": "요기요",
-    "brand": "오븐마루",
+    "brand": "오븐마루치킨",
     "discount": 6000,
     "special_condition": "5%할인 최대 3,000원 + 추가할인 3,000원",
     "min_order": 18000,
@@ -141,7 +141,7 @@
   },
   {
     "app": "요기요",
-    "brand": "전통숙성황실김치찜&찌개",
+    "brand": "황실김치찜&찌개",
     "discount": 8000,
     "special_condition": "5%할인 최대 3,000원 + 추가할인 5,000원",
     "min_order": 15000,
@@ -211,7 +211,7 @@
   },
   {
     "app": "요기요",
-    "brand": "맘스터치피자앤치킨",
+    "brand": "맘스터치 피자앤치킨",
     "discount": 6000,
     "special_condition": "5%할인 최대 3,000원 + 배달 추가할인 3,000원",
     "min_order": 27800,
@@ -231,7 +231,7 @@
   },
   {
     "app": "요기요",
-    "brand": "반찬가게슈퍼키친",
+    "brand": "슈퍼키친",
     "discount": 5500,
     "special_condition": "5%할인 최대 3,000원 + 배달 추가할인 2,500원",
     "min_order": 25000,
