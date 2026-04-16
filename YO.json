@@ -1,63 +1,13 @@
 [
   {
     "app": "요기요",
-    "brand": "또래오래",
+    "brand": "청년피자",
     "discount": 3000,
-    "min_order": 18000,
-    "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "또래오래",
-    "discount": 2000,
-    "min_order": 18000,
+    "min_order": 17900,
     "method": "전체",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 3%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "도미노피자",
-    "discount": 2000,
-    "min_order": 21900,
-    "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 3%",
+    "special_condition": null,
     "valid_until": "2026-04-30"
-  },
-  {
-    "app": "요기요",
-    "brand": "롯데리아",
-    "discount": 3000,
-    "min_order": 15000,
-    "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "호식이두마리치킨",
-    "discount": 3000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "BHC",
-    "discount": 3000,
-    "min_order": 23000,
-    "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
   },
   {
     "app": "요기요",
@@ -71,23 +21,223 @@
   },
   {
     "app": "요기요",
+    "brand": "7번가피자",
+    "discount": 3000,
+    "min_order": 17900,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "7번가피자",
+    "discount": 2000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "3%할인 최대 2,000원",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "자담치킨",
+    "discount": 2500,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "자담치킨",
+    "discount": 3000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "자담치킨",
+    "discount": 2000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "3%할인 최대 2,000원",
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "샐러디",
+    "discount": 2000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "샐러디",
+    "discount": 3000,
+    "min_order": 15000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "샐러디",
+    "discount": 2000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 2,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "BHC",
+    "discount": 3000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "BHC",
+    "discount": 3000,
+    "min_order": 23000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "피자헛",
+    "discount": 7000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
     "brand": "피자헛",
     "discount": 3000,
     "min_order": 22000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
   },
   {
     "app": "요기요",
     "brand": "피자헛",
     "discount": 2000,
     "min_order": 22000,
+    "method": "픽업",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "3%할인 최대 2,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "뚜레쥬르",
+    "discount": 4000,
+    "min_order": 18000,
     "method": "전체",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 3%",
-    "valid_until": "2026-04-12"
+    "special_condition": null,
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "뚜레쥬르",
+    "discount": 2000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 2,000원",
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "오븐마루",
+    "discount": 3000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "오븐마루",
+    "discount": 3000,
+    "min_order": 18000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "맘스터치",
+    "discount": 3000,
+    "min_order": 17900,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "맘스터치",
+    "discount": 3000,
+    "min_order": 17900,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "파파존스",
+    "discount": 6000,
+    "min_order": 18000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "파파존스",
+    "discount": 2000,
+    "min_order": 18000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "3%할인 최대 2,000원",
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "황실김치찜&찌개",
+    "discount": 5000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
@@ -96,7 +246,17 @@
     "min_order": 15000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "계근상",
+    "discount": 5000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -106,28 +266,78 @@
     "min_order": 15000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "뚜레쥬르",
-    "discount": 2000,
-    "min_order": 18000,
-    "method": "전체",
+    "brand": "도미노피자",
+    "discount": 5000,
+    "min_order": 21900,
+    "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-09"
+    "special_condition": null,
+    "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "네네치킨",
+    "brand": "도미노피자",
+    "discount": 2000,
+    "min_order": 21900,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "3%할인 최대 2,000원",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "덮덮밥",
+    "discount": 4000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "덮덮밥",
+    "discount": 3000,
+    "min_order": 20000,
+    "method": "배달",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "요기요",
+    "brand": "또래오래",
+    "discount": 3500,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "또래오래",
     "discount": 3000,
     "min_order": 18000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "요기요",
+    "brand": "치킨플러스",
+    "discount": 3000,
+    "min_order": 19900,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
@@ -136,7 +346,17 @@
     "min_order": 19900,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "부어치킨",
+    "discount": 3000,
+    "min_order": 21000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -146,38 +366,38 @@
     "min_order": 21000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "맘스터치",
+    "brand": "맘스터치피자앤치킨",
+    "discount": 3000,
+    "min_order": 27800,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "맘스터치피자앤치킨",
     "discount": 3000,
     "min_order": 27800,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "떡볶이참잘하는집",
+    "brand": "꾸브라꼬숯불치킨",
     "discount": 3000,
-    "min_order": 17000,
-    "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "떡볶이참잘하는집",
-    "discount": 2000,
-    "min_order": 17000,
+    "min_order": 21000,
     "method": "전체",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 3%",
-    "valid_until": "2026-04-12"
+    "special_condition": null,
+    "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
@@ -186,27 +406,17 @@
     "min_order": 21000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "파리바게뜨",
-    "discount": 2000,
-    "min_order": 15000,
-    "method": "픽업",
+    "brand": "슈퍼키친",
+    "discount": 2500,
+    "min_order": 25000,
+    "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "요기요",
-    "brand": "7번가피자",
-    "discount": 2000,
-    "min_order": 18000,
-    "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 3%",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -216,8 +426,18 @@
     "min_order": 25000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "큰맘할매순대국",
+    "discount": 2000,
+    "min_order": 14000,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
   },
   {
     "app": "요기요",
@@ -226,17 +446,27 @@
     "min_order": 14000,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
-    "valid_until": "2026-04-12"
+    "special_condition": "5%할인 최대 3,000원",
+    "valid_until": "2026-04-19"
   },
   {
     "app": "요기요",
-    "brand": "자담치킨",
+    "brand": "치킨플러스",
+    "discount": 2000,
+    "min_order": 18900,
+    "method": "전체",
+    "delivery_types": ["요기패스X 중복할인"],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "요기요",
+    "brand": "치킨플러스",
     "discount": 3000,
-    "min_order": 22000,
+    "min_order": 18900,
     "method": "배달",
     "delivery_types": ["요기패스X 중복할인"],
-    "special_condition": "정률할인 5%",
+    "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   }
 ]

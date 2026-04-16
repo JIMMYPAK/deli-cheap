@@ -463,7 +463,7 @@
     "discountAmount": 5000,
     "minOrderAmount": 25000,
     "description": "모든 주문 할인",
-    "category": "chicken",
+    "category": "korean",
     "method": "전체",
     "deliveryTypes": [],
     "specialCondition": null,
@@ -486,39 +486,39 @@
     "id": "sync-35",
     "brandName": "기떡찜",
     "platform": "baemin",
-    "discountAmount": 10,
+    "discountAmount": 10000,
     "minOrderAmount": 18900,
-    "description": "모든 주문 할인",
+    "description": "10%",
     "category": "bunsik",
     "method": "전체",
     "deliveryTypes": [],
-    "specialCondition": "정률할인 10%",
+    "specialCondition": "10%",
     "validUntil": "2026-04-30"
   },
   {
     "id": "sync-36",
     "brandName": "메가MGC커피",
     "platform": "baemin",
-    "discountAmount": 10,
+    "discountAmount": 1000,
     "minOrderAmount": 0,
-    "description": "픽업 전용 할인",
+    "description": "10%",
     "category": "cafe",
     "method": "픽업",
     "deliveryTypes": [],
-    "specialCondition": "정률할인 10%",
+    "specialCondition": "10%",
     "validUntil": "2026-04-19"
   },
   {
     "id": "sync-37",
     "brandName": "읍천리382",
     "platform": "baemin",
-    "discountAmount": 10,
+    "discountAmount": 1000,
     "minOrderAmount": 0,
-    "description": "픽업 전용 할인",
+    "description": "10%",
     "category": "cafe",
     "method": "픽업",
     "deliveryTypes": [],
-    "specialCondition": "정률할인 10%",
+    "specialCondition": "10%",
     "validUntil": "2026-04-19"
   },
   {
@@ -1131,9 +1131,9 @@
     "id": "sync-81",
     "brandName": "요아잇",
     "platform": "baemin",
-    "discountAmount": 10,
+    "discountAmount": 2000,
     "minOrderAmount": 18800,
-    "description": "모든 주문 할인",
+    "description": "10%",
     "category": "cafe",
     "method": "전체",
     "deliveryTypes": [
@@ -1141,7 +1141,7 @@
       "알뜰배달",
       "가게배달"
     ],
-    "specialCondition": "정률할인 10%",
+    "specialCondition": "10%",
     "validUntil": "2026-04-19"
   },
   {
@@ -2013,22 +2013,22 @@
     "validUntil": "2026-04-19"
   },
   {
-    "id": "sync-155",
-    "brandName": "도미노피자",
+    "id": "sync-153",
+    "brandName": "청년피자",
     "platform": "yogiyo",
-    "discountAmount": 2000,
-    "minOrderAmount": 21900,
-    "description": "정률할인 3%",
+    "discountAmount": 3000,
+    "minOrderAmount": 17900,
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "요기패스X 중복할인"
     ],
-    "specialCondition": "정률할인 3%",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-159",
+    "id": "sync-154",
     "brandName": "청년피자",
     "platform": "yogiyo",
     "discountAmount": 2000,
@@ -2043,138 +2043,678 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-162",
-    "brandName": "황실김치찜&찌개",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 15000,
-    "description": "정률할인 5%",
-    "category": "korean",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-163",
-    "brandName": "계근상",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 15000,
-    "description": "정률할인 5%",
-    "category": "korean",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-166",
-    "brandName": "치킨플러스",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 19900,
-    "description": "정률할인 5%",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-167",
-    "brandName": "부어치킨",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 21000,
-    "description": "정률할인 5%",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-168",
-    "brandName": "맘스터치",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 27800,
-    "description": "정률할인 5%",
-    "category": "burger",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-171",
-    "brandName": "꾸브라꼬숯불치킨",
-    "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 21000,
-    "description": "정률할인 5%",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [
-      "요기패스X 중복할인"
-    ],
-    "specialCondition": "정률할인 5%",
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-173",
+    "id": "sync-155",
     "brandName": "7번가피자",
     "platform": "yogiyo",
-    "discountAmount": 2000,
-    "minOrderAmount": 18000,
-    "description": "정률할인 3%",
+    "discountAmount": 3000,
+    "minOrderAmount": 17900,
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "요기패스X 중복할인"
     ],
-    "specialCondition": "정률할인 3%",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-174",
-    "brandName": "슈퍼키친",
+    "id": "sync-156",
+    "brandName": "7번가피자",
     "platform": "yogiyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 25000,
-    "description": "정률할인 5%",
-    "category": "korean",
-    "method": "배달",
+    "discountAmount": 2000,
+    "minOrderAmount": 18000,
+    "description": "3%할인 최대 2,000원",
+    "category": "pizza",
+    "method": "전체",
     "deliveryTypes": [
       "요기패스X 중복할인"
     ],
-    "specialCondition": "정률할인 5%",
+    "specialCondition": "3%할인 최대 2,000원",
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-176",
+    "id": "sync-157",
     "brandName": "자담치킨",
     "platform": "yogiyo",
-    "discountAmount": 3000,
+    "discountAmount": 2500,
     "minOrderAmount": 22000,
-    "description": "정률할인 5%",
+    "description": "배달 전용 할인",
     "category": "chicken",
     "method": "배달",
     "deliveryTypes": [
       "요기패스X 중복할인"
     ],
-    "specialCondition": "정률할인 5%",
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-158",
+    "brandName": "자담치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 22000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-159",
+    "brandName": "자담치킨",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 22000,
+    "description": "3%할인 최대 2,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "3%할인 최대 2,000원",
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-160",
+    "brandName": "샐러디",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-161",
+    "brandName": "샐러디",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-162",
+    "brandName": "샐러디",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 15000,
+    "description": "5%할인 최대 2,000원",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 2,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-163",
+    "brandName": "BHC",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-164",
+    "brandName": "BHC",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 23000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-165",
+    "brandName": "피자헛",
+    "platform": "yogiyo",
+    "discountAmount": 7000,
+    "minOrderAmount": 22000,
+    "description": "배달 전용 할인",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-166",
+    "brandName": "피자헛",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 22000,
+    "description": "5%할인 최대 3,000원",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-167",
+    "brandName": "피자헛",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 22000,
+    "description": "3%할인 최대 2,000원",
+    "category": "pizza",
+    "method": "픽업",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "3%할인 최대 2,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-168",
+    "brandName": "뚜레쥬르",
+    "platform": "yogiyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "bakery",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-169",
+    "brandName": "뚜레쥬르",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 18000,
+    "description": "5%할인 최대 2,000원",
+    "category": "bakery",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 2,000원",
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-170",
+    "brandName": "오븐마루",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-171",
+    "brandName": "오븐마루",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-172",
+    "brandName": "맘스터치",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 17900,
+    "description": "모든 주문 할인",
+    "category": "burger",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-173",
+    "brandName": "맘스터치",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 17900,
+    "description": "5%할인 최대 3,000원",
+    "category": "burger",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-174",
+    "brandName": "파파존스",
+    "platform": "yogiyo",
+    "discountAmount": 6000,
+    "minOrderAmount": 18000,
+    "description": "배달 전용 할인",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-175",
+    "brandName": "파파존스",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 18000,
+    "description": "3%할인 최대 2,000원",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "3%할인 최대 2,000원",
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-176",
+    "brandName": "황실김치찜&찌개",
+    "platform": "yogiyo",
+    "discountAmount": 5000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-177",
+    "brandName": "황실김치찜&찌개",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-178",
+    "brandName": "계근상",
+    "platform": "yogiyo",
+    "discountAmount": 5000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-179",
+    "brandName": "계근상",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-180",
+    "brandName": "도미노피자",
+    "platform": "yogiyo",
+    "discountAmount": 5000,
+    "minOrderAmount": 21900,
+    "description": "배달 전용 할인",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-181",
+    "brandName": "도미노피자",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 21900,
+    "description": "3%할인 최대 2,000원",
+    "category": "pizza",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "3%할인 최대 2,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-182",
+    "brandName": "덮덮밥",
+    "platform": "yogiyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 20000,
+    "description": "모든 주문 할인",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-183",
+    "brandName": "덮덮밥",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 20000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-26"
+  },
+  {
+    "id": "sync-184",
+    "brandName": "또래오래",
+    "platform": "yogiyo",
+    "discountAmount": 3500,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-185",
+    "brandName": "또래오래",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-186",
+    "brandName": "치킨플러스",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 19900,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-187",
+    "brandName": "치킨플러스",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 19900,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-188",
+    "brandName": "부어치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 21000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-189",
+    "brandName": "부어치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 21000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-190",
+    "brandName": "맘스터치피자앤치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 27800,
+    "description": "모든 주문 할인",
+    "category": "pizza",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-191",
+    "brandName": "맘스터치피자앤치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 27800,
+    "description": "5%할인 최대 3,000원",
+    "category": "pizza",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-192",
+    "brandName": "꾸브라꼬숯불치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 21000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-193",
+    "brandName": "꾸브라꼬숯불치킨",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 21000,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-194",
+    "brandName": "슈퍼키친",
+    "platform": "yogiyo",
+    "discountAmount": 2500,
+    "minOrderAmount": 25000,
+    "description": "배달 전용 할인",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-195",
+    "brandName": "슈퍼키친",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 25000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-196",
+    "brandName": "큰맘할매순대국",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 14000,
+    "description": "모든 주문 할인",
+    "category": "korean",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-197",
+    "brandName": "큰맘할매순대국",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 14000,
+    "description": "5%할인 최대 3,000원",
+    "category": "korean",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
+    "validUntil": "2026-04-19"
+  },
+  {
+    "id": "sync-198",
+    "brandName": "치킨플러스",
+    "platform": "yogiyo",
+    "discountAmount": 2000,
+    "minOrderAmount": 18900,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": null,
+    "validUntil": "2026-04-30"
+  },
+  {
+    "id": "sync-199",
+    "brandName": "치킨플러스",
+    "platform": "yogiyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18900,
+    "description": "5%할인 최대 3,000원",
+    "category": "chicken",
+    "method": "배달",
+    "deliveryTypes": [
+      "요기패스X 중복할인"
+    ],
+    "specialCondition": "5%할인 최대 3,000원",
     "validUntil": "2026-04-30"
   }
 ]

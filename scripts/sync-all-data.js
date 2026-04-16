@@ -47,6 +47,7 @@ const categoryMap = {
   '칠봉통닭': 'chicken',
   '웰덤치킨': 'chicken',
   '땅땅치킨': 'chicken',
+  '부어치킨': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',
@@ -64,6 +65,7 @@ const categoryMap = {
   '피자알볼로': 'pizza',
   '클랩피자': 'pizza',
   '피자에땅': 'pizza',
+  '맘스터치피자앤치킨': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
@@ -94,6 +96,9 @@ const categoryMap = {
   '마선생얼큰국밥': 'korean',
   '아구듬뿍알곤마니': 'korean',
   '유가네닭갈비': 'korean',
+  '유가네찜닭': 'korean',
+  '덮덮밥': 'korean',
+  '샐러디': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',

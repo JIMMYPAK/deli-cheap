@@ -352,31 +352,31 @@
   {
     "app": "배달의민족",
     "brand": "기떡찜",
-    "discount": "10%",
+    "discount": "10000",
     "min_order": 18900,
     "method": "전체",
     "delivery_types": [],
-    "special_condition": null,
+    "special_condition": "10%",
     "valid_until": "2026-04-30"
   },
   {
     "app": "배달의민족",
     "brand": "메가MGC커피",
-    "discount": "10%",
+    "discount": "1000",
     "min_order": null,
     "method": "픽업",
     "delivery_types": [],
-    "special_condition": null,
+    "special_condition": "10%",
     "valid_until": "2026-04-19"
   },
   {
     "app": "배달의민족",
     "brand": "읍천리382",
-    "discount": "10%",
+    "discount": "1000",
     "min_order": null,
     "method": "픽업",
     "delivery_types": [],
-    "special_condition": null,
+    "special_condition": "10%",
     "valid_until": "2026-04-19"
   },
   {
@@ -812,11 +812,11 @@
   {
     "app": "배달의민족",
     "brand": "요아잇",
-    "discount": "10%",
+    "discount": "2000",
     "min_order": 18800,
     "method": "전체",
     "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
-    "special_condition": null,
+    "special_condition": "10%",
     "valid_until": "2026-04-19"
   },
   {
