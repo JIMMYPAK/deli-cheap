@@ -1,362 +1,362 @@
 [
   {
     "app": "쿠팡이츠",
-    "brand": "굽네치킨",
-    "discount": 1000,
-    "min_order": 20000,
+    "brand": "배스킨라빈스",
+    "discount": 3500,
+    "min_order": 18500,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-26"
+    "valid_until": "2026-04-16"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "굽네치킨",
+    "brand": "bhc",
     "discount": 2000,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-26"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "호식이두마리치킨",
-    "discount": 1000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "호식이두마리치킨",
-    "discount": 2000,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "자담치킨",
-    "discount": 1000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "자담치킨",
-    "discount": 2000,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "후라이드참잘하는집",
-    "discount": 2000,
-    "min_order": 16000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "후라이드참잘하는집",
-    "discount": 1000,
-    "min_order": 16000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": "중복 가능한 할인",
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "순살만공격",
-    "discount": 1000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "순살만공격",
-    "discount": 1500,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "순살만공격",
-    "discount": 2000,
-    "min_order": 30000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "순살만공격",
-    "discount": 1000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": "중복 가능한 할인",
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "또래오래",
-    "discount": 2000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "멕시카나",
-    "discount": 2000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "빅스타피자",
-    "discount": 1500,
-    "min_order": 16900,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "빅스타피자",
-    "discount": 2000,
-    "min_order": 16900,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": "중복 가능한 할인",
-    "valid_until": "2026-04-12"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "꾸브라꼬숯불두마리치킨",
-    "discount": 1000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-19"
+    "valid_until": "2026-04-16"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "꾸브라꼬숯불두마리치킨",
-    "discount": 1500,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "청년피자",
+    "brand": "푸라닭",
     "discount": 2000,
-    "min_order": 23900,
+    "min_order": 16900,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-26"
+    "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "청년피자",
+    "brand": "푸라닭",
     "discount": 3000,
-    "min_order": 30000,
+    "min_order": 16900,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "자담치킨",
+    "discount": 6000,
+    "min_order": 22000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
+    "special_condition": "선착순 17:00부터",
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "자담치킨",
+    "discount": 3000,
+    "min_order": 22000,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "페리카나",
-    "discount": 1000,
-    "min_order": 20000,
+    "brand": "왓더버거",
+    "discount": 4000,
+    "min_order": 15000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "강정이기가막혀",
-    "discount": 1000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "강정이기가막혀",
-    "discount": 1500,
-    "min_order": 25000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "강정이기가막혀",
+    "brand": "왓더버거",
     "discount": 2000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "뚜레쥬르",
+    "discount": 3000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-26"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "청년피자",
+    "discount": 7000,
+    "min_order": 17900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": "선착순 12:00부터",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "청년피자",
+    "discount": 4000,
+    "min_order": 17900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "꾸브라꼬숯불치킨",
+    "discount": 5000,
     "min_order": 30000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-05-03"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "꾸브라꼬숯불치킨",
+    "discount": 3000,
+    "min_order": 21000,
+    "method": "배달",
+    "delivery_types": [],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "강정이기가막혀",
+    "brand": "쉐이크쉑",
+    "discount": 5000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "치킨인류",
+    "discount": 2500,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 5000,
+    "min_order": 29900,
+    "method": "픽업",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 5000,
+    "min_order": 29900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 3000,
+    "min_order": 27800,
+    "method": "픽업",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 3000,
+    "min_order": 27800,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 2000,
+    "min_order": 18900,
+    "method": "픽업",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "맘스터치 피자앤치킨",
+    "discount": 2000,
+    "min_order": 18900,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "치킨마루",
     "discount": 1000,
-    "min_order": 20000,
+    "min_order": null,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": "중복 가능한 할인",
+    "delivery_types": [],
+    "special_condition": "즉시할인",
     "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "반올림피자",
+    "brand": "치킨마루",
     "discount": 2000,
-    "min_order": 21900,
+    "min_order": 17000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "비비큐(BBQ)",
-    "discount": 2000,
-    "min_order": 20000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-05"
-  },
-  {
-    "app": "쿠팡이츠",
-    "brand": "네네치킨",
-    "discount": 2000,
-    "min_order": 18000,
-    "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
-    "brand": "돈치킨",
-    "discount": 2000,
-    "min_order": 16000,
+    "brand": "치킨마루",
+    "discount": 3000,
+    "min_order": 25000,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "도미노피자",
+    "discount": 5000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
     "app": "쿠팡이츠",
     "brand": "피자헛",
-    "discount": 5000,
-    "min_order": 24900,
+    "discount": 7500,
+    "min_order": null,
     "method": "배달",
-    "delivery_types": [
-      "배달비 0원"
-    ],
+    "delivery_types": ["배달비 0원"],
     "special_condition": null,
-    "valid_until": "2026-04-05"
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "프레드피자",
+    "discount": 3000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "7번가피자",
+    "discount": 4000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "피자에땅",
+    "discount": 5000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "파스쿠찌",
+    "discount": 2000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "매드포갈릭",
+    "discount": 5000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "커피앳웍스",
+    "discount": 3000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "잠바주스",
+    "discount": 3000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": ["배달비 0원"],
+    "special_condition": null,
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "큰맘할매순대국",
+    "discount": 1000,
+    "min_order": null,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": "즉시할인",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "큰맘할매순대국",
+    "discount": 2000,
+    "min_order": 14000,
+    "method": "픽업",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "쿠팡이츠",
+    "brand": "큰맘할매순대국",
+    "discount": 2000,
+    "min_order": 14000,
+    "method": "배달",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": "2026-04-30"
   }
 ]

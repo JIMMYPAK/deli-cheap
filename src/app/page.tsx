@@ -3,8 +3,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import CategoryFilter from '@/components/home/CategoryFilter';
 import DiscountCard from '@/components/home/DiscountCard';
+import FilterPanel from '@/components/home/FilterPanel';
 import { useDiscounts } from '@/hooks/useDiscounts';
-import { GroupedDiscount, Category, BrandSortMode } from '@/types/discount';
+import { useFilter } from '@/hooks/useFilter';
+import { GroupedDiscount, Category, BrandSortMode, ALL_PLATFORMS, ALL_FILTER_METHODS } from '@/types/discount';
 import { compareBrandsByRank, categoryHasSurveyRank } from '@/constants/brandRank';
 import BrandSortControl from '@/components/home/BrandSortControl';
 
@@ -71,7 +73,9 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('chicken');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [brandSortMode, setBrandSortMode] = useState<BrandSortMode>('rank');
+  const [filterOpen, setFilterOpen] = useState(false);
   const { discounts, loading, error } = useDiscounts();
+  const { filter, setFilter, isFilterActive, activeFilterCount } = useFilter();
 
   // Load state from localStorage on mount
   useEffect(() => {
@@ -105,7 +109,11 @@ export default function Home() {
     !showRankOption && brandSortMode === 'rank' ? 'discount' : brandSortMode;
 
   const processedDiscounts = useMemo((): GroupedDiscount[] => {
-    // 1. Filter by category and search
+    const platformFiltered = filter.platforms.length < ALL_PLATFORMS.length;
+    const methodFiltered = filter.methods.length < ALL_FILTER_METHODS.length;
+    const platformSet = new Set(filter.platforms);
+
+    // 1. Filter by category, search, platform, and method
     const filtered = discounts.filter(d => {
       const searchLower = searchQuery.toLowerCase().trim();
       
@@ -118,15 +126,12 @@ export default function Home() {
       );
       
       const brandNameLower = d.brandName.toLowerCase();
-      // 병기 표시명도 검색 대상에 포함
       const brandLabelLower = (BRAND_KO_LABEL[d.brandName] ?? d.brandName).toLowerCase();
 
-      // Check if direct match (원본명 + 병기명 모두 체크)
       let matchesSearch = searchLower
         ? brandNameLower.includes(searchLower) || brandLabelLower.includes(searchLower)
         : true;
 
-      // Check aliases
       if (!matchesSearch && searchLower) {
         for (const [officialBrand, aliases] of Object.entries(BRAND_ALIASES)) {
           if (
@@ -137,6 +142,15 @@ export default function Home() {
             break;
           }
         }
+      }
+
+      // Platform filter
+      if (platformFiltered && !platformSet.has(d.platform)) return false;
+
+      // Method filter: '전체' coupons always pass; '배달'/'픽업' checked against selected methods
+      if (methodFiltered && d.method !== '전체') {
+        if (d.method === '배달' && !filter.methods.includes('배달')) return false;
+        if (d.method === '픽업' && !filter.methods.includes('포장')) return false;
       }
 
       return matchesCategory && matchesSearch;
@@ -201,10 +215,15 @@ export default function Home() {
       });
     });
 
-    const groups = Object.values(brandGroups).map((g) => ({
+    let groups = Object.values(brandGroups).map((g) => ({
       ...g,
       minOrderLowest: Number.isFinite(g.minOrderLowest) ? g.minOrderLowest : 0,
     }));
+
+    // Min order ceiling filter
+    if (filter.maxMinOrder !== null) {
+      groups = groups.filter(g => g.minOrderLowest <= filter.maxMinOrder!);
+    }
 
     // 3. Find the maximum discount among all visible brands
     const globalMaxDiscount = groups.reduce((max, g) => Math.max(max, g.totalMaxDiscount), 0);
@@ -232,7 +251,7 @@ export default function Home() {
     });
 
     return sorted;
-  }, [discounts, selectedCategory, searchQuery, effectiveSortMode]);
+  }, [discounts, selectedCategory, searchQuery, effectiveSortMode, filter]);
 
   return (
     <div className="flex flex-col">
@@ -262,6 +281,33 @@ export default function Home() {
         value={effectiveSortMode}
         onChange={setBrandSortMode}
         showRankOption={showRankOption}
+        filterButton={
+          <button
+            onClick={() => setFilterOpen(true)}
+            className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 ${
+              isFilterActive
+                ? 'bg-baemin text-white shadow-sm shadow-baemin/25'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+            </svg>
+            필터
+            {activeFilterCount > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-500 text-white text-[10px] font-black rounded-full flex items-center justify-center leading-none">
+                {activeFilterCount}
+              </span>
+            )}
+          </button>
+        }
+      />
+
+      <FilterPanel
+        isOpen={filterOpen}
+        onClose={() => setFilterOpen(false)}
+        filter={filter}
+        onApply={setFilter}
       />
 
       {/* Content Area */}

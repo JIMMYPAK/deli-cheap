@@ -1,5 +1,22 @@
 export type Platform = 'baemin' | 'yogiyo' | 'coupang' | 'ttangyo';
 
+export type FilterMethod = '배달' | '포장';
+
+export interface FilterState {
+  platforms: Platform[];
+  methods: FilterMethod[];
+  maxMinOrder: number | null;
+}
+
+export const ALL_PLATFORMS: Platform[] = ['baemin', 'yogiyo', 'coupang', 'ttangyo'];
+export const ALL_FILTER_METHODS: FilterMethod[] = ['배달', '포장'];
+
+export const DEFAULT_FILTER: FilterState = {
+  platforms: [...(['baemin', 'yogiyo', 'coupang', 'ttangyo'] as Platform[])],
+  methods: ['배달', '포장'],
+  maxMinOrder: null,
+};
+
 export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery';
 
 /** 브랜드 카드 목록 정렬 */
