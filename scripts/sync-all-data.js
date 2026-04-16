@@ -77,6 +77,7 @@ const categoryMap = {
   '오구샌': 'burger',
   '버거리': 'burger',
   '다운타우너': 'burger',
+  '샐러디': 'burger',
 
   // Korean
   '두찜': 'korean',
@@ -98,7 +99,6 @@ const categoryMap = {
   '유가네닭갈비': 'korean',
   '유가네찜닭': 'korean',
   '덮덮밥': 'korean',
-  '샐러디': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',
