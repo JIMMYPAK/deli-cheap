@@ -35,7 +35,9 @@
     "discount": 3000,
     "min_order": 16900,
     "method": "전체",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -55,7 +57,9 @@
     "discount": 3000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
@@ -75,7 +79,9 @@
     "discount": 2000,
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -85,7 +91,9 @@
     "discount": 3000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
@@ -135,7 +143,9 @@
     "discount": 5000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -145,7 +155,9 @@
     "discount": 2500,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -241,21 +253,13 @@
   },
   {
     "app": "쿠팡이츠",
-    "brand": "도미노피자",
-    "discount": 5000,
-    "min_order": null,
-    "method": "배달",
-    "delivery_types": ["배달비 0원"],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "쿠팡이츠",
     "brand": "피자헛",
     "discount": 7500,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -265,7 +269,9 @@
     "discount": 3000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -275,7 +281,9 @@
     "discount": 4000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -285,7 +293,9 @@
     "discount": 5000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -295,7 +305,9 @@
     "discount": 2000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -305,7 +317,9 @@
     "discount": 5000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -315,7 +329,9 @@
     "discount": 3000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -325,7 +341,9 @@
     "discount": 3000,
     "min_order": null,
     "method": "배달",
-    "delivery_types": ["배달비 0원"],
+    "delivery_types": [
+      "배달비 0원"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },

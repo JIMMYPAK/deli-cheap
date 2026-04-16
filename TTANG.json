@@ -1,562 +1,522 @@
 [
   {
     "app": "땡겨요",
-    "brand": "치킨플러스",
-    "discount": 7000,
-    "min_order": 17000,
+    "brand": "맘스터치",
+    "discount": 8000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-26"
   },
   {
     "app": "땡겨요",
-    "brand": "처갓집양념치킨",
-    "discount": 6000,
-    "min_order": 20000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "이디야커피",
-    "discount": 4000,
-    "min_order": 13000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "땅스부대찌개",
-    "discount": 4000,
-    "min_order": 15900,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "네네치킨",
-    "discount": 6000,
-    "min_order": 20000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "두찜",
-    "discount": 6000,
-    "min_order": 25000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "떡참",
-    "discount": 6000,
-    "min_order": 25000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "순살만공격",
-    "discount": 6000,
-    "min_order": 18000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "파스퇴르밀크바",
-    "discount": 4000,
-    "min_order": 12000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "뽕뜨락피자",
-    "discount": 6000,
-    "min_order": 18000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "59쌀피자",
-    "discount": 4000,
-    "min_order": 18000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "호식이두마리치킨",
-    "discount": 6000,
-    "min_order": 20000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "달떡볶이",
-    "discount": 5000,
-    "min_order": 15000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "엔제리너스",
-    "discount": 4000,
-    "min_order": 12000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "크리스피크림도넛",
-    "discount": 4000,
-    "min_order": 13000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "마왕족발",
-    "discount": 6000,
-    "min_order": 30000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "에그드랍",
-    "discount": 4000,
-    "min_order": 12000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "뉴욕버거",
-    "discount": 4000,
-    "min_order": 15000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "도미노피자",
+    "brand": "BHC",
     "discount": 9000,
-    "min_order": 15000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-05-03"
   },
   {
     "app": "땡겨요",
-    "brand": "뚜레쥬르",
-    "discount": 5000,
-    "min_order": 15000,
+    "brand": "메가MGC커피",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-19"
   },
   {
     "app": "땡겨요",
     "brand": "피자알볼로",
-    "discount": 9000,
-    "min_order": 20000,
+    "discount": 10500,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-26"
   },
   {
     "app": "땡겨요",
-    "brand": "치킨마루",
-    "discount": 6000,
-    "min_order": 16000,
+    "brand": "버거킹",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "진교동찜닭",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "아웃백스테이크하우스",
+    "discount": 15000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "두찜",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "맘스피자",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "훌랄라참숯치킨",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "청년피자",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "또봉이통닭",
+    "discount": 8000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "호식이두마리치킨",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "BBQ",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "포케올데이",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "프레드피자",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "왓더버거",
+    "discount": 8000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-19"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "7번가피자",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "치킨플러스",
+    "discount": 8000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "파파존스",
+    "discount": 10000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "멕시카나치킨",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
     "brand": "피자헛",
+    "discount": 17000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "꾸브라꼬 숯불치킨",
     "discount": 10000,
-    "min_order": 18000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-05-03"
   },
   {
     "app": "땡겨요",
-    "brand": "본죽",
-    "discount": 4000,
-    "min_order": 15000,
+    "brand": "청년피자",
+    "discount": 10000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "걸작떡볶이치킨",
-    "discount": 5000,
-    "min_order": 16000,
+    "brand": "오븐마루치킨",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "미스터피자",
-    "discount": 5000,
-    "min_order": 25000,
+    "brand": "땅땅치킨",
+    "discount": 11000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "동대문엽기떡볶이",
-    "discount": 4000,
-    "min_order": 14000,
+    "brand": "쉐이크쉑",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-06-30"
   },
   {
     "app": "땡겨요",
-    "brand": "순수치킨",
-    "discount": 7000,
-    "min_order": 18000,
+    "brand": "또래오래",
+    "discount": 10000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "가마로강정",
-    "discount": 5000,
-    "min_order": 16000,
+    "brand": "네네치킨",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "이삭토스트",
-    "discount": 4000,
-    "min_order": 14000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "피자스쿨",
-    "discount": 4000,
-    "min_order": 12000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "자담치킨",
-    "discount": 6000,
-    "min_order": 20000,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장",
-      "매장"
-    ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
     "brand": "바른치킨",
-    "discount": 6000,
-    "min_order": 15000,
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "치킨더홈",
-    "discount": 5000,
-    "min_order": 17000,
+    "brand": "자담치킨",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-19"
   },
   {
     "app": "땡겨요",
-    "brand": "굽네치킨",
-    "discount": 6000,
-    "min_order": 16000,
+    "brand": "떡참",
+    "discount": 8000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "죠스떡볶이",
-    "discount": 4000,
-    "min_order": 14000,
+    "brand": "기영이숯불두마리치킨",
+    "discount": 10000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "투존치킨",
-    "discount": 5000,
-    "min_order": 15000,
+    "brand": "보끔당",
+    "discount": 8000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "지코바치킨",
-    "discount": 6000,
-    "min_order": 18000,
+    "brand": "일미리금계찜닭",
+    "discount": 10000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "티바두마리치킨",
-    "discount": 6000,
-    "min_order": 20000,
+    "brand": "부어치킨",
+    "discount": 9000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   },
   {
     "app": "땡겨요",
-    "brand": "보드람치킨",
-    "discount": 5000,
-    "min_order": 18000,
+    "brand": "아메리칸피자",
+    "discount": 8000,
+    "min_order": null,
     "method": "전체",
     "delivery_types": [
       "배달",
-      "포장",
-      "매장"
+      "포장"
     ],
-    "special_condition": "땡겨요페이 결제 시",
-    "valid_until": "2026-04-06"
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-12-31"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "오븐에빠진닭",
+    "discount": 9000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "해두리치킨",
+    "discount": 8000,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-06-30"
+  },
+  {
+    "app": "땡겨요",
+    "brand": "계근상",
+    "discount": 9500,
+    "min_order": null,
+    "method": "전체",
+    "delivery_types": [
+      "배달",
+      "포장"
+    ],
+    "special_condition": "첫 입점 기념, 첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "valid_until": "2026-04-30"
   }
 ]

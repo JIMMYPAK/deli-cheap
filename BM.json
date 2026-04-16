@@ -1,56 +1,6 @@
 [
   {
     "app": "배달의민족",
-    "brand": "도미노피자",
-    "discount": "7000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
-    "brand": "빽보이피자",
-    "discount": "6000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
-    "brand": "노모어피자",
-    "discount": "5000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
-    "brand": "롯데리아",
-    "discount": "3000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
-    "brand": "버거리",
-    "discount": "2000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
     "brand": "벤슨 아이스크림",
     "discount": "2000",
     "min_order": null,
@@ -75,7 +25,10 @@
     "discount": "2000",
     "min_order": 20000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -125,7 +78,9 @@
     "discount": "2000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["가게배달"],
+    "delivery_types": [
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -135,7 +90,11 @@
     "discount": "3000",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -165,7 +124,10 @@
     "discount": "3000",
     "min_order": 27000,
     "method": "전체",
-    "delivery_types": ["가게배달", "픽업"],
+    "delivery_types": [
+      "가게배달",
+      "픽업"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -205,7 +167,10 @@
     "discount": "3000",
     "min_order": 14900,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": "첫 주문 전용",
     "valid_until": "2026-04-30"
   },
@@ -215,7 +180,10 @@
     "discount": "2000",
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -255,7 +223,11 @@
     "discount": "3000",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -305,7 +277,10 @@
     "discount": "4000",
     "min_order": 28000,
     "method": "전체",
-    "delivery_types": ["가게배달", "픽업"],
+    "delivery_types": [
+      "가게배달",
+      "픽업"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-29"
   },
@@ -315,7 +290,10 @@
     "discount": "5000",
     "min_order": 20000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -445,7 +423,11 @@
     "discount": "2000",
     "min_order": 14000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -455,7 +437,11 @@
     "discount": "2000",
     "min_order": 14000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -485,7 +471,10 @@
     "discount": "2000",
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -515,7 +504,11 @@
     "discount": "2000",
     "min_order": 16000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -525,7 +518,11 @@
     "discount": "2000",
     "min_order": 16900,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-29"
   },
@@ -535,7 +532,11 @@
     "discount": "3000",
     "min_order": 20000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -565,7 +566,11 @@
     "discount": "2000",
     "min_order": 17000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -575,7 +580,11 @@
     "discount": "3000",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -625,7 +634,11 @@
     "discount": "3000",
     "min_order": 30000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -675,7 +688,11 @@
     "discount": "4000",
     "min_order": 17900,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -725,7 +742,11 @@
     "discount": "2500",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -795,7 +816,11 @@
     "discount": "7000",
     "min_order": 25900,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -815,7 +840,11 @@
     "discount": "2000",
     "min_order": 18800,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": "10%",
     "valid_until": "2026-04-19"
   },
@@ -825,7 +854,10 @@
     "discount": "5000",
     "min_order": 16000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -845,7 +877,10 @@
     "discount": "5000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -855,7 +890,10 @@
     "discount": "3000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-16"
   },
@@ -875,7 +913,10 @@
     "discount": "5000",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -885,7 +926,9 @@
     "discount": "7000",
     "min_order": 22000,
     "method": "전체",
-    "delivery_types": ["가게배달"],
+    "delivery_types": [
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-05-03"
   },
@@ -895,7 +938,10 @@
     "discount": "7000",
     "min_order": 22000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -915,7 +961,10 @@
     "discount": "5000",
     "min_order": 17000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -925,7 +974,10 @@
     "discount": "6000",
     "min_order": 25000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -955,7 +1007,10 @@
     "discount": "5000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -965,7 +1020,10 @@
     "discount": "7000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -975,7 +1033,10 @@
     "discount": "8000",
     "min_order": 18900,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -985,7 +1046,10 @@
     "discount": "5000",
     "min_order": 19000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -1045,7 +1109,10 @@
     "discount": "5500",
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-17"
   },
@@ -1085,7 +1152,10 @@
     "discount": "2000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -1125,7 +1195,11 @@
     "discount": "3000",
     "min_order": 30000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -1135,7 +1209,11 @@
     "discount": "2000",
     "min_order": 17000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -1185,7 +1263,11 @@
     "discount": "3000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -1195,7 +1277,11 @@
     "discount": "4000",
     "min_order": 30000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -1205,7 +1291,11 @@
     "discount": "4000",
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": "브랜드찜 전용",
     "valid_until": "2026-04-30"
   },
@@ -1215,7 +1305,11 @@
     "discount": "4500",
     "min_order": 30000,
     "method": "전체",
-    "delivery_types": ["한집배달", "알뜰배달", "가게배달"],
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
     "special_condition": "브랜드찜 전용",
     "valid_until": "2026-04-30"
   },
