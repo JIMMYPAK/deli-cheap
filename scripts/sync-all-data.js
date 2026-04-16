@@ -53,6 +53,8 @@ const categoryMap = {
   '꾸브라꼬 숯불치킨': 'chicken',
   '바른치킨': 'chicken',
   '해두리치킨': 'chicken',
+  'BHC치킨': 'chicken',
+  '치킨플러스&떡볶이': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',
@@ -108,6 +110,8 @@ const categoryMap = {
   '유가네찜닭': 'korean',
   '덮덮밥': 'korean',
   '보끔당': 'korean',
+  '전통숙성황실김치찜&찌개': 'korean',
+  '반찬가게슈퍼키친': 'korean',
 
   // Bunsik
   '동대문엽기떡볶이': 'bunsik',
