@@ -5,7 +5,9 @@
     "discount": 3000,
     "min_order": 17900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -15,7 +17,9 @@
     "discount": 2000,
     "min_order": 17900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -25,7 +29,9 @@
     "discount": 3000,
     "min_order": 17900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -35,7 +41,9 @@
     "discount": 2000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "3%할인 최대 2,000원",
     "valid_until": "2026-04-30"
   },
@@ -45,7 +53,9 @@
     "discount": 2500,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -55,7 +65,9 @@
     "discount": 3000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -65,7 +77,9 @@
     "discount": 2000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "3%할인 최대 2,000원",
     "valid_until": "2026-04-26"
   },
@@ -75,7 +89,9 @@
     "discount": 2000,
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -85,7 +101,9 @@
     "discount": 3000,
     "min_order": 15000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -95,7 +113,9 @@
     "discount": 2000,
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 2,000원",
     "valid_until": "2026-04-19"
   },
@@ -105,7 +125,9 @@
     "discount": 3000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -115,7 +137,9 @@
     "discount": 3000,
     "min_order": 23000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -125,7 +149,9 @@
     "discount": 7000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -135,7 +161,9 @@
     "discount": 3000,
     "min_order": 22000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -145,7 +173,9 @@
     "discount": 2000,
     "min_order": 22000,
     "method": "픽업",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "3%할인 최대 2,000원",
     "valid_until": "2026-04-19"
   },
@@ -155,7 +185,9 @@
     "discount": 4000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
@@ -165,27 +197,33 @@
     "discount": 2000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 2,000원",
     "valid_until": "2026-04-26"
   },
   {
     "app": "요기요",
-    "brand": "오븐마루",
+    "brand": "오븐마루치킨",
     "discount": 3000,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
     "app": "요기요",
-    "brand": "오븐마루",
+    "brand": "오븐마루치킨",
     "discount": 3000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -195,7 +233,9 @@
     "discount": 3000,
     "min_order": 17900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -205,7 +245,9 @@
     "discount": 3000,
     "min_order": 17900,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -215,7 +257,9 @@
     "discount": 6000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
@@ -225,7 +269,9 @@
     "discount": 2000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "3%할인 최대 2,000원",
     "valid_until": "2026-04-26"
   },
@@ -235,7 +281,9 @@
     "discount": 5000,
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -245,7 +293,9 @@
     "discount": 3000,
     "min_order": 15000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -255,7 +305,9 @@
     "discount": 5000,
     "min_order": 15000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -265,7 +317,9 @@
     "discount": 3000,
     "min_order": 15000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -275,7 +329,9 @@
     "discount": 5000,
     "min_order": 21900,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -285,7 +341,9 @@
     "discount": 2000,
     "min_order": 21900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "3%할인 최대 2,000원",
     "valid_until": "2026-04-30"
   },
@@ -295,7 +353,9 @@
     "discount": 4000,
     "min_order": 20000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-26"
   },
@@ -305,7 +365,9 @@
     "discount": 3000,
     "min_order": 20000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-26"
   },
@@ -315,7 +377,9 @@
     "discount": 3500,
     "min_order": 18000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -325,7 +389,9 @@
     "discount": 3000,
     "min_order": 18000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -335,7 +401,9 @@
     "discount": 3000,
     "min_order": 19900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -345,7 +413,9 @@
     "discount": 3000,
     "min_order": 19900,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -355,7 +425,9 @@
     "discount": 3000,
     "min_order": 21000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -365,27 +437,33 @@
     "discount": 3000,
     "min_order": 21000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "맘스터치피자앤치킨",
+    "brand": "맘스터치 피자앤치킨",
     "discount": 3000,
     "min_order": 27800,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
-    "brand": "맘스터치피자앤치킨",
+    "brand": "맘스터치 피자앤치킨",
     "discount": 3000,
     "min_order": 27800,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -395,7 +473,9 @@
     "discount": 3000,
     "min_order": 21000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -405,7 +485,9 @@
     "discount": 3000,
     "min_order": 21000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -415,7 +497,9 @@
     "discount": 2500,
     "min_order": 25000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -425,7 +509,9 @@
     "discount": 3000,
     "min_order": 25000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   },
@@ -435,7 +521,9 @@
     "discount": 2000,
     "min_order": 14000,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-19"
   },
@@ -445,7 +533,9 @@
     "discount": 3000,
     "min_order": 14000,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-19"
   },
@@ -455,7 +545,9 @@
     "discount": 2000,
     "min_order": 18900,
     "method": "전체",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": null,
     "valid_until": "2026-04-30"
   },
@@ -465,7 +557,9 @@
     "discount": 3000,
     "min_order": 18900,
     "method": "배달",
-    "delivery_types": ["요기패스X 중복할인"],
+    "delivery_types": [
+      "요기패스X 중복할인"
+    ],
     "special_condition": "5%할인 최대 3,000원",
     "valid_until": "2026-04-30"
   }

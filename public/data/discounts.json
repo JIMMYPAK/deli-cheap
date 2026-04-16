@@ -266,7 +266,7 @@
   },
   {
     "id": "sync-19",
-    "brandName": "보끄당",
+    "brandName": "보끔당",
     "platform": "baemin",
     "discountAmount": 3000,
     "minOrderAmount": 25000,
@@ -1650,7 +1650,7 @@
   },
   {
     "id": "sync-119",
-    "brandName": "bhc",
+    "brandName": "BHC",
     "platform": "coupang",
     "discountAmount": 2000,
     "minOrderAmount": 18000,
@@ -1659,7 +1659,7 @@
     "method": "배달",
     "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-16"
+    "validUntil": "2026-05-03"
   },
   {
     "id": "sync-120",
@@ -2308,7 +2308,7 @@
   },
   {
     "id": "sync-170",
-    "brandName": "오븐마루",
+    "brandName": "오븐마루치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
     "minOrderAmount": 18000,
@@ -2548,7 +2548,7 @@
   },
   {
     "id": "sync-190",
-    "brandName": "맘스터치피자앤치킨",
+    "brandName": "맘스터치 피자앤치킨",
     "platform": "yogiyo",
     "discountAmount": 3000,
     "minOrderAmount": 27800,
@@ -2812,7 +2812,7 @@
   },
   {
     "id": "sync-209",
-    "brandName": "훌랄라참숯치킨",
+    "brandName": "훌랄라참숯바베큐치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
@@ -2988,7 +2988,7 @@
   },
   {
     "id": "sync-220",
-    "brandName": "멕시카나치킨",
+    "brandName": "멕시카나",
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
@@ -3020,7 +3020,7 @@
   },
   {
     "id": "sync-222",
-    "brandName": "꾸브라꼬 숯불치킨",
+    "brandName": "꾸브라꼬숯불치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,

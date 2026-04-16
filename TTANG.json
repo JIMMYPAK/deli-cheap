@@ -118,7 +118,7 @@
   },
   {
     "app": "땡겨요",
-    "brand": "훌랄라참숯치킨",
+    "brand": "훌랄라참숯바베큐치킨",
     "discount": 10000,
     "min_order": null,
     "method": "전체",
@@ -261,7 +261,7 @@
   },
   {
     "app": "땡겨요",
-    "brand": "멕시카나치킨",
+    "brand": "멕시카나",
     "discount": 9000,
     "min_order": null,
     "method": "전체",
@@ -287,7 +287,7 @@
   },
   {
     "app": "땡겨요",
-    "brand": "꾸브라꼬 숯불치킨",
+    "brand": "꾸브라꼬숯불치킨",
     "discount": 10000,
     "min_order": null,
     "method": "전체",
