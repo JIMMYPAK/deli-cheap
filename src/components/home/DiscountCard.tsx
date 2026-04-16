@@ -69,7 +69,6 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
                       {coupon.specialCondition && (
                         <span className="bg-red-50 text-red-500 text-[10px] px-1.5 py-0.5 rounded font-bold">
                           {coupon.specialCondition}
-                          {platformGroup.platform === 'yogiyo' && coupon.specialCondition.includes('%') && !coupon.specialCondition.includes('적립') ? ' 적립' : ''}
                         </span>
                       )}
 
