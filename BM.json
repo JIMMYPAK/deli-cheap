@@ -1,16 +1,6 @@
 [
   {
     "app": "배달의민족",
-    "brand": "벤슨 아이스크림",
-    "discount": "2000",
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": null,
-    "valid_until": null
-  },
-  {
-    "app": "배달의민족",
     "brand": "토스트카페마리",
     "discount": "2000",
     "min_order": 15000,
@@ -1322,5 +1312,19 @@
     "delivery_types": [],
     "special_condition": null,
     "valid_until": "2026-04-30"
+  },
+  {
+    "app": "배달의민족",
+    "brand": "도미노피자",
+    "discount": "8000",
+    "min_order": 25900,
+    "method": "전체",
+    "delivery_types": [
+      "한집배달",
+      "알뜰배달",
+      "가게배달"
+    ],
+    "special_condition": "배민클럽 회원 전용",
+    "valid_until": "2026-04-19"
   }
 ]
