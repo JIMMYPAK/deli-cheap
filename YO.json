@@ -50,37 +50,25 @@
   {
     "app": "요기요",
     "brand": "자담치킨",
-    "discount": 2500,
+    "discount": 5500,
     "min_order": 22000,
     "method": "배달",
     "delivery_types": [
       "요기패스X 중복할인"
     ],
-    "special_condition": null,
+    "special_condition": "5%할인 최대 3,000원 + 배달 추가할인 2,500원",
     "valid_until": "2026-04-30"
   },
   {
     "app": "요기요",
     "brand": "자담치킨",
-    "discount": 3000,
+    "discount": 4500,
     "min_order": 22000,
     "method": "배달",
     "delivery_types": [
       "요기패스X 중복할인"
     ],
-    "special_condition": "5%할인 최대 3,000원",
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "요기요",
-    "brand": "자담치킨",
-    "discount": 2000,
-    "min_order": 22000,
-    "method": "배달",
-    "delivery_types": [
-      "요기패스X 중복할인"
-    ],
-    "special_condition": "3%할인 최대 2,000원",
+    "special_condition": "3%할인 최대 2,000원 + 배달 추가할인 2,500원",
     "valid_until": "2026-04-26"
   },
   {
