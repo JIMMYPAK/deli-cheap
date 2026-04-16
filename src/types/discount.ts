@@ -31,6 +31,7 @@ export interface Coupon {
   method: Method;
   deliveryTypes: string[];
   specialCondition: string | null;
+  validUntil?: string;
 }
 
 export interface DiscountInfo {

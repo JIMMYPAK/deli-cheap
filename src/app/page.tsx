@@ -194,7 +194,8 @@ export default function Home() {
         description: d.description,
         method: d.method,
         deliveryTypes: d.deliveryTypes,
-        specialCondition: d.specialCondition
+        specialCondition: d.specialCondition,
+        validUntil: d.validUntil,
       });
 
       if (d.discountAmount > platformGroup.maxDiscount) {

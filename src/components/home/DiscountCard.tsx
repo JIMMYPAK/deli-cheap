@@ -88,6 +88,11 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
                     <span className="text-gray-400 font-medium">
                       {coupon.minOrderAmount > 0 ? `${coupon.minOrderAmount.toLocaleString()}원 이상 주문 시` : '최소주문금액 없음'}
                     </span>
+                    {coupon.validUntil && (
+                      <span className="text-gray-400 font-medium">
+                        ~{new Date(coupon.validUntil).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}
+                      </span>
+                    )}
                   </div>
                 </div>
               ))}
