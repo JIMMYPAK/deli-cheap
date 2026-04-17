@@ -319,16 +319,6 @@
   },
   {
     "app": "배달의민족",
-    "brand": "기떡찜",
-    "discount": "10000",
-    "min_order": 18900,
-    "method": "전체",
-    "delivery_types": [],
-    "special_condition": "10%",
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "배달의민족",
     "brand": "메가MGC커피",
     "discount": "1000",
     "min_order": null,
