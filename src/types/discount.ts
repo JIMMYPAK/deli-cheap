@@ -17,7 +17,7 @@ export const DEFAULT_FILTER: FilterState = {
   maxMinOrder: null,
 };
 
-export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery';
+export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery' | 'salad';
 
 /** 브랜드 카드 목록 정렬 */
 export type BrandSortMode = 'rank' | 'discount' | 'minOrder';

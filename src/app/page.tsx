@@ -56,6 +56,8 @@ const BRAND_ALIASES: Record<string, string[]> = {
 // 특정 브랜드가 추가로 포함될 카테고리 (DB 카테고리 외 추가 노출)
 const EXTRA_CATEGORIES: Record<string, Category[]> = {
   '맘스터치': ['burger'],
+  '치킨플러스': ['bunsik'],
+  '치킨플러스&떡볶이': ['bunsik'],
 };
 
 // 영문 브랜드명 → 한글 표기 병기 맵

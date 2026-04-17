@@ -88,11 +88,12 @@ const categoryMap = {
   '다운타우너': 'burger',
   '샐러디': 'burger',
   '왓더버거': 'burger',
+  '샐러리아': 'burger',
+  '포케올데이': 'burger',
+  '포케올데이 샐러드&도시락': 'burger',
 
   // Korean
   '두찜': 'korean',
-  '포케올데이 샐러드&도시락': 'korean',
-  '포케올데이': 'korean',
   '계근상': 'korean',
   '보끄당': 'korean',
   '큰맘할매순대국': 'korean',
@@ -123,7 +124,6 @@ const categoryMap = {
   '지지고': 'bunsik',
 
   // Meat
-  '기영이숯불두마리치킨': 'meat',
   '미스터보쌈&삼겹': 'meat',
 
   // Chinese
@@ -154,7 +154,6 @@ const categoryMap = {
   '읍천리382': 'cafe',
   '트리플에이커피': 'cafe',
   '영커피': 'cafe',
-  '샐러리아': 'cafe',
   '요아잇': 'cafe',
   '카페인중독': 'cafe',
 

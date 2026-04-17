@@ -334,7 +334,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -347,7 +347,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-06-30"
   },
   {
@@ -360,7 +360,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -373,7 +373,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -386,7 +386,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -399,7 +399,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-19"
   },
   {
@@ -412,7 +412,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -425,7 +425,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -438,7 +438,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -451,7 +451,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -464,7 +464,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -477,7 +477,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-12-31"
   },
   {
@@ -490,7 +490,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   },
   {
@@ -503,7 +503,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "선착순",
+    "special_condition": null,
     "valid_until": "2026-06-30"
   },
   {
@@ -516,7 +516,7 @@
       "배달",
       "포장"
     ],
-    "special_condition": "첫 입점 기념, 선착순",
+    "special_condition": null,
     "valid_until": "2026-04-30"
   }
 ]

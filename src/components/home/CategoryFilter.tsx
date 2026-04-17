@@ -15,14 +15,15 @@ const FIRST_ROW: { id: Category; name: string; icon: string }[] = [
 // 펼치기 시 추가로 보이는 카테고리 (배달 인기 순)
 const SECOND_ROW: { id: Category; name: string; icon: string }[] = [
   { id: 'bunsik',  name: '분식',           icon: '🍢' },
+  { id: 'salad',   name: '샐러드/포케',     icon: '🥗' },
   { id: 'chinese', name: '중식',           icon: '🥟' },
   { id: 'japanese',name: '일식',           icon: '🍣' },
   { id: 'western', name: '양식',           icon: '🍝' },
-  { id: 'bakery',  name: '베이커리',       icon: '🥐' },
 ];
 
 const THIRD_ROW: { id: Category; name: string; icon: string }[] = [
   { id: 'meat',    name: '족발/보쌈/고기', icon: '🍖' },
+  { id: 'bakery',  name: '베이커리',       icon: '🥐' },
 ];
 
 interface CategoryFilterProps {

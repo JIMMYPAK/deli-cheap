@@ -759,7 +759,7 @@
     "discountAmount": 3000,
     "minOrderAmount": 17000,
     "description": "모든 주문 할인",
-    "category": "cafe",
+    "category": "burger",
     "method": "전체",
     "deliveryTypes": [],
     "specialCondition": null,
@@ -854,7 +854,7 @@
     "discountAmount": 4000,
     "minOrderAmount": 20000,
     "description": "모든 주문 할인",
-    "category": "meat",
+    "category": "chicken",
     "method": "전체",
     "deliveryTypes": [],
     "specialCondition": null,
@@ -2497,7 +2497,7 @@
     "discountAmount": 4000,
     "minOrderAmount": 0,
     "description": "모든 주문 할인",
-    "category": "korean",
+    "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
@@ -2656,14 +2656,14 @@
     "platform": "ttangyo",
     "discountAmount": 6000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2672,14 +2672,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-06-30"
   },
   {
@@ -2688,14 +2688,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2704,14 +2704,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2720,14 +2720,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2736,14 +2736,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-19"
   },
   {
@@ -2752,14 +2752,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "bunsik",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2768,14 +2768,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "선착순",
-    "category": "meat",
+    "description": "모든 주문 할인",
+    "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2784,14 +2784,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2800,14 +2800,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2816,14 +2816,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2832,14 +2832,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-12-31"
   },
   {
@@ -2848,14 +2848,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2864,14 +2864,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "선착순",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "선착순",
+    "specialCondition": null,
     "validUntil": "2026-06-30"
   },
   {
@@ -2880,14 +2880,14 @@
     "platform": "ttangyo",
     "discountAmount": 4500,
     "minOrderAmount": 0,
-    "description": "첫 입점 기념, 선착순",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫 입점 기념, 선착순",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   }
 ]
