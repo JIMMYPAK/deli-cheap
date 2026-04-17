@@ -55,6 +55,8 @@ const categoryMap = {
   '해두리치킨': 'chicken',
   'BHC치킨': 'chicken',
   '치킨플러스&떡볶이': 'chicken',
+  '꾸브라꼬숯불두마리치킨': 'chicken',
+  '훌랄라참숯바베큐': 'chicken',
 
   // Pizza
   '7번가피자': 'pizza',

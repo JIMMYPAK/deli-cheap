@@ -2,521 +2,421 @@
   {
     "app": "땡겨요",
     "brand": "맘스터치",
-    "discount": 8000,
-    "min_order": null,
+    "discount": 10000,
+    "min_order": 16000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-26"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "BHC",
-    "discount": 9000,
-    "min_order": null,
+    "brand": "바른치킨",
+    "discount": 16000,
+    "min_order": 16000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-05-03"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "메가MGC커피",
-    "discount": 9000,
-    "min_order": null,
+    "discount": 19000,
+    "min_order": 19000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-19"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "피자알볼로",
     "discount": 10500,
-    "min_order": null,
+    "min_order": 17500,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-26"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "버거킹",
+    "discount": 10500,
+    "min_order": 17500,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "배스킨라빈스",
+    "discount": 10000,
+    "min_order": 16000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "파리바게뜨",
+    "discount": 10000,
+    "min_order": 16000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "굽네치킨",
+    "discount": 10000,
+    "min_order": 16000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "본스치킨",
+    "discount": 10000,
+    "min_order": 19000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "푸라닭",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 18900,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "진교동찜닭",
+    "brand": "처갓집양념치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 20000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "아웃백스테이크하우스",
-    "discount": 15000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "두찜",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "맘스피자",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "훌랄라참숯바베큐치킨",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "청년피자",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "또봉이통닭",
-    "discount": 8000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "호식이두마리치킨",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "BBQ",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "포케올데이",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "프레드피자",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "왓더버거",
-    "discount": 8000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-19"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "7번가피자",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "치킨플러스",
-    "discount": 8000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "파파존스",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "멕시카나",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "피자헛",
-    "discount": 17000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "꾸브라꼬숯불치킨",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-05-03"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "청년피자",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "오븐마루치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 17000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "땅땅치킨",
-    "discount": 11000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "쉐이크쉑",
+    "brand": "지코바치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 18000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-06-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "또래오래",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "네네치킨",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "바른치킨",
-    "discount": 9000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "자담치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 19000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-19"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "떡참",
-    "discount": 8000,
-    "min_order": null,
+    "brand": "또래오래",
+    "discount": 9000,
+    "min_order": 18000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "꾸브라꼬숯불두마리치킨",
+    "discount": 9000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
   },
   {
     "app": "땡겨요",
     "brand": "기영이숯불두마리치킨",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "보끔당",
-    "discount": 8000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "일미리금계찜닭",
-    "discount": 10000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-04-30"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "부어치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 18000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "아메리칸피자",
-    "discount": 8000,
-    "min_order": null,
-    "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
-    "special_condition": null,
-    "valid_until": "2026-12-31"
-  },
-  {
-    "app": "땡겨요",
-    "brand": "오븐에빠진닭",
+    "brand": "티바두마리치킨",
     "discount": 9000,
-    "min_order": null,
+    "min_order": 18000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "해두리치킨",
+    "brand": "청년피자",
+    "discount": 9000,
+    "min_order": 19000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "피자마루",
+    "discount": 9000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "던킨",
+    "discount": 9000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "파스쿠찌",
+    "discount": 9000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "이삭토스트",
+    "discount": 9000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "공차",
+    "discount": 9000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "호식이두마리치킨",
     "discount": 8000,
-    "min_order": null,
+    "min_order": 17000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-06-30"
+    "valid_until": null
   },
   {
     "app": "땡겨요",
-    "brand": "계근상",
-    "discount": 9500,
-    "min_order": null,
+    "brand": "노랑통닭",
+    "discount": 8000,
+    "min_order": 18000,
     "method": "전체",
-    "delivery_types": [
-      "배달",
-      "포장"
-    ],
+    "delivery_types": [],
     "special_condition": null,
-    "valid_until": "2026-04-30"
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "멕시카나",
+    "discount": 8000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "피자헛",
+    "discount": 8000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "파파존스",
+    "discount": 8000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "선명희피자",
+    "discount": 8000,
+    "min_order": 20000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "유로코피자",
+    "discount": 8000,
+    "min_order": 18000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "프랭크버거",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "폴바셋",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "카페베네",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "디저트39",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "삼첩분식",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "죠스떡볶이",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "응급실국물떡볶이",
+    "discount": 8000,
+    "min_order": 16000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "감탄떡볶이",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "직구삼",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "청년고기장수",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
+  },
+  {
+    "app": "땡겨요",
+    "brand": "존가네",
+    "discount": 8000,
+    "min_order": 15000,
+    "method": "전체",
+    "delivery_types": [],
+    "special_condition": null,
+    "valid_until": null
   }
 ]

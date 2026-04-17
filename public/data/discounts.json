@@ -1089,7 +1089,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-86",
@@ -1147,7 +1147,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-90",
@@ -1260,7 +1260,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-98",
@@ -2257,624 +2257,546 @@
     "id": "sync-178",
     "brandName": "맘스터치",
     "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
+    "discountAmount": 5000,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-26"
+    "validUntil": null
   },
   {
     "id": "sync-179",
-    "brandName": "BHC",
+    "brandName": "바른치킨",
     "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "discountAmount": 11000,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-05-03"
+    "validUntil": null
   },
   {
     "id": "sync-180",
     "brandName": "메가MGC커피",
     "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "discountAmount": 14000,
+    "minOrderAmount": 19000,
     "description": "모든 주문 할인",
     "category": "cafe",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-19"
+    "validUntil": null
   },
   {
     "id": "sync-181",
     "brandName": "피자알볼로",
     "platform": "ttangyo",
     "discountAmount": 5500,
-    "minOrderAmount": 0,
+    "minOrderAmount": 17500,
     "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-26"
+    "validUntil": null
   },
   {
     "id": "sync-182",
     "brandName": "버거킹",
     "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "discountAmount": 5500,
+    "minOrderAmount": 17500,
     "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-183",
-    "brandName": "진교동찜닭",
+    "brandName": "배스킨라빈스",
     "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "discountAmount": 5000,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
-    "category": "korean",
+    "category": "cafe",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-184",
-    "brandName": "아웃백스테이크하우스",
+    "brandName": "파리바게뜨",
     "platform": "ttangyo",
-    "discountAmount": 10000,
-    "minOrderAmount": 0,
+    "discountAmount": 5000,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
-    "category": "western",
+    "category": "bakery",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-185",
-    "brandName": "두찜",
+    "brandName": "굽네치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
-    "category": "korean",
+    "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-186",
-    "brandName": "맘스피자",
+    "brandName": "본스치킨",
     "platform": "ttangyo",
     "discountAmount": 5000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 19000,
     "description": "모든 주문 할인",
-    "category": "pizza",
+    "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-187",
-    "brandName": "훌랄라참숯바베큐치킨",
+    "brandName": "푸라닭",
     "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
+    "discountAmount": 4000,
+    "minOrderAmount": 18900,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-188",
-    "brandName": "청년피자",
+    "brandName": "처갓집양념치킨",
     "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
+    "discountAmount": 4000,
+    "minOrderAmount": 20000,
     "description": "모든 주문 할인",
-    "category": "pizza",
+    "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-189",
-    "brandName": "또봉이통닭",
-    "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-190",
-    "brandName": "호식이두마리치킨",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-191",
-    "brandName": "BBQ",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-192",
-    "brandName": "포케올데이",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "salad",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-193",
-    "brandName": "프레드피자",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "pizza",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-194",
-    "brandName": "왓더버거",
-    "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "burger",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-195",
-    "brandName": "7번가피자",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "pizza",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-196",
-    "brandName": "치킨플러스",
-    "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-197",
-    "brandName": "파파존스",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "pizza",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-198",
-    "brandName": "멕시카나",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-199",
-    "brandName": "피자헛",
-    "platform": "ttangyo",
-    "discountAmount": 12000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "pizza",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-200",
-    "brandName": "꾸브라꼬숯불치킨",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-05-03"
-  },
-  {
-    "id": "sync-202",
     "brandName": "오븐마루치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 17000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
-    "id": "sync-203",
-    "brandName": "땅땅치킨",
-    "platform": "ttangyo",
-    "discountAmount": 6000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-204",
-    "brandName": "쉐이크쉑",
+    "id": "sync-190",
+    "brandName": "지코바치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "burger",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-06-30"
-  },
-  {
-    "id": "sync-205",
-    "brandName": "또래오래",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 18000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
-    "id": "sync-206",
-    "brandName": "네네치킨",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-207",
-    "brandName": "바른치킨",
-    "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-208",
+    "id": "sync-191",
     "brandName": "자담치킨",
     "platform": "ttangyo",
     "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 19000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-19"
+    "validUntil": null
   },
   {
-    "id": "sync-209",
-    "brandName": "떡참",
-    "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "bunsik",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-210",
-    "brandName": "기영이숯불두마리치킨",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-211",
-    "brandName": "보끔당",
-    "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "korean",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-212",
-    "brandName": "일미리금계찜닭",
-    "platform": "ttangyo",
-    "discountAmount": 5000,
-    "minOrderAmount": 0,
-    "description": "모든 주문 할인",
-    "category": "korean",
-    "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
-  },
-  {
-    "id": "sync-213",
-    "brandName": "부어치킨",
+    "id": "sync-192",
+    "brandName": "또래오래",
     "platform": "ttangyo",
     "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 18000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
-    "id": "sync-214",
-    "brandName": "아메리칸피자",
+    "id": "sync-193",
+    "brandName": "꾸브라꼬숯불두마리치킨",
     "platform": "ttangyo",
-    "discountAmount": 3000,
-    "minOrderAmount": 0,
+    "discountAmount": 4000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-194",
+    "brandName": "기영이숯불두마리치킨",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-195",
+    "brandName": "티바두마리치킨",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-196",
+    "brandName": "청년피자",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 19000,
     "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-12-31"
+    "validUntil": null
+  },
+  {
+    "id": "sync-197",
+    "brandName": "피자마루",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-198",
+    "brandName": "던킨",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-199",
+    "brandName": "파스쿠찌",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "cafe",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-200",
+    "brandName": "이삭토스트",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-201",
+    "brandName": "공차",
+    "platform": "ttangyo",
+    "discountAmount": 4000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-202",
+    "brandName": "호식이두마리치킨",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 17000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-203",
+    "brandName": "노랑통닭",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-204",
+    "brandName": "멕시카나",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-205",
+    "brandName": "피자헛",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 20000,
+    "description": "모든 주문 할인",
+    "category": "pizza",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-206",
+    "brandName": "파파존스",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 20000,
+    "description": "모든 주문 할인",
+    "category": "pizza",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-207",
+    "brandName": "선명희피자",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 20000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-208",
+    "brandName": "유로코피자",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 18000,
+    "description": "모든 주문 할인",
+    "category": "pizza",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-209",
+    "brandName": "프랭크버거",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "burger",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-210",
+    "brandName": "폴바셋",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-211",
+    "brandName": "카페베네",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-212",
+    "brandName": "디저트39",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-213",
+    "brandName": "삼첩분식",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-214",
+    "brandName": "죠스떡볶이",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
   },
   {
     "id": "sync-215",
-    "brandName": "오븐에빠진닭",
+    "brandName": "응급실국물떡볶이",
     "platform": "ttangyo",
-    "discountAmount": 4000,
-    "minOrderAmount": 0,
+    "discountAmount": 3000,
+    "minOrderAmount": 16000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
   },
   {
     "id": "sync-216",
-    "brandName": "해두리치킨",
+    "brandName": "감탄떡볶이",
     "platform": "ttangyo",
     "discountAmount": 3000,
-    "minOrderAmount": 0,
+    "minOrderAmount": 15000,
     "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-06-30"
+    "validUntil": null
   },
   {
     "id": "sync-217",
-    "brandName": "계근상",
+    "brandName": "직구삼",
     "platform": "ttangyo",
-    "discountAmount": 4500,
-    "minOrderAmount": 0,
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
     "description": "모든 주문 할인",
-    "category": "korean",
+    "category": "chicken",
     "method": "전체",
-    "deliveryTypes": [
-      "배달",
-      "포장"
-    ],
+    "deliveryTypes": [],
     "specialCondition": null,
-    "validUntil": "2026-04-30"
+    "validUntil": null
+  },
+  {
+    "id": "sync-218",
+    "brandName": "청년고기장수",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
+  },
+  {
+    "id": "sync-219",
+    "brandName": "존가네",
+    "platform": "ttangyo",
+    "discountAmount": 3000,
+    "minOrderAmount": 15000,
+    "description": "모든 주문 할인",
+    "category": "chicken",
+    "method": "전체",
+    "deliveryTypes": [],
+    "specialCondition": null,
+    "validUntil": null
   }
 ]
