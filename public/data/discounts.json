@@ -522,40 +522,6 @@
     "validUntil": "2026-04-30"
   },
   {
-    "id": "sync-38",
-    "brandName": "방가네 소고기국밥",
-    "platform": "baemin",
-    "discountAmount": 2000,
-    "minOrderAmount": 14000,
-    "description": "모든 주문 할인",
-    "category": "korean",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달",
-      "가게배달"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-16"
-  },
-  {
-    "id": "sync-39",
-    "brandName": "본초맘죽",
-    "platform": "baemin",
-    "discountAmount": 2000,
-    "minOrderAmount": 14000,
-    "description": "모든 주문 할인",
-    "category": "korean",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달",
-      "가게배달"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-16"
-  },
-  {
     "id": "sync-40",
     "brandName": "국민낙곱새",
     "platform": "baemin",
@@ -622,23 +588,6 @@
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-45",
-    "brandName": "BBQ",
-    "platform": "baemin",
-    "discountAmount": 2000,
-    "minOrderAmount": 16000,
-    "description": "모든 주문 할인",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달",
-      "가게배달"
-    ],
-    "specialCondition": null,
-    "validUntil": "2026-04-30"
   },
   {
     "id": "sync-46",
@@ -1067,67 +1016,6 @@
     "validUntil": "2026-04-19"
   },
   {
-    "id": "sync-76",
-    "brandName": "처갓집양념치킨",
-    "platform": "baemin",
-    "discountAmount": 5000,
-    "minOrderAmount": 16000,
-    "description": "매일 10:00 선착순",
-    "category": "chicken",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달"
-    ],
-    "specialCondition": "매일 10:00 선착순",
-    "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-77",
-    "brandName": "처갓집양념치킨",
-    "platform": "baemin",
-    "discountAmount": 4500,
-    "minOrderAmount": 16000,
-    "description": "픽업 전용 할인",
-    "category": "chicken",
-    "method": "픽업",
-    "deliveryTypes": [],
-    "specialCondition": null,
-    "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-78",
-    "brandName": "노모어피자",
-    "platform": "baemin",
-    "discountAmount": 5000,
-    "minOrderAmount": 18000,
-    "description": "매일 10:00 선착순",
-    "category": "pizza",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달"
-    ],
-    "specialCondition": "매일 10:00 선착순",
-    "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-79",
-    "brandName": "롯데리아",
-    "platform": "baemin",
-    "discountAmount": 3000,
-    "minOrderAmount": 18000,
-    "description": "매일 10:00 선착순",
-    "category": "burger",
-    "method": "전체",
-    "deliveryTypes": [
-      "한집배달",
-      "알뜰배달"
-    ],
-    "specialCondition": "매일 10:00 선착순",
-    "validUntil": "2026-04-19"
-  },
-  {
     "id": "sync-80",
     "brandName": "피자에땅",
     "platform": "baemin",
@@ -1198,7 +1086,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-86",
@@ -1214,7 +1102,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-30"
   },
   {
     "id": "sync-87",
@@ -1256,7 +1144,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-90",
@@ -1272,7 +1160,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-30"
   },
   {
     "id": "sync-91",
@@ -1288,7 +1176,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-92",
@@ -1304,7 +1192,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-19"
   },
   {
     "id": "sync-93",
@@ -1385,7 +1273,7 @@
       "알뜰배달"
     ],
     "specialCondition": null,
-    "validUntil": "2026-04-17"
+    "validUntil": "2026-04-30"
   },
   {
     "id": "sync-99",
@@ -1634,32 +1522,6 @@
     ],
     "specialCondition": "배민클럽 회원 전용",
     "validUntil": "2026-04-19"
-  },
-  {
-    "id": "sync-118",
-    "brandName": "배스킨라빈스",
-    "platform": "coupang",
-    "discountAmount": 3500,
-    "minOrderAmount": 18500,
-    "description": "배달 전용 할인",
-    "category": "cafe",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null,
-    "validUntil": "2026-04-16"
-  },
-  {
-    "id": "sync-119",
-    "brandName": "BHC",
-    "platform": "coupang",
-    "discountAmount": 2000,
-    "minOrderAmount": 18000,
-    "description": "배달 전용 할인",
-    "category": "chicken",
-    "method": "배달",
-    "deliveryTypes": [],
-    "specialCondition": null,
-    "validUntil": "2026-05-03"
   },
   {
     "id": "sync-120",
@@ -2410,14 +2272,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-26"
   },
   {
@@ -2426,14 +2288,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-05-03"
   },
   {
@@ -2442,14 +2304,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "cafe",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-19"
   },
   {
@@ -2458,14 +2320,14 @@
     "platform": "ttangyo",
     "discountAmount": 5500,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-26"
   },
   {
@@ -2474,14 +2336,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2490,14 +2352,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2506,14 +2368,14 @@
     "platform": "ttangyo",
     "discountAmount": 10000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "western",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2522,14 +2384,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2538,14 +2400,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2554,14 +2416,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2570,14 +2432,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2586,14 +2448,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2602,14 +2464,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2618,14 +2480,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2634,14 +2496,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2650,14 +2512,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2666,14 +2528,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-19"
   },
   {
@@ -2682,14 +2544,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2698,14 +2560,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2714,14 +2576,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2730,14 +2592,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2746,14 +2608,14 @@
     "platform": "ttangyo",
     "discountAmount": 12000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2762,14 +2624,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-05-03"
   },
   {
@@ -2778,14 +2640,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시",
+    "description": "모든 주문 할인",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시",
+    "specialCondition": null,
     "validUntil": "2026-04-30"
   },
   {
@@ -2794,14 +2656,14 @@
     "platform": "ttangyo",
     "discountAmount": 6000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2810,14 +2672,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "burger",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-06-30"
   },
   {
@@ -2826,14 +2688,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2842,14 +2704,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2858,14 +2720,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2874,14 +2736,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-19"
   },
   {
@@ -2890,14 +2752,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "bunsik",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2906,14 +2768,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "meat",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2922,14 +2784,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2938,14 +2800,14 @@
     "platform": "ttangyo",
     "discountAmount": 5000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2954,14 +2816,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -2970,14 +2832,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "pizza",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-12-31"
   },
   {
@@ -2986,14 +2848,14 @@
     "platform": "ttangyo",
     "discountAmount": 4000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-04-30"
   },
   {
@@ -3002,14 +2864,14 @@
     "platform": "ttangyo",
     "discountAmount": 3000,
     "minOrderAmount": 0,
-    "description": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "선착순",
     "category": "chicken",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "선착순",
     "validUntil": "2026-06-30"
   },
   {
@@ -3018,14 +2880,14 @@
     "platform": "ttangyo",
     "discountAmount": 4500,
     "minOrderAmount": 0,
-    "description": "첫 입점 기념, 첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "description": "첫 입점 기념, 선착순",
     "category": "korean",
     "method": "전체",
     "deliveryTypes": [
       "배달",
       "포장"
     ],
-    "specialCondition": "첫 입점 기념, 첫주문/재주문 쿠폰 중복 사용 시, 선착순",
+    "specialCondition": "첫 입점 기념, 선착순",
     "validUntil": "2026-04-30"
   }
 ]
