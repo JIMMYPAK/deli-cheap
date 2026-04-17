@@ -21,6 +21,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
       { id: 3, name: '삼겹살/목살 구이' },
       { id: 4, name: '족발/보쌈' },
       { id: 5, name: '스테이크/폭립' },
+      { id: 31, name: '곱창/막창' },
     ],
   },
   {
@@ -32,6 +33,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
       { id: 8, name: '뼈해장국/감자탕' },
       { id: 9, name: '순대국/돼지국밥' },
       { id: 10, name: '된장찌개/순두부찌개' },
+      { id: 32, name: '마라탕/마라샹궈' },
     ],
   },
   {
@@ -44,6 +46,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
       { id: 13, name: '제육볶음/불고기' },
       { id: 14, name: '게장' },
       { id: 15, name: '닭발/오돌뼈' },
+      { id: 33, name: '도시락' },
     ],
   },
   {

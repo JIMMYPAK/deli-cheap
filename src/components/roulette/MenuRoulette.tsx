@@ -1,24 +1,65 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { MENU_CATEGORIES, MenuItem } from '@/constants/menus';
 import styles from './MenuRoulette.module.css';
 
+const CUSTOM_MENU_STORAGE_KEY = 'rouletteCustomMenus';
+
 export default function MenuRoulette() {
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
+  const [customItems, setCustomItems] = useState<MenuItem[]>([]);
+  const [customInput, setCustomInput] = useState('');
+  const [showCustomForm, setShowCustomForm] = useState(false);
+  const [customLoaded, setCustomLoaded] = useState(false);
   const [isSpinning, setIsSpinning] = useState(false);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [rotation, setRotation] = useState(0);
   const [spinItems, setSpinItems] = useState<MenuItem[]>([]);
   const spinTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const initializedSelectionRef = useRef(false);
   const SPIN_DURATION_MS = 4200;
+  const baseItems = useMemo(() => MENU_CATEGORIES.flatMap((cat) => cat.items), []);
+  const allItems = useMemo(() => [...baseItems, ...customItems], [baseItems, customItems]);
 
-  // Initialize with all items selected
+  // Load user custom menus from localStorage
   useEffect(() => {
-    const allIds = MENU_CATEGORIES.flatMap(cat => cat.items.map(item => item.id));
-    setSelectedIds(allIds);
+    try {
+      const raw = localStorage.getItem(CUSTOM_MENU_STORAGE_KEY);
+      if (!raw) {
+        setCustomLoaded(true);
+        return;
+      }
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        const normalized = parsed.filter(
+          (item): item is MenuItem =>
+            typeof item?.id === 'number' &&
+            typeof item?.name === 'string' &&
+            item.name.trim().length > 0
+        );
+        setCustomItems(normalized);
+      }
+    } catch {
+      // Ignore parse/storage errors and continue with defaults.
+    } finally {
+      setCustomLoaded(true);
+    }
   }, []);
+
+  // Initialize with all items selected exactly once after custom menus are loaded
+  useEffect(() => {
+    if (!customLoaded || initializedSelectionRef.current) return;
+    setSelectedIds(allItems.map((item) => item.id));
+    initializedSelectionRef.current = true;
+  }, [allItems, customLoaded]);
+
+  // Persist custom menus
+  useEffect(() => {
+    if (!customLoaded) return;
+    localStorage.setItem(CUSTOM_MENU_STORAGE_KEY, JSON.stringify(customItems));
+  }, [customItems, customLoaded]);
 
   useEffect(() => {
     return () => {
@@ -28,14 +69,13 @@ export default function MenuRoulette() {
     };
   }, []);
 
-  const isAllSelected = selectedIds.length === MENU_CATEGORIES.flatMap(cat => cat.items).length;
+  const isAllSelected = allItems.length > 0 && selectedIds.length === allItems.length;
 
   const toggleAll = () => {
     if (isAllSelected) {
       setSelectedIds([]);
     } else {
-      const allIds = MENU_CATEGORIES.flatMap(cat => cat.items.map(item => item.id));
-      setSelectedIds(allIds);
+      setSelectedIds(allItems.map((item) => item.id));
     }
   };
 
@@ -58,7 +98,33 @@ export default function MenuRoulette() {
     }
   };
 
-  const activeItems = MENU_CATEGORIES.flatMap(cat => cat.items).filter(i => selectedIds.includes(i.id));
+  const addCustomItem = () => {
+    const name = customInput.trim();
+    if (!name) return;
+
+    const alreadyExists = allItems.some(
+      (item) => item.name.trim().toLowerCase() === name.toLowerCase()
+    );
+    if (alreadyExists) {
+      setCustomInput('');
+      setShowCustomForm(false);
+      return;
+    }
+
+    const customId = Date.now() + Math.floor(Math.random() * 1000);
+    const newItem: MenuItem = { id: customId, name };
+    setCustomItems((prev) => [...prev, newItem]);
+    setSelectedIds((prev) => [...new Set([...prev, customId])]);
+    setCustomInput('');
+    setShowCustomForm(false);
+  };
+
+  const removeCustomItem = (id: number) => {
+    setCustomItems((prev) => prev.filter((item) => item.id !== id));
+    setSelectedIds((prev) => prev.filter((selectedId) => selectedId !== id));
+  };
+
+  const activeItems = allItems.filter((i) => selectedIds.includes(i.id));
   const wheelItems = isOverlayOpen ? spinItems : activeItems;
   const wheelBackground = (() => {
     if (wheelItems.length <= 0) return '#ffffff';
@@ -112,16 +178,84 @@ export default function MenuRoulette() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h2 className={styles.title}>오늘 뭐 먹지?</h2>
-        <button 
-          className={`${styles.globalToggle} ${isAllSelected ? styles.allActive : ''}`}
-          onClick={toggleAll}
-        >
-          <span className={styles.toggleIcon}>{isAllSelected ? '☑' : '☐'}</span>
-          전체 선택
-        </button>
+        <div className={styles.headerActions}>
+          <button
+            className={styles.addButton}
+            onClick={() => setShowCustomForm((prev) => !prev)}
+            type="button"
+          >
+            + 직접 추가
+          </button>
+          <button
+            className={`${styles.globalToggle} ${isAllSelected ? styles.allActive : ''}`}
+            onClick={toggleAll}
+            type="button"
+          >
+            <span className={styles.toggleIcon}>{isAllSelected ? '☑' : '☐'}</span>
+            전체 선택
+          </button>
+        </div>
       </div>
+
+      {showCustomForm && (
+        <div className={styles.customForm}>
+          <input
+            type="text"
+            className={styles.customInput}
+            placeholder="예: 커리"
+            value={customInput}
+            onChange={(e) => setCustomInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                addCustomItem();
+              }
+            }}
+            maxLength={24}
+          />
+          <button className={styles.customSubmit} onClick={addCustomItem} type="button">
+            추가
+          </button>
+        </div>
+      )}
       
       <div className={styles.filterSection}>
+        {customItems.length > 0 && (
+          <div className={styles.categoryGroup}>
+            <div className={styles.categoryHeader}>
+              <span className={styles.categoryName}>내 메뉴</span>
+              <span className={styles.categoryDesc}>직접 추가</span>
+            </div>
+            <div className={styles.itemsGrid}>
+              {customItems.map((item) => (
+                <label
+                  key={item.id}
+                  className={`${styles.itemLabel} ${selectedIds.includes(item.id) ? styles.active : ''}`}
+                >
+                  <input
+                    type="checkbox"
+                    className={styles.hiddenCheckbox}
+                    checked={selectedIds.includes(item.id)}
+                    onChange={() => toggleItem(item.id)}
+                  />
+                  <span className={styles.itemName}>{item.name}</span>
+                  <button
+                    type="button"
+                    className={styles.removeCustomButton}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      removeCustomItem(item.id);
+                    }}
+                    aria-label={`${item.name} 삭제`}
+                  >
+                    ×
+                  </button>
+                </label>
+              ))}
+            </div>
+          </div>
+        )}
         {MENU_CATEGORIES.map(cat => {
           const isCatAllSelected = cat.items.every(i => selectedIds.includes(i.id));
           return (
