@@ -22,7 +22,7 @@ export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat
 /** 브랜드 카드 목록 정렬 */
 export type BrandSortMode = 'rank' | 'discount' | 'minOrder';
 
-export type Method = '배달' | '픽업' | '전체';
+export type Method = '배달' | '포장' | '전체';
 
 export interface Coupon {
   discountAmount: number;

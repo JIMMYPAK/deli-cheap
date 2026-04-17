@@ -71,7 +71,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
                       <div className="flex items-center gap-1.5 flex-wrap">
                         <span className={`text-[10px] px-1.5 py-0.5 rounded flex items-center font-bold ${
                           coupon.method === '배달' ? 'bg-blue-100/50 text-blue-600' :
-                          coupon.method === '픽업' ? 'bg-orange-100/50 text-orange-600' :
+                          coupon.method === '포장' ? 'bg-orange-100/50 text-orange-600' :
                           'bg-gray-200/50 text-gray-600'
                         }`}>
                           {coupon.method}

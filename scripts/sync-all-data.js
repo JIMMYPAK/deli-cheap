@@ -239,8 +239,8 @@ const convertedData = allRawData
       minOrderAmount: toNumber(item.min_order),
       description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),
       category: categoryMap[item.brand] || 'chicken',
-      method: item.method,
-      deliveryTypes: item.delivery_types || [],
+      method: item.method === '픽업' ? '포장' : item.method,
+      deliveryTypes: (item.delivery_types || []).map(t => t === '픽업' ? '포장' : t),
       specialCondition: combinedSpecialCondition,
       validUntil,
     };

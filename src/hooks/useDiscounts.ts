@@ -45,7 +45,8 @@ export function useDiscounts() {
             minOrderAmount: item.min_order_amount,
             description: item.description ?? '',
             category: item.category,
-            method: item.method,
+            // Supabase DB는 '픽업' enum 사용 → UI/필터는 '포장'으로 통일
+          method: item.method === '픽업' ? '포장' : item.method,
             deliveryTypes: item.delivery_types ?? [],
             specialCondition: item.special_condition ?? null,
             validUntil: item.valid_until ?? undefined

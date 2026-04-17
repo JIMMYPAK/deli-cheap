@@ -107,9 +107,8 @@ export default function Home() {
 
   const searchActive = searchQuery.trim().length > 0;
   const showRankOption =
-    searchActive ||
-    selectedCategory === 'all' ||
-    categoryHasSurveyRank(selectedCategory);
+    selectedCategory !== 'all' &&
+    (searchActive || categoryHasSurveyRank(selectedCategory));
 
   const effectiveSortMode: BrandSortMode =
     !showRankOption && brandSortMode === 'rank' ? 'discount' : brandSortMode;
@@ -153,10 +152,10 @@ export default function Home() {
       // Platform filter
       if (platformFiltered && !platformSet.has(d.platform)) return false;
 
-      // Method filter: '전체' coupons always pass; '배달'/'픽업' checked against selected methods
+      // Method filter: '전체' coupons always pass; '배달'/'포장' checked against selected methods
       if (methodFiltered && d.method !== '전체') {
-        if (d.method === '배달' && !filter.methods.includes('배달')) return false;
-        if (d.method === '픽업' && !filter.methods.includes('포장')) return false;
+        const m = d.method as '배달' | '포장';
+        if (!filter.methods.includes(m)) return false;
       }
 
       return matchesCategory && matchesSearch;

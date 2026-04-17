@@ -149,7 +149,7 @@
     "method": "전체",
     "deliveryTypes": [
       "가게배달",
-      "픽업"
+      "포장"
     ],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -344,7 +344,7 @@
     "method": "전체",
     "deliveryTypes": [
       "가게배달",
-      "픽업"
+      "포장"
     ],
     "specialCondition": null,
     "validUntil": "2026-04-29"
@@ -425,7 +425,7 @@
     "minOrderAmount": 0,
     "description": "10%",
     "category": "cafe",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": "10%",
     "validUntil": "2026-04-19"
@@ -438,7 +438,7 @@
     "minOrderAmount": 0,
     "description": "10%",
     "category": "cafe",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": "10%",
     "validUntil": "2026-04-19"
@@ -571,7 +571,7 @@
     "minOrderAmount": 15000,
     "description": "픽업 전용 할인",
     "category": "burger",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-26"
@@ -584,7 +584,7 @@
     "minOrderAmount": 16000,
     "description": "픽업 전용 할인",
     "category": "chicken",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-19"
@@ -950,7 +950,7 @@
     "minOrderAmount": 20000,
     "description": "픽업 전용 할인",
     "category": "chicken",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-19"
@@ -1067,7 +1067,7 @@
     "minOrderAmount": 24000,
     "description": "픽업 전용 할인",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-05-03"
@@ -1420,7 +1420,7 @@
     "minOrderAmount": 30000,
     "description": "픽업 전용 할인",
     "category": "chicken",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -1501,7 +1501,7 @@
     "minOrderAmount": 17000,
     "description": "픽업 전용 할인",
     "category": "chicken",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -1712,7 +1712,7 @@
     "minOrderAmount": 29900,
     "description": "픽업 전용 할인",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-19"
@@ -1725,7 +1725,7 @@
     "minOrderAmount": 27800,
     "description": "픽업 전용 할인",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -1738,7 +1738,7 @@
     "minOrderAmount": 18900,
     "description": "픽업 전용 할인",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -1923,7 +1923,7 @@
     "minOrderAmount": 14000,
     "description": "픽업 전용 할인",
     "category": "korean",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": null,
     "validUntil": "2026-04-30"
@@ -1962,7 +1962,7 @@
     "minOrderAmount": 18000,
     "description": "3%할인 최대 2,000원 + 포장 추가할인 3,000원",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": "3%할인 최대 2,000원 + 포장 추가할인 3,000원",
     "validUntil": "2026-04-30"
@@ -1975,7 +1975,7 @@
     "minOrderAmount": 18000,
     "description": "브랜드 적립 5%",
     "category": "pizza",
-    "method": "픽업",
+    "method": "포장",
     "deliveryTypes": [],
     "specialCondition": "브랜드 적립 5%",
     "validUntil": "2026-04-30"

@@ -30,7 +30,8 @@ async function uploadToSupabase() {
       description: item.description,
       // salad 카테고리가 DB enum에 아직 없을 수 있으므로 burger로 매핑하여 업로드
       category: item.category === 'salad' ? 'burger' : item.category,
-      method: item.method,
+      // DB enum은 '픽업'을 사용하므로 '포장'→'픽업'으로 매핑 (UI에서는 항상 '포장' 표시)
+      method: item.method === '포장' ? '픽업' : item.method,
       delivery_types: item.deliveryTypes,
       special_condition: item.specialCondition,
       valid_until: item.validUntil || null,
