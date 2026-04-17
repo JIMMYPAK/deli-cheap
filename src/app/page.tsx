@@ -362,7 +362,7 @@ export default function Home() {
       <button
         onClick={() => setRouletteOpen(true)}
         aria-label="메뉴 룰렛 열기"
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-end"
+        className="fixed top-20 right-6 z-50 flex items-center justify-end"
       >
         <span
           className={`pointer-events-none mr-2 rounded-full bg-black/80 px-3 py-1.5 text-xs font-bold text-white shadow transition-all duration-300 ${
