@@ -1,0 +1,367 @@
+.container {
+  padding: 16px;
+  background: white;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+.title {
+  color: #333;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.globalToggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f0f0f0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.globalToggle.allActive {
+  background: #e6f7f6;
+  color: #2ac1bc;
+}
+
+.toggleIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.categoryGroup {
+  margin-bottom: 10px;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.categoryHeader:hover {
+  background: #f0f0f0;
+}
+
+.categoryName {
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.categoryDesc {
+  font-size: 0.7rem;
+  color: #2ac1bc;
+  background: #e6f7f6;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.categoryCheck {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #2ac1bc;
+  font-weight: bold;
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.itemLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 2px;
+  font-size: 0.75rem;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  color: #777;
+}
+
+.itemLabel.active {
+  background: #fff;
+  border-color: #2ac1bc;
+  color: #000;
+  font-weight: 800;
+  box-shadow: 0 2px 4px rgba(42, 193, 188, 0.1);
+}
+
+.hiddenCheckbox {
+  display: none;
+}
+
+.itemName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spinButton {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #2ac1bc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 0 #23a09b;
+}
+
+.spinButton:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #23a09b;
+}
+
+/* Overlay and Wheel Styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.985);
+  z-index: 100;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.overlayContent {
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.categoryCheck {
+  margin-left: auto;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-weight: normal;
+  transition: all 0.2s;
+}
+
+.categoryCheck.checked {
+  color: #2ac1bc;
+}
+
+/* Wheel Segments */
+.segment {
+  position: absolute;
+  inset: 0;
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.segmentText {
+  --segment-font-size: 0.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  font-size: var(--segment-font-size);
+  font-weight: 800;
+  text-align: left;
+  width: 22px;
+  margin-left: -8px;
+  line-height: 1;
+  display: block;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0;
+  white-space: nowrap;
+  max-height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.45),
+    0 0 1px rgba(0, 0, 0, 0.35);
+  -webkit-text-stroke: 0.15px rgba(0, 0, 0, 0.35);
+}
+
+.wheelCenterInner {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border-radius: 50%;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+}
+
+.rouletteWrapper {
+  position: relative;
+  width: min(88vw, 360px);
+  height: min(88vw, 360px);
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #333;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 4.2s cubic-bezier(0.1, 0.75, 0.12, 1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.wheelBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #2ac1bc 0deg 45deg,
+    #fff 45deg 90deg,
+    #2ac1bc 90deg 135deg,
+    #fff 135deg 180deg,
+    #2ac1bc 180deg 225deg,
+    #fff 225deg 270deg,
+    #2ac1bc 270deg 315deg,
+    #fff 315deg 360deg
+  );
+  opacity: 0.3;
+}
+
+.wheelCenter {
+  width: 60%;
+  height: 60%;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #2ac1bc;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.wheelText {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.pointer {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.2rem;
+  color: #ff6b6b;
+  z-index: 2;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.25));
+}
+
+.resultBox {
+  padding: 0 20px;
+  animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.resultLabel {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.resultName {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #2ac1bc;
+  margin: 0 0 24px;
+  line-height: 1.2;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.retryButton {
+  padding: 12px 20px;
+  background: #2ac1bc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  flex: 1;
+}
+
+.closeButton {
+  padding: 12px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  flex: 1;
+}

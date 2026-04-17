@@ -9,6 +9,7 @@ import { useFilter } from '@/hooks/useFilter';
 import { GroupedDiscount, Category, BrandSortMode, ALL_PLATFORMS, ALL_FILTER_METHODS } from '@/types/discount';
 import { compareBrandsByRank, categoryHasSurveyRank } from '@/constants/brandRank';
 import BrandSortControl from '@/components/home/BrandSortControl';
+import MenuRoulette from '@/components/roulette/MenuRoulette';
 
 const BRAND_ALIASES: Record<string, string[]> = {
   '7번가피자': ['7번가'],
@@ -80,6 +81,8 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [brandSortMode, setBrandSortMode] = useState<BrandSortMode>('rank');
   const [filterOpen, setFilterOpen] = useState(false);
+  const [rouletteOpen, setRouletteOpen] = useState(false);
+  const [showRouletteHint, setShowRouletteHint] = useState(true);
   const { discounts, loading, error } = useDiscounts();
   const { filter, setFilter, isFilterActive, activeFilterCount } = useFilter();
 
@@ -104,6 +107,16 @@ export default function Home() {
     localStorage.setItem('searchQuery', searchQuery);
     localStorage.setItem('brandSortMode', brandSortMode);
   }, [selectedCategory, searchQuery, brandSortMode]);
+
+  // 스크롤을 시작하면 떠다니는 다이스의 안내 문구를 숨긴다.
+  useEffect(() => {
+    const onScroll = () => {
+      setShowRouletteHint(window.scrollY < 40);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const searchActive = searchQuery.trim().length > 0;
   const showRankOption =
@@ -344,6 +357,41 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      {/* Roulette FAB */}
+      <button
+        onClick={() => setRouletteOpen(true)}
+        aria-label="메뉴 룰렛 열기"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-end"
+      >
+        <span
+          className={`pointer-events-none mr-2 rounded-full bg-black/80 px-3 py-1.5 text-xs font-bold text-white shadow transition-all duration-300 ${
+            showRouletteHint
+              ? 'translate-x-0 opacity-100'
+              : 'translate-x-2 opacity-0'
+          }`}
+        >
+          뭐 먹지?
+        </span>
+        <span className="w-14 h-14 bg-red-500 text-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform active:scale-95">
+        <span className="text-2xl">🎲</span>
+        </span>
+      </button>
+
+      {/* Roulette Modal */}
+      {rouletteOpen && (
+        <div className="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative p-2 shadow-2xl">
+            <button 
+              onClick={() => setRouletteOpen(false)}
+              className="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold z-10 hover:bg-gray-200"
+            >
+              ✕
+            </button>
+            <MenuRoulette />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
