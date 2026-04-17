@@ -221,7 +221,12 @@ function isExpired(validUntil) {
 const convertedData = allRawData
   .map((item, index) => {
     const isPercentDiscount = typeof item.discount === 'string' && item.discount.includes('%');
-    const parsedDiscount = toNumber(item.discount);
+    let parsedDiscount = toNumber(item.discount);
+
+    // 땡겨요: 화면에 표시되는 최대 할인액에는 첫 주문 5,000원이 포함되어 있음 → 항상 차감
+    if (item.app === '땡겨요') {
+      parsedDiscount = Math.max(0, parsedDiscount - 5000);
+    }
     const percentNote = isPercentDiscount ? `정률할인 ${item.discount}` : null;
     const combinedSpecialCondition = [percentNote, item.special_condition || null]
       .filter(Boolean)
