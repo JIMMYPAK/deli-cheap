@@ -61,6 +61,7 @@ const categoryMap = {
   '노모어피자': 'pizza',
   '도미노피자': 'pizza',
   '반올림피자': 'pizza',
+  '빽보이피자': 'pizza',
   '빅스타피자': 'pizza',
   '유로코피자': 'pizza',
   '청년피자': 'pizza',
@@ -86,11 +87,13 @@ const categoryMap = {
   '오구샌': 'burger',
   '버거리': 'burger',
   '다운타우너': 'burger',
-  '샐러디': 'burger',
   '왓더버거': 'burger',
-  '샐러리아': 'burger',
-  '포케올데이': 'burger',
-  '포케올데이 샐러드&도시락': 'burger',
+
+  // Salad
+  '샐러디': 'salad',
+  '샐러리아': 'salad',
+  '포케올데이': 'salad',
+  '포케올데이 샐러드&도시락': 'salad',
 
   // Korean
   '두찜': 'korean',
