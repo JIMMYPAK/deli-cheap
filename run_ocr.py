@@ -2,7 +2,7 @@ import os
 import subprocess
 import glob
 
-directory = '/Users/jimmypak/deli-cheap/YO'
+directory = '/Users/jimmypak/deli-cheap/TTANG'
 files = sorted(glob.glob(f'{directory}/*.PNG'))
 
 with open('ocr_results.txt', 'w') as out:
