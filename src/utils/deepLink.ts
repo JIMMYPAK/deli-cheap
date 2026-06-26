@@ -21,7 +21,7 @@ export function getDeepLink(platform: Platform, brandName: string): string {
   }
 }
 
-export function getWebFallback(platform: Platform, _brandName: string): string {
+export function getWebFallback(platform: Platform): string {
   switch (platform) {
     case 'baemin':
       return `https://www.baemin.com/`; // 웹 메인으로 유도
@@ -38,7 +38,7 @@ export function getWebFallback(platform: Platform, _brandName: string): string {
 
 export function openDeliveryApp(platform: Platform, brandName: string) {
   const deepLink = getDeepLink(platform, brandName);
-  const fallback = getWebFallback(platform, brandName);
+  const fallback = getWebFallback(platform);
 
   // 모바일 환경 체크 (간단한 정규식)
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -48,8 +48,13 @@ export function openDeliveryApp(platform: Platform, brandName: string) {
     return;
   }
 
-  let timeoutId: ReturnType<typeof setTimeout>;
   let cancelled = false;
+  const timeoutId = setTimeout(() => {
+    if (cancelled) return;
+    document.removeEventListener('visibilitychange', cancel);
+    window.removeEventListener('blur', cancel);
+    window.location.href = fallback;
+  }, 2500);
 
   const cancel = () => {
     if (cancelled) return;
@@ -66,12 +71,4 @@ export function openDeliveryApp(platform: Platform, brandName: string) {
 
   // 딥링크 실행 시도
   window.location.href = deepLink;
-
-  // 앱 미설치 등으로 딥링크가 작동하지 않을 경우 웹으로 이동 (2.5초 대기)
-  timeoutId = setTimeout(() => {
-    if (cancelled) return;
-    document.removeEventListener('visibilitychange', cancel);
-    window.removeEventListener('blur', cancel);
-    window.location.href = fallback;
-  }, 2500);
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { shareOrCopyLink } from '@/utils/share';
 
 export default function ShareButton() {
   const [copied, setCopied] = useState(false);
@@ -12,16 +13,10 @@ export default function ShareButton() {
       url: window.location.origin,
     };
 
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData);
-      } else {
-        await navigator.clipboard.writeText(window.location.origin);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      }
-    } catch (err) {
-      console.error('Share failed', err);
+    const ok = await shareOrCopyLink(shareData);
+    if (ok) {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     }
   };
 

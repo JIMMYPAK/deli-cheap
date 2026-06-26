@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   FilterState,
   FilterMethod,
@@ -38,12 +38,6 @@ const MIN_ORDER_OPTIONS: { value: number | null; label: string }[] = [
 
 export default function FilterPanel({ isOpen, onClose, filter, onApply }: FilterPanelProps) {
   const [draft, setDraft] = useState<FilterState>(filter);
-  const panelRef = useRef<HTMLDivElement>(null);
-
-  // Sync draft when panel opens
-  useEffect(() => {
-    if (isOpen) setDraft(filter);
-  }, [isOpen, filter]);
 
   // Prevent body scroll when open
   useEffect(() => {
@@ -92,7 +86,6 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
 
       {/* Panel */}
       <div
-        ref={panelRef}
         className={`fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-2xl shadow-2xl transition-transform duration-300 ease-out ${
           isOpen ? 'translate-y-0' : 'translate-y-full'
         }`}

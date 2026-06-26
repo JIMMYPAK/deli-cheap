@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { shareOrCopyLink } from '@/utils/share';
 
 export default function Header() {
   const [copied, setCopied] = useState(false);
@@ -12,17 +13,15 @@ export default function Header() {
       url: window.location.origin,
     };
 
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData);
-      } else {
-        await navigator.clipboard.writeText(window.location.origin);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      }
-    } catch (err) {
-      console.error('Share failed', err);
+    const ok = await shareOrCopyLink(shareData);
+    if (ok) {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     }
+  };
+
+  const focusSearch = () => {
+    document.getElementById('brand-search')?.focus();
   };
 
   return (
@@ -35,6 +34,7 @@ export default function Header() {
         <button
           onClick={handleShare}
           title={copied ? '링크 복사됨!' : '친구에게 공유하기'}
+          aria-label={copied ? '링크 복사됨' : '친구에게 공유하기'}
           className="p-2 text-gray-400 hover:text-gray-600 relative"
         >
           {copied ? (
@@ -43,7 +43,11 @@ export default function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
           )}
         </button>
-        <button className="p-2 -mr-2 text-gray-400 hover:text-gray-600">
+        <button
+          onClick={focusSearch}
+          aria-label="브랜드 검색창으로 이동"
+          className="p-2 -mr-2 text-gray-400 hover:text-gray-600"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
       </div>

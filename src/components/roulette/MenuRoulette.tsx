@@ -25,34 +25,43 @@ export default function MenuRoulette() {
 
   // Load user custom menus from localStorage
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(CUSTOM_MENU_STORAGE_KEY);
-      if (!raw) {
+    const timeoutId = window.setTimeout(() => {
+      try {
+        const raw = localStorage.getItem(CUSTOM_MENU_STORAGE_KEY);
+        if (!raw) {
+          setCustomLoaded(true);
+          return;
+        }
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) {
+          const normalized = parsed.filter(
+            (item): item is MenuItem =>
+              typeof item?.id === 'number' &&
+              typeof item?.name === 'string' &&
+              item.name.trim().length > 0
+          );
+          setCustomItems(normalized);
+        }
+      } catch {
+        // Ignore parse/storage errors and continue with defaults.
+      } finally {
         setCustomLoaded(true);
-        return;
       }
-      const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed)) {
-        const normalized = parsed.filter(
-          (item): item is MenuItem =>
-            typeof item?.id === 'number' &&
-            typeof item?.name === 'string' &&
-            item.name.trim().length > 0
-        );
-        setCustomItems(normalized);
-      }
-    } catch {
-      // Ignore parse/storage errors and continue with defaults.
-    } finally {
-      setCustomLoaded(true);
-    }
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   // Initialize with all items selected exactly once after custom menus are loaded
   useEffect(() => {
     if (!customLoaded || initializedSelectionRef.current) return;
-    setSelectedIds(allItems.map((item) => item.id));
-    initializedSelectionRef.current = true;
+    const timeoutId = window.setTimeout(() => {
+      if (initializedSelectionRef.current) return;
+      setSelectedIds(allItems.map((item) => item.id));
+      initializedSelectionRef.current = true;
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, [allItems, customLoaded]);
 
   // Persist custom menus

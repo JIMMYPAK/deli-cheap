@@ -1,12 +1,16 @@
+import Image from 'next/image';
 import { GroupedDiscount } from '@/types/discount';
 import PlatformBadge from '@/components/common/PlatformBadge';
 import { openDeliveryApp } from '@/utils/deepLink';
+import { getBrandIconPath } from '@/constants/brandIcons';
 
 interface DiscountCardProps {
   discount: GroupedDiscount;
 }
 
 export default function DiscountCard({ discount }: DiscountCardProps) {
+  const iconPath = getBrandIconPath(discount.brandKey);
+
   return (
     <div className={`relative bg-white border ${discount.isBest ? 'border-baemin shadow-md' : 'border-gray-200 shadow-sm'} p-5 rounded-xl flex flex-col gap-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md`}>
       {discount.isBest && (
@@ -17,14 +21,22 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
 
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2.5">
-          <img 
-            src={`/icons/${discount.brandKey}.png`} 
-            alt={`${discount.brandName} 로고`} 
-            className="w-7 h-7 object-contain rounded-md bg-gray-50"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
+          {iconPath ? (
+            <Image
+              src={iconPath}
+              alt={`${discount.brandName} 로고`}
+              width={28}
+              height={28}
+              className="w-7 h-7 object-contain rounded-md bg-gray-50"
+            />
+          ) : (
+            <div
+              aria-hidden="true"
+              className="w-7 h-7 rounded-md bg-baemin/10 text-baemin flex items-center justify-center text-xs font-black"
+            >
+              {discount.brandName.trim().slice(0, 1)}
+            </div>
+          )}
           <h3 className="text-lg font-black text-gray-900 tracking-tight">{discount.brandName}</h3>
         </div>
         <div className="flex flex-col items-end">

@@ -28,47 +28,51 @@ export function useDiscounts() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    async function loadLocalDiscounts() {
-      const response = await fetch('/data/discounts.json');
-      if (!response.ok) {
-        throw new Error(`Failed to load local discounts: ${response.status}`);
-      }
-      const localData = await response.json();
-      setDiscounts(localData);
-    }
+    let cancelled = false;
 
-    async function loadLocalDiscountMap(): Promise<Map<string, DiscountInfo>> {
+    async function loadLocalDiscounts(): Promise<DiscountInfo[]> {
       const response = await fetch('/data/discounts.json');
       if (!response.ok) {
         throw new Error(`Failed to load local discounts: ${response.status}`);
       }
-      const localData: DiscountInfo[] = await response.json();
-      return new Map(localData.map((row) => [row.id, row]));
+      return response.json();
     }
 
     async function fetchDiscounts() {
+      let localData: DiscountInfo[] = [];
+
       try {
+        localData = await loadLocalDiscounts();
+        if (!cancelled) {
+          setDiscounts(localData);
+          setLoading(false);
+        }
+      } catch (localErr) {
         if (!supabase) {
-          await loadLocalDiscounts();
+          if (!cancelled) {
+            setError(localErr instanceof Error ? localErr.message : 'Unknown error');
+            setLoading(false);
+          }
           return;
         }
+      }
 
-        const [{ data, error }, localById] = await Promise.all([
-          supabase
-            .from('discounts')
-            .select(
-              'sync_id, brand_name, platform, discount_amount, min_order_amount, description, category, method, delivery_types, special_condition, valid_until'
-            ),
-          loadLocalDiscountMap().catch(() => new Map<string, DiscountInfo>()),
-        ]);
+      if (!supabase) return;
 
+      try {
+        const localById = new Map(localData.map((row) => [row.id, row]));
+        const { data, error } = await supabase
+          .from('discounts')
+          .select(
+            'sync_id, brand_name, platform, discount_amount, min_order_amount, description, category, method, delivery_types, special_condition, valid_until'
+          );
+
+        if (cancelled) return;
         if (error) {
           throw error;
         }
         
-        if (!data || data.length === 0) {
-          await loadLocalDiscounts();
-        } else {
+        if (data && data.length > 0) {
           const mappedData: DiscountInfo[] = data.map(item => ({
             id: item.sync_id,
             brandName: item.brand_name,
@@ -86,25 +90,27 @@ export function useDiscounts() {
           setDiscounts(mappedData);
         }
       } catch (supabaseErr) {
-        // Supabase 실패 시에도 앱은 로컬 데이터로 동작한다.
+        // Supabase 실패 시에도 앱은 이미 로컬 데이터로 동작한다.
         console.warn('Supabase fetch failed. Falling back to local data.');
-        try {
-          await loadLocalDiscounts();
-        } catch (jsonErr) {
+        if (localData.length === 0 && !cancelled) {
           setError(
-            jsonErr instanceof Error
-              ? jsonErr.message
-              : supabaseErr instanceof Error
-                ? supabaseErr.message
-                : 'Unknown error'
+            supabaseErr instanceof Error
+              ? supabaseErr.message
+              : 'Unknown error'
           );
         }
       } finally {
-        setLoading(false);
+        if (!cancelled) {
+          setLoading(false);
+        }
       }
     }
 
     fetchDiscounts();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return { discounts, loading, error };

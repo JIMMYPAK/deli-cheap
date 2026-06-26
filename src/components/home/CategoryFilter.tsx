@@ -36,21 +36,21 @@ export default function CategoryFilter({ activeId, onSelect }: CategoryFilterPro
       {/* 1번째 행 */}
       <div className="grid grid-cols-5 gap-x-1 mb-1">
         {FIRST_ROW.map((cat) => (
-          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} />
         ))}
       </div>
 
       {/* 2번째 행 */}
       <div className="grid grid-cols-5 gap-x-1 mb-1">
         {SECOND_ROW.map((cat) => (
-          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} />
         ))}
       </div>
 
       {/* 3번째 행 */}
       <div className="grid grid-cols-5 gap-x-1">
         {THIRD_ROW.map((cat) => (
-          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} size="sm" />
+          <CatBtn key={cat.id} cat={cat} active={activeId === cat.id} onSelect={onSelect} />
         ))}
       </div>
     </div>
@@ -62,12 +62,10 @@ function CatBtn({
   cat,
   active,
   onSelect,
-  size,
 }: {
   cat: { id: Category; name: string; icon: string };
   active: boolean;
   onSelect: (id: Category) => void;
-  size: 'sm' | 'lg';
 }) {
   return (
     <button

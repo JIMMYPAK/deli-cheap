@@ -8,20 +8,25 @@ export function useFilter() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem('filterState');
-      if (saved) {
-        const parsed = JSON.parse(saved) as Partial<FilterState>;
-        setFilter({
-          platforms: Array.isArray(parsed.platforms) ? parsed.platforms : DEFAULT_FILTER.platforms,
-          methods: Array.isArray(parsed.methods) ? parsed.methods : DEFAULT_FILTER.methods,
-          maxMinOrder: parsed.maxMinOrder ?? null,
-        });
+    const timeoutId = window.setTimeout(() => {
+      try {
+        const saved = localStorage.getItem('filterState');
+        if (saved) {
+          const parsed = JSON.parse(saved) as Partial<FilterState>;
+          setFilter({
+            platforms: Array.isArray(parsed.platforms) ? parsed.platforms : DEFAULT_FILTER.platforms,
+            methods: Array.isArray(parsed.methods) ? parsed.methods : DEFAULT_FILTER.methods,
+            maxMinOrder: parsed.maxMinOrder ?? null,
+          });
+        }
+      } catch {
+        // ignore parse errors
+      } finally {
+        setLoaded(true);
       }
-    } catch {
-      // ignore parse errors
-    }
-    setLoaded(true);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   useEffect(() => {
