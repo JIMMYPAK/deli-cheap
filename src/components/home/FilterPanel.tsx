@@ -41,13 +41,20 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
 
   // Prevent body scroll when open
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [isOpen]);
+    if (!isOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isOpen, onClose]);
 
   const togglePlatform = (p: Platform) => {
     setDraft(prev => {
@@ -78,6 +85,7 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
     <>
       {/* Backdrop */}
       <div
+        aria-hidden="true"
         className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
@@ -86,6 +94,9 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
 
       {/* Panel */}
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="filter-panel-title"
         className={`fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-2xl shadow-2xl transition-transform duration-300 ease-out ${
           isOpen ? 'translate-y-0' : 'translate-y-full'
         }`}
@@ -98,8 +109,9 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
         <div className="px-5 pt-2 pb-4">
           {/* Header */}
           <div className="flex items-center justify-between mb-5">
-            <h2 className="text-base font-black text-gray-900">필터</h2>
+            <h2 id="filter-panel-title" className="text-base font-black text-gray-900">필터</h2>
             <button
+              type="button"
               onClick={onClose}
               className="p-1 text-gray-400 hover:text-gray-600"
               aria-label="닫기"
@@ -115,26 +127,25 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
             <div className="flex items-center justify-between mb-2.5">
               <p className="text-xs font-bold text-gray-700">플랫폼</p>
               <button
-                onClick={() =>
-                  setDraft(prev => ({
-                    ...prev,
-                    platforms: allPlatformsSelected ? [] : [...ALL_PLATFORMS],
-                  }))
-                }
+                type="button"
+                onClick={() => setDraft(prev => ({ ...prev, platforms: [...ALL_PLATFORMS] }))}
+                disabled={allPlatformsSelected}
                 className={`text-[11px] font-bold px-2 py-0.5 rounded-md transition-colors ${
                   allPlatformsSelected
                     ? 'text-baemin bg-baemin/10'
                     : 'text-gray-400 bg-gray-100 hover:bg-gray-200'
                 }`}
               >
-                {allPlatformsSelected ? '전체해제' : '전체선택'}
+                {allPlatformsSelected ? '전체 선택됨' : '전체선택'}
               </button>
             </div>
             <div className="flex gap-2 flex-wrap">
               {ALL_PLATFORMS.map(p => (
                 <button
                   key={p}
+                  type="button"
                   onClick={() => togglePlatform(p)}
+                  aria-pressed={draft.platforms.includes(p)}
                   className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-150 ${
                     draft.platforms.includes(p)
                       ? 'bg-baemin text-white shadow-sm shadow-baemin/25'
@@ -152,26 +163,25 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
             <div className="flex items-center justify-between mb-2.5">
               <p className="text-xs font-bold text-gray-700">주문방식</p>
               <button
-                onClick={() =>
-                  setDraft(prev => ({
-                    ...prev,
-                    methods: allMethodsSelected ? [] : [...ALL_FILTER_METHODS],
-                  }))
-                }
+                type="button"
+                onClick={() => setDraft(prev => ({ ...prev, methods: [...ALL_FILTER_METHODS] }))}
+                disabled={allMethodsSelected}
                 className={`text-[11px] font-bold px-2 py-0.5 rounded-md transition-colors ${
                   allMethodsSelected
                     ? 'text-baemin bg-baemin/10'
                     : 'text-gray-400 bg-gray-100 hover:bg-gray-200'
                 }`}
               >
-                {allMethodsSelected ? '전체해제' : '전체선택'}
+                {allMethodsSelected ? '전체 선택됨' : '전체선택'}
               </button>
             </div>
             <div className="flex gap-2">
               {ALL_FILTER_METHODS.map(m => (
                 <button
                   key={m}
+                  type="button"
                   onClick={() => toggleMethod(m)}
+                  aria-pressed={draft.methods.includes(m)}
                   className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-150 ${
                     draft.methods.includes(m)
                       ? 'bg-baemin text-white shadow-sm shadow-baemin/25'
@@ -191,7 +201,9 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
               {MIN_ORDER_OPTIONS.map(opt => (
                 <button
                   key={String(opt.value)}
+                  type="button"
                   onClick={() => setDraft(prev => ({ ...prev, maxMinOrder: opt.value }))}
+                  aria-pressed={draft.maxMinOrder === opt.value}
                   className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-150 ${
                     draft.maxMinOrder === opt.value
                       ? 'bg-baemin text-white shadow-sm shadow-baemin/25'
@@ -207,12 +219,14 @@ export default function FilterPanel({ isOpen, onClose, filter, onApply }: Filter
           {/* Footer buttons */}
           <div className="flex gap-2">
             <button
+              type="button"
               onClick={() => setDraft(DEFAULT_FILTER)}
               className="flex-1 py-3.5 rounded-xl text-sm font-bold bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors"
             >
               초기화
             </button>
             <button
+              type="button"
               onClick={() => { onApply(draft); onClose(); }}
               className="flex-[2] py-3.5 rounded-xl text-sm font-bold bg-baemin text-white hover:bg-baemin/90 transition-colors shadow-sm shadow-baemin/25"
             >

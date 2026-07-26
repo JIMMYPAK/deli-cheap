@@ -5,12 +5,19 @@ import './globals.css';
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
+  viewportFit: 'cover',
 };
 
 export const metadata: Metadata = {
-  title: '딜리칩 (Deli-Cheap) - 배달 앱 통합 쿠폰 비교',
+  applicationName: '딜리칩',
+  title: {
+    default: '딜리칩 - 배달 앱 할인 비교',
+    template: '%s | 딜리칩',
+  },
   description: '복잡한 배달어플들의 조건을 걷어내고, 지금 이 브랜드를 먹으려면 어느 앱이 가장 저렴한지 제공해주는 초직관적 비교 웹사이트',
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     title: '딜리칩 (Deli-Cheap)',
     description: '어느 배달앱이 가장 쌀까? 1초 만에 확인하세요.',
@@ -59,12 +66,12 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className="min-h-full flex flex-col bg-gray-50">
-        <main className="max-w-md mx-auto w-full min-h-screen bg-white shadow-sm flex flex-col">
+      <body className="min-h-full bg-gray-50">
+        <div className="max-w-md mx-auto w-full min-h-screen bg-white shadow-sm flex flex-col">
           <Header />
-          <div className="flex-1 flex flex-col">{children}</div>
+          <main className="flex-1 flex flex-col">{children}</main>
           <Footer />
-        </main>
+        </div>
       </body>
     </html>
   );

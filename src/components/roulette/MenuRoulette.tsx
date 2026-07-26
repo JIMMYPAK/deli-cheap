@@ -10,6 +10,7 @@ export default function MenuRoulette() {
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [customItems, setCustomItems] = useState<MenuItem[]>([]);
   const [customInput, setCustomInput] = useState('');
+  const [customError, setCustomError] = useState<string | null>(null);
   const [showCustomForm, setShowCustomForm] = useState(false);
   const [customLoaded, setCustomLoaded] = useState(false);
   const [isSpinning, setIsSpinning] = useState(false);
@@ -17,9 +18,10 @@ export default function MenuRoulette() {
   const [result, setResult] = useState<string | null>(null);
   const [rotation, setRotation] = useState(0);
   const [spinItems, setSpinItems] = useState<MenuItem[]>([]);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const spinTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const initializedSelectionRef = useRef(false);
-  const SPIN_DURATION_MS = 4200;
+  const spinDurationMs = prefersReducedMotion ? 80 : 4200;
   const baseItems = useMemo(() => MENU_CATEGORIES.flatMap((cat) => cat.items), []);
   const allItems = useMemo(() => [...baseItems, ...customItems], [baseItems, customItems]);
 
@@ -71,7 +73,13 @@ export default function MenuRoulette() {
   }, [customItems, customLoaded]);
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => setPrefersReducedMotion(mediaQuery.matches);
+    updatePreference();
+    mediaQuery.addEventListener('change', updatePreference);
+
     return () => {
+      mediaQuery.removeEventListener('change', updatePreference);
       if (spinTimeoutRef.current) {
         clearTimeout(spinTimeoutRef.current);
       }
@@ -115,8 +123,7 @@ export default function MenuRoulette() {
       (item) => item.name.trim().toLowerCase() === name.toLowerCase()
     );
     if (alreadyExists) {
-      setCustomInput('');
-      setShowCustomForm(false);
+      setCustomError('이미 있는 메뉴예요.');
       return;
     }
 
@@ -125,6 +132,7 @@ export default function MenuRoulette() {
     setCustomItems((prev) => [...prev, newItem]);
     setSelectedIds((prev) => [...new Set([...prev, customId])]);
     setCustomInput('');
+    setCustomError(null);
     setShowCustomForm(false);
   };
 
@@ -180,18 +188,21 @@ export default function MenuRoulette() {
     spinTimeoutRef.current = setTimeout(() => {
       setResult(targetItem.name);
       setIsSpinning(false);
-    }, SPIN_DURATION_MS);
+      spinTimeoutRef.current = null;
+    }, spinDurationMs);
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2 className={styles.title}>오늘 뭐 먹지?</h2>
+        <h2 id="roulette-title" className={styles.title}>오늘 뭐 먹지?</h2>
         <div className={styles.headerActions}>
           <button
             className={styles.addButton}
             onClick={() => setShowCustomForm((prev) => !prev)}
             type="button"
+            aria-expanded={showCustomForm}
+            aria-controls="custom-menu-form"
           >
             + 직접 추가
           </button>
@@ -207,13 +218,20 @@ export default function MenuRoulette() {
       </div>
 
       {showCustomForm && (
-        <div className={styles.customForm}>
+        <div id="custom-menu-form" className={styles.customForm}>
+          <label className={styles.visuallyHidden} htmlFor="custom-menu-input">
+            직접 추가할 메뉴
+          </label>
           <input
+            id="custom-menu-input"
             type="text"
             className={styles.customInput}
             placeholder="예: 커리"
             value={customInput}
-            onChange={(e) => setCustomInput(e.target.value)}
+            onChange={(e) => {
+              setCustomInput(e.target.value);
+              setCustomError(null);
+            }}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 e.preventDefault();
@@ -221,10 +239,16 @@ export default function MenuRoulette() {
               }
             }}
             maxLength={24}
+            aria-describedby={customError ? 'custom-menu-error' : undefined}
           />
           <button className={styles.customSubmit} onClick={addCustomItem} type="button">
             추가
           </button>
+          {customError && (
+            <p id="custom-menu-error" role="alert" className={styles.customError}>
+              {customError}
+            </p>
+          )}
         </div>
       )}
       
@@ -269,13 +293,18 @@ export default function MenuRoulette() {
           const isCatAllSelected = cat.items.every(i => selectedIds.includes(i.id));
           return (
             <div key={cat.id} className={styles.categoryGroup}>
-              <div className={styles.categoryHeader} onClick={() => toggleCategory(cat.id)}>
+              <button
+                type="button"
+                className={styles.categoryHeader}
+                onClick={() => toggleCategory(cat.id)}
+                aria-pressed={isCatAllSelected}
+              >
                 <span className={styles.categoryName}>{cat.name}</span>
                 {cat.description && <span className={styles.categoryDesc}>{cat.description}</span>}
                 <div className={`${styles.categoryCheck} ${isCatAllSelected ? styles.checked : ''}`}>
                   {isCatAllSelected ? '☑' : '☐'}
                 </div>
-              </div>
+              </button>
               <div className={styles.itemsGrid}>
                 {cat.items.map(item => (
                   <label key={item.id} className={`${styles.itemLabel} ${selectedIds.includes(item.id) ? styles.active : ''}`}>
@@ -295,6 +324,7 @@ export default function MenuRoulette() {
       </div>
 
       <button 
+        type="button"
         className={styles.spinButton} 
         onClick={spin}
         disabled={selectedIds.length === 0 || isSpinning}
@@ -309,9 +339,10 @@ export default function MenuRoulette() {
             <div className={styles.rouletteWrapper}>
               <div 
                 className={styles.wheel} 
+                aria-hidden="true"
                 style={{ 
                   transform: `rotate(${rotation}deg)`,
-                  transitionDuration: `${SPIN_DURATION_MS}ms`,
+                  transitionDuration: `${spinDurationMs}ms`,
                   background: wheelBackground,
                 }}
               >
@@ -349,12 +380,13 @@ export default function MenuRoulette() {
             </div>
 
             {result && !isSpinning && (
-              <div className={styles.resultBox}>
+              <div className={styles.resultBox} aria-live="polite">
                 <p className={styles.resultLabel}>오늘의 추천 메뉴는?</p>
                 <h3 className={styles.resultName}>{result}</h3>
                 <div className={styles.actionButtons}>
-                  <button className={styles.retryButton} onClick={spin}>다시 돌리기</button>
+                  <button type="button" className={styles.retryButton} onClick={spin}>다시 돌리기</button>
                   <button
+                    type="button"
                     className={styles.closeButton}
                     onClick={() => {
                       setResult(null);

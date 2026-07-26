@@ -3,8 +3,8 @@ export default function Footer() {
     <footer className="mt-auto p-6 text-center border-t border-gray-100 bg-gray-50/50">
       <p className="text-xs text-gray-400 leading-relaxed">
         © 2026 Deli-Cheap. <br />
-        테스트 버전이라 쿠폰 정보가 최신이 아닐 수 있습니다. <br />
-        실제 가격은 배달팁 등에 따라 다를 수 있습니다.
+        종료일이 확인된 만료 혜택은 자동으로 제외합니다. <br />
+        종료일 미확인 혜택과 실제 결제가는 주문 전 앱에서 확인해 주세요.
       </p>
     </footer>
   );

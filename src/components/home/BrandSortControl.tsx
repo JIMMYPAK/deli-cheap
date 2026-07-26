@@ -29,6 +29,7 @@ export default function BrandSortControl({ value, onChange, showRankOption, filt
               key={opt.id}
               type="button"
               onClick={() => onChange(opt.id)}
+              aria-pressed={value === opt.id}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-200
                 ${value === opt.id
                   ? 'bg-baemin text-white shadow-sm shadow-baemin/25'

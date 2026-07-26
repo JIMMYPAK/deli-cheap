@@ -1,17 +1,19 @@
-# Tech Stack: Deli-Cheap MVP
+# Tech Stack: Deli-Cheap
 
 ## Frontend
-* **Core:** React 18 (Vite)
-* **Language:** TypeScript (Strict mode)
-* **Styling:** Vanilla CSS (CSS Modules)
-* **State Management:** React Context API or Zustand (Minimalist)
-* **Navigation:** Next.js (App Router) - (Note: If Vite is preferred, we use React Router, but for SEO/Viral, Next.js is recommended in the PRD scope.)
+* **Runtime:** Node.js 22+
+* **Framework:** Next.js 16 App Router
+* **UI:** React 19
+* **Language:** TypeScript (strict mode)
+* **Styling:** Tailwind CSS 4 plus the roulette CSS Module
+* **State:** Local React state and validated browser `localStorage`
 
 ## Backend & Database
-* **Primary:** Supabase (Auth, Postgres DB)
-* **Storage:** Supabase Storage (for brand assets)
-* **Data Flow:** Daily 11:00 AM JSON Snapshot sync with Supabase Table.
+* **Primary:** Static validated JSON with optional Supabase Postgres refresh
+* **Assets:** Repository `public/icons`; Supabase Storage is not required by the current app
+* **Data flow:** Reviewed OCR JSON → `sync-all-data.js` → validation → public JSON → optional safe Supabase upsert
 
 ## DevOps
 * **Hosting:** Vercel (Auto-deploy)
-* **Analytics:** Google Analytics (User Tracking)
+* **Analytics:** Optional Google Analytics via `NEXT_PUBLIC_GA_ID`
+* **Quality:** ESLint, TypeScript, deterministic data validation, production build

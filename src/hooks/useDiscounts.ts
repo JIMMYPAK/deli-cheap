@@ -3,6 +3,14 @@
 import { useState, useEffect } from 'react';
 import { DiscountInfo } from '@/types/discount';
 import { supabase } from '@/utils/supabase';
+import { DiscountDataStats, filterCurrentDiscounts } from '@/utils/discounts';
+
+const EMPTY_STATS: DiscountDataStats = {
+  activeCount: 0,
+  expiredExcludedCount: 0,
+  unknownExpiryCount: 0,
+  source: 'local',
+};
 
 function toFiniteNumber(value: unknown, fallback = 0): number {
   if (value === null || value === undefined || value === '') return fallback;
@@ -26,6 +34,7 @@ export function useDiscounts() {
   const [discounts, setDiscounts] = useState<DiscountInfo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [stats, setStats] = useState<DiscountDataStats>(EMPTY_STATS);
 
   useEffect(() => {
     let cancelled = false;
@@ -44,7 +53,9 @@ export function useDiscounts() {
       try {
         localData = await loadLocalDiscounts();
         if (!cancelled) {
-          setDiscounts(localData);
+          const currentLocal = filterCurrentDiscounts(localData, 'local');
+          setDiscounts(currentLocal.discounts);
+          setStats(currentLocal.stats);
           setLoading(false);
         }
       } catch (localErr) {
@@ -73,7 +84,7 @@ export function useDiscounts() {
         }
         
         if (data && data.length > 0) {
-          const mappedData: DiscountInfo[] = data.map(item => ({
+          const mappedData: DiscountInfo[] = data.map((item) => ({
             id: item.sync_id,
             brandName: item.brand_name,
             platform: item.platform,
@@ -85,13 +96,18 @@ export function useDiscounts() {
             method: item.method === '픽업' ? '포장' : item.method,
             deliveryTypes: item.delivery_types ?? [],
             specialCondition: item.special_condition ?? null,
-            validUntil: item.valid_until ?? undefined
+            validUntil: item.valid_until ?? undefined,
           }));
-          setDiscounts(mappedData);
+          const currentRemote = filterCurrentDiscounts(mappedData, 'supabase');
+          if (currentRemote.discounts.length > 0 || localData.length === 0) {
+            setDiscounts(currentRemote.discounts);
+            setStats(currentRemote.stats);
+          }
+          setError(null);
         }
       } catch (supabaseErr) {
         // Supabase 실패 시에도 앱은 이미 로컬 데이터로 동작한다.
-        console.warn('Supabase fetch failed. Falling back to local data.');
+        console.warn('Supabase fetch failed. Falling back to local data.', supabaseErr);
         if (localData.length === 0 && !cancelled) {
           setError(
             supabaseErr instanceof Error
@@ -113,5 +129,5 @@ export function useDiscounts() {
     };
   }, []);
 
-  return { discounts, loading, error };
+  return { discounts, loading, error, stats };
 }

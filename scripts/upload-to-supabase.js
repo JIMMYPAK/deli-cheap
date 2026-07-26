@@ -11,12 +11,17 @@ if (!supabaseUrl || !supabaseServiceRoleKey) {
   process.exit(1);
 }
 
-const supabase = createClient(supabaseUrl, supabaseServiceRoleKey);
+const supabase = createClient(supabaseUrl, supabaseServiceRoleKey, {
+  auth: { persistSession: false, autoRefreshToken: false },
+});
 
 async function uploadToSupabase() {
   try {
     const dataPath = path.join(process.cwd(), 'public/data/discounts.json');
     const discountsData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    if (!Array.isArray(discountsData) || discountsData.length === 0) {
+      throw new Error('Refusing to sync an empty discounts dataset.');
+    }
 
     console.log(`Starting upload of ${discountsData.length} items to Supabase...`);
 
@@ -28,8 +33,7 @@ async function uploadToSupabase() {
       discount_amount: item.discountAmount,
       min_order_amount: item.minOrderAmount,
       description: item.description,
-      // salad 카테고리가 DB enum에 아직 없을 수 있으므로 burger로 매핑하여 업로드
-      category: item.category === 'salad' ? 'burger' : item.category,
+      category: item.category,
       // DB enum은 '픽업'을 사용하므로 '포장'→'픽업'으로 매핑 (UI에서는 항상 '포장' 표시)
       method: item.method === '포장' ? '픽업' : item.method,
       delivery_types: item.deliveryTypes,
@@ -38,28 +42,43 @@ async function uploadToSupabase() {
       updated_at: new Date().toISOString()
     }));
 
-    // 1. Delete all existing data
-    console.log('Clearing old data from Supabase...');
-    const { error: deleteError } = await supabase
+    // 새 데이터부터 upsert한다. 실패해도 기존 운영 데이터는 유지된다.
+    console.log('Upserting current data...');
+    const { error: upsertError } = await supabase
       .from('discounts')
-      .delete()
-      .not('sync_id', 'is', null); // Delete all rows
+      .upsert(mappedData, { onConflict: 'sync_id' });
 
-    if (deleteError) {
-      throw new Error(`Failed to delete old data: ${deleteError.message}`);
+    if (upsertError) {
+      throw new Error(`Failed to upsert data: ${upsertError.message}`);
     }
 
-    // 2. Insert new data
-    console.log('Inserting new data...');
-    const { error: insertError } = await supabase
+    // upsert 성공 뒤에만 더 이상 존재하지 않는 이전 행을 정리한다.
+    const { data: existingRows, error: selectError } = await supabase
       .from('discounts')
-      .insert(mappedData);
+      .select('sync_id');
 
-    if (insertError) {
-      throw new Error(`Failed to insert new data: ${insertError.message}`);
+    if (selectError) {
+      throw new Error(`Failed to read existing ids: ${selectError.message}`);
     }
 
-    console.log('Successfully cleared old data and uploaded new data to Supabase!');
+    const currentIds = new Set(mappedData.map((item) => item.sync_id));
+    const staleIds = (existingRows || [])
+      .map((item) => item.sync_id)
+      .filter((id) => id && !currentIds.has(id));
+
+    for (let index = 0; index < staleIds.length; index += 100) {
+      const chunk = staleIds.slice(index, index + 100);
+      const { error: deleteError } = await supabase
+        .from('discounts')
+        .delete()
+        .in('sync_id', chunk);
+
+      if (deleteError) {
+        throw new Error(`Failed to delete stale data: ${deleteError.message}`);
+      }
+    }
+
+    console.log(`Successfully synced ${mappedData.length} rows and removed ${staleIds.length} stale rows.`);
   } catch (err) {
     console.error('Error during upload to Supabase:', err.message);
     process.exit(1);

@@ -10,6 +10,9 @@ interface DiscountCardProps {
 
 export default function DiscountCard({ discount }: DiscountCardProps) {
   const iconPath = getBrandIconPath(discount.brandKey);
+  const benefitLabel = discount.totalMaxDiscount > 0
+    ? `-${discount.totalMaxDiscount.toLocaleString()}원`
+    : '적립 혜택';
 
   return (
     <div className={`relative bg-white border ${discount.isBest ? 'border-baemin shadow-md' : 'border-gray-200 shadow-sm'} p-5 rounded-xl flex flex-col gap-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md`}>
@@ -41,7 +44,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
         </div>
         <div className="flex flex-col items-end">
           <span className="text-gray-400 text-[10px] font-bold mb-0.5">최대 혜택</span>
-          <span className="text-baemin font-black text-xl tracking-tight">-{discount.totalMaxDiscount.toLocaleString()}원</span>
+          <span className="text-baemin font-black text-xl tracking-tight">{benefitLabel}</span>
         </div>
       </div>
 
@@ -57,7 +60,9 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
                 </span>
               </div>
               <button 
-                onClick={() => openDeliveryApp(platformGroup.platform, discount.brandName)}
+                type="button"
+                onClick={() => openDeliveryApp(platformGroup.platform, discount.brandKey)}
+                aria-label={`${discount.brandName} ${platformGroup.platform === 'baemin' ? '배달의민족' : platformGroup.platform === 'yogiyo' ? '요기요' : platformGroup.platform === 'ttangyo' ? '땡겨요' : '쿠팡이츠'} 앱 열기`}
                 className="text-[11px] font-bold text-baemin flex items-center gap-0.5 bg-baemin/5 px-2 py-1 rounded-md transition-colors hover:bg-baemin/10"
               >
                 앱 열기 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -112,7 +117,7 @@ export default function DiscountCard({ discount }: DiscountCardProps) {
                       </span>
                       {coupon.validUntil && (
                         <span className="text-gray-400 font-medium">
-                          ~{new Date(coupon.validUntil).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}
+                          ~{new Date(`${coupon.validUntil}T00:00:00+09:00`).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}
                         </span>
                       )}
                     </div>

@@ -1,80 +1,17 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CategoryFilter from '@/components/home/CategoryFilter';
+import DataNotice from '@/components/home/DataNotice';
 import DiscountCard from '@/components/home/DiscountCard';
 import FilterPanel from '@/components/home/FilterPanel';
 import { useDiscounts } from '@/hooks/useDiscounts';
 import { useFilter } from '@/hooks/useFilter';
-import { GroupedDiscount, Category, BrandSortMode, ALL_PLATFORMS, ALL_FILTER_METHODS } from '@/types/discount';
-import { compareBrandsByRank, categoryHasSurveyRank } from '@/constants/brandRank';
+import { useProcessedDiscounts } from '@/hooks/useProcessedDiscounts';
+import { BrandSortMode, Category } from '@/types/discount';
+import { isCategory } from '@/utils/discounts';
 import BrandSortControl from '@/components/home/BrandSortControl';
 import MenuRoulette from '@/components/roulette/MenuRoulette';
-
-const BRAND_ALIASES: Record<string, string[]> = {
-  '7번가피자': ['7번가'],
-  'BBQ': ['bbq', '비비큐'],
-  'BHC': ['bhc', '비에이치씨', '비에이치시'],
-  'COFFEE@WORKS': ['커앳웍'],
-  'Mad for Garlic': ['매포갈', '매드포갈릭'],
-  'PASCUCCI': ['파쿠', '파스쿠찌', '파스쿠치'],
-  'Tim Hortons': ['팀홀튼'],
-  'jamba': ['잠바', '잠바주스'],
-  '교촌치킨': ['교촌'],
-  '굽네치킨': ['굽네'],
-  '꾸브라꼬숯불치킨': ['꾸브라꼬'],
-  '네네치킨': ['네네'],
-  '노모어피자': ['노모어'],
-  '도미노피자': ['도미노'],
-  '동대문엽기떡볶이': ['엽떡', '엽기떡볶이', '동대문엽떡'],
-  '두찜': ['두마리 찜닭', '두마리찜닭'],
-  '뚜레쥬르': ['뚜쥬'],
-  '롯데리아': ['롯리'],
-  '맘스터치': ['맘터'],
-  '맥도날드': ['맥날'],
-  '반올림피자': ['반올림'],
-  '배스킨라빈스': ['베라', '배라', '베스킨라빈스', '배스킨'],
-  '버거킹': ['벜', '버킹'],
-  '본스치킨': ['본스'],
-  '빅스타피자': ['빅스타'],
-  '쉐이크쉑': ['쉑쉑버거', '쉑쉑'],
-  '오븐마루치킨': ['오븐마루'],
-  '오븐에빠진닭': ['오빠닭'],
-  '유로코피자': ['유로코'],
-  '육회바른연어': ['육바연'],
-  '자담치킨': ['자담'],
-  '지코바치킨': ['지코바'],
-  '처갓집양념치킨': ['처갓집'],
-  '청년피자': ['청피'],
-  '치킨플러스': ['치플'],
-  '투존치킨': ['투존'],
-  '티바두마리치킨': ['티바'],
-  '파리바게뜨': ['파바', '파리바게트'],
-  '피자헛': ['핏자헛'],
-  '호식이두마리치킨': ['호식이'],
-};
-
-// 특정 브랜드가 추가로 포함될 카테고리 (DB 카테고리 외 추가 노출)
-const EXTRA_CATEGORIES: Record<string, Category[]> = {
-  '맘스터치': ['burger'],
-  '치킨플러스': ['bunsik'],
-  '치킨플러스&떡볶이': ['bunsik'],
-  '샐러디': ['salad'],
-  '샐러리아': ['salad'],
-  '포케올데이': ['salad'],
-  '포케올데이 샐러드&도시락': ['salad'],
-};
-
-// 영문 브랜드명 → 한글 표기 병기 맵
-const BRAND_KO_LABEL: Record<string, string> = {
-  'BBQ': 'BBQ',
-  'BHC': 'BHC',
-  'COFFEE@WORKS': 'COFFEE@WORKS 커피앳웍스',
-  'Mad for Garlic': 'Mad for Garlic 매드포갈릭',
-  'PASCUCCI': 'PASCUCCI 파스쿠찌',
-  'Tim Hortons': 'Tim Hortons 팀홀튼',
-  'jamba': 'jamba 잠바주스',
-};
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
@@ -83,30 +20,34 @@ export default function Home() {
   const [filterOpen, setFilterOpen] = useState(false);
   const [rouletteOpen, setRouletteOpen] = useState(false);
   const [showRouletteHint, setShowRouletteHint] = useState(true);
-  const { discounts, loading, error } = useDiscounts();
+  const [preferencesLoaded, setPreferencesLoaded] = useState(false);
+  const rouletteCloseButtonRef = useRef<HTMLButtonElement>(null);
+  const { discounts, loading, error, stats } = useDiscounts();
   const { filter, setFilter, isFilterActive, activeFilterCount } = useFilter();
 
   // Load state from localStorage on mount
   useEffect(() => {
-    const init = () => {
+    try {
       const savedCategory = localStorage.getItem('selectedCategory');
       const savedSearch = localStorage.getItem('searchQuery');
       const savedSort = localStorage.getItem('brandSortMode');
-      if (savedCategory) setSelectedCategory(savedCategory as Category);
+      if (savedCategory && isCategory(savedCategory)) setSelectedCategory(savedCategory);
       if (savedSearch) setSearchQuery(savedSearch);
       if (savedSort === 'rank' || savedSort === 'discount' || savedSort === 'minOrder') {
         setBrandSortMode(savedSort);
       }
-    };
-    init();
+    } finally {
+      setPreferencesLoaded(true);
+    }
   }, []);
 
   // Save state to localStorage whenever it changes
   useEffect(() => {
+    if (!preferencesLoaded) return;
     localStorage.setItem('selectedCategory', selectedCategory);
     localStorage.setItem('searchQuery', searchQuery);
     localStorage.setItem('brandSortMode', brandSortMode);
-  }, [selectedCategory, searchQuery, brandSortMode]);
+  }, [brandSortMode, preferencesLoaded, searchQuery, selectedCategory]);
 
   // 스크롤을 시작하면 떠다니는 다이스의 안내 문구를 숨긴다.
   useEffect(() => {
@@ -118,162 +59,34 @@ export default function Home() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const searchActive = searchQuery.trim().length > 0;
-  const showRankOption =
-    selectedCategory !== 'all' &&
-    (searchActive || categoryHasSurveyRank(selectedCategory));
+  useEffect(() => {
+    if (!rouletteOpen) return;
 
-  const effectiveSortMode: BrandSortMode =
-    !showRankOption && brandSortMode === 'rank' ? 'discount' : brandSortMode;
+    const previousOverflow = document.body.style.overflow;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setRouletteOpen(false);
+    };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKeyDown);
+    window.requestAnimationFrame(() => rouletteCloseButtonRef.current?.focus());
 
-  const processedDiscounts = useMemo((): GroupedDiscount[] => {
-    const platformFiltered = filter.platforms.length < ALL_PLATFORMS.length;
-    const methodFiltered = filter.methods.length < ALL_FILTER_METHODS.length;
-    const platformSet = new Set(filter.platforms);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [rouletteOpen]);
 
-    // 1. Filter by category, search, platform, and method
-    const filtered = discounts.filter(d => {
-      const searchLower = searchQuery.toLowerCase().trim();
-      
-      // 검색어가 있으면 카테고리 무시하고 전체에서 검색
-      const extraCategories = EXTRA_CATEGORIES[d.brandName] ?? [];
-      const matchesCategory = searchLower ? true : (
-        selectedCategory === 'all' ||
-        d.category === selectedCategory ||
-        extraCategories.includes(selectedCategory)
-      );
-      
-      const brandNameLower = d.brandName.toLowerCase();
-      const brandLabelLower = (BRAND_KO_LABEL[d.brandName] ?? d.brandName).toLowerCase();
-
-      let matchesSearch = searchLower
-        ? brandNameLower.includes(searchLower) || brandLabelLower.includes(searchLower)
-        : true;
-
-      if (!matchesSearch && searchLower) {
-        for (const [officialBrand, aliases] of Object.entries(BRAND_ALIASES)) {
-          if (
-            aliases.some(alias => alias.toLowerCase().includes(searchLower) || searchLower.includes(alias.toLowerCase())) &&
-            (brandNameLower.includes(officialBrand.toLowerCase()) || officialBrand.toLowerCase().includes(brandNameLower))
-          ) {
-            matchesSearch = true;
-            break;
-          }
-        }
-      }
-
-      // Platform filter
-      if (platformFiltered && !platformSet.has(d.platform)) return false;
-
-      // Method filter: '전체' coupons always pass; '배달'/'포장' checked against selected methods
-      if (methodFiltered && d.method !== '전체') {
-        const m = d.method as '배달' | '포장';
-        if (!filter.methods.includes(m)) return false;
-      }
-
-      return matchesCategory && matchesSearch;
-    });
-
-    // 2. Group by brandName only
-    const brandGroups: Record<string, GroupedDiscount> = {};
-    filtered.forEach(d => {
-      const brandKey = d.brandName;
-      if (!brandGroups[brandKey]) {
-        brandGroups[brandKey] = {
-          id: brandKey,
-          brandKey: brandKey,
-          brandName: BRAND_KO_LABEL[d.brandName] ?? d.brandName,
-          category: d.category,
-          platforms: [],
-          totalMaxDiscount: 0,
-          minOrderLowest: Number.POSITIVE_INFINITY,
-          isBest: false
-        };
-      }
-
-      // 적립 혜택(discount:0)은 최소주문금액 계산에서 제외
-      if (d.discountAmount > 0) {
-        brandGroups[brandKey].minOrderLowest = Math.min(
-          brandGroups[brandKey].minOrderLowest,
-          d.minOrderAmount
-        );
-      }
-
-      let platformGroup = brandGroups[brandKey].platforms.find(p => p.platform === d.platform);
-      if (!platformGroup) {
-        platformGroup = {
-          platform: d.platform,
-          coupons: [],
-          maxDiscount: 0
-        };
-        brandGroups[brandKey].platforms.push(platformGroup);
-      }
-
-      platformGroup.coupons.push({
-        discountAmount: d.discountAmount,
-        minOrderAmount: d.minOrderAmount,
-        description: d.description,
-        method: d.method,
-        deliveryTypes: d.deliveryTypes,
-        specialCondition: d.specialCondition,
-        validUntil: d.validUntil,
-      });
-
-      if (d.discountAmount > platformGroup.maxDiscount) {
-        platformGroup.maxDiscount = d.discountAmount;
-      }
-      if (d.discountAmount > brandGroups[brandKey].totalMaxDiscount) {
-        brandGroups[brandKey].totalMaxDiscount = d.discountAmount;
-      }
-    });
-
-    // Sort platforms and coupons
-    Object.values(brandGroups).forEach(brand => {
-      // Sort platforms by maxDiscount descending
-      brand.platforms.sort((a, b) => b.maxDiscount - a.maxDiscount);
-      // Sort coupons in each platform by discountAmount descending
-      brand.platforms.forEach(p => {
-        p.coupons.sort((a, b) => b.discountAmount - a.discountAmount);
-      });
-    });
-
-    let groups = Object.values(brandGroups).map((g) => ({
-      ...g,
-      minOrderLowest: Number.isFinite(g.minOrderLowest) ? g.minOrderLowest : 0,
-    }));
-
-    // Min order ceiling filter
-    if (filter.maxMinOrder !== null) {
-      groups = groups.filter(g => g.minOrderLowest <= filter.maxMinOrder!);
-    }
-
-    // 3. Find the maximum discount among all visible brands
-    const globalMaxDiscount = groups.reduce((max, g) => Math.max(max, g.totalMaxDiscount), 0);
-
-    // 4. Mark isBest for brands that offer the absolute maximum discount in current view (if it's a significant discount)
-    const withBest = groups.map(g => ({
-      ...g,
-      isBest: globalMaxDiscount > 0 && g.totalMaxDiscount === globalMaxDiscount && g.totalMaxDiscount >= 4000
-    }));
-
-    const sorted = [...withBest].sort((a, b) => {
-      if (effectiveSortMode === 'discount') {
-        if (b.totalMaxDiscount !== a.totalMaxDiscount) {
-          return b.totalMaxDiscount - a.totalMaxDiscount;
-        }
-        return compareBrandsByRank(a, b);
-      }
-      if (effectiveSortMode === 'minOrder') {
-        if (a.minOrderLowest !== b.minOrderLowest) {
-          return a.minOrderLowest - b.minOrderLowest;
-        }
-        return compareBrandsByRank(a, b);
-      }
-      return compareBrandsByRank(a, b);
-    });
-
-    return sorted;
-  }, [discounts, selectedCategory, searchQuery, effectiveSortMode, filter]);
+  const {
+    discounts: processedDiscounts,
+    effectiveSortMode,
+    showRankOption,
+  } = useProcessedDiscounts({
+    discounts,
+    selectedCategory,
+    searchQuery,
+    sortMode: brandSortMode,
+    filter,
+  });
 
   return (
     <div className="flex flex-col">
@@ -283,6 +96,7 @@ export default function Home() {
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           <input 
             id="brand-search"
+            aria-label="브랜드명 검색"
             type="text" 
             placeholder="브랜드명을 검색해보세요" 
             className="bg-transparent border-none outline-none w-full text-sm font-medium placeholder:text-gray-400"
@@ -326,6 +140,8 @@ export default function Home() {
         }
       />
 
+      {!loading && !error && <DataNotice stats={stats} />}
+
       {filterOpen && (
         <FilterPanel
           isOpen={filterOpen}
@@ -345,6 +161,13 @@ export default function Home() {
         ) : error ? (
           <div className="py-12 text-center text-gray-400">
             <p className="text-sm">정보를 불러오지 못했습니다.</p>
+            <button
+              type="button"
+              onClick={() => window.location.reload()}
+              className="mt-3 rounded-lg bg-gray-100 px-3 py-2 text-xs font-bold text-gray-600"
+            >
+              다시 시도
+            </button>
           </div>
         ) : processedDiscounts.length > 0 ? (
           <div className="flex flex-col gap-5 mb-8">
@@ -355,7 +178,9 @@ export default function Home() {
         ) : (
           <div className="py-20 flex flex-col items-center justify-center text-center text-gray-400">
             <p className="text-sm font-medium">
-              현재 진행 중인 할인이 없습니다.
+              {searchQuery.trim() || isFilterActive
+                ? '조건에 맞는 할인 정보가 없습니다.'
+                : '현재 확인된 진행 중 할인이 없습니다.'}
             </p>
           </div>
         )}
@@ -364,8 +189,9 @@ export default function Home() {
       {/* Roulette FAB */}
       <button
         onClick={() => setRouletteOpen(true)}
+        type="button"
         aria-label="메뉴 룰렛 열기"
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-end"
+        className="roulette-fab fixed bottom-6 z-50 flex items-center justify-end"
       >
         <span
           className={`pointer-events-none mr-2 rounded-full bg-black/80 px-3 py-1.5 text-xs font-bold text-white shadow transition-all duration-300 ${
@@ -383,10 +209,22 @@ export default function Home() {
 
       {/* Roulette Modal */}
       {rouletteOpen && (
-        <div className="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative p-2 shadow-2xl">
+        <div
+          className="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4"
+          onClick={() => setRouletteOpen(false)}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="roulette-title"
+            className="bg-white rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto relative p-2 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
             <button 
+              ref={rouletteCloseButtonRef}
               onClick={() => setRouletteOpen(false)}
+              type="button"
+              aria-label="메뉴 룰렛 닫기"
               className="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-500 font-bold z-10 hover:bg-gray-200"
             >
               ✕

@@ -69,7 +69,9 @@ function CatBtn({
 }) {
   return (
     <button
+      type="button"
       onClick={() => onSelect(cat.id)}
+      aria-pressed={active}
       className="flex flex-col items-center gap-1 group py-1"
     >
       <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl transition-all duration-200

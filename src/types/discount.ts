@@ -19,6 +19,24 @@ export const DEFAULT_FILTER: FilterState = {
 
 export type Category = 'all' | 'chicken' | 'korean' | 'bunsik' | 'pizza' | 'meat' | 'chinese' | 'japanese' | 'burger' | 'western' | 'cafe' | 'bakery' | 'salad';
 
+export type DiscountCategory = Exclude<Category, 'all'>;
+
+export const ALL_CATEGORIES: Category[] = [
+  'all',
+  'chicken',
+  'korean',
+  'bunsik',
+  'pizza',
+  'meat',
+  'chinese',
+  'japanese',
+  'burger',
+  'western',
+  'cafe',
+  'bakery',
+  'salad',
+];
+
 /** 브랜드 카드 목록 정렬 */
 export type BrandSortMode = 'rank' | 'discount' | 'minOrder';
 
@@ -42,7 +60,7 @@ export interface DiscountInfo {
   minOrderAmount: number;
   description?: string;
   validUntil?: string;
-  category: Category;
+  category: DiscountCategory;
   isBest?: boolean;
   method: Method;
   deliveryTypes: string[];
@@ -59,7 +77,7 @@ export interface GroupedDiscount {
   id: string;
   brandKey: string;
   brandName: string;
-  category: Category;
+  category: DiscountCategory;
   platforms: PlatformGroup[];
   totalMaxDiscount: number;
   /** 브랜드 내 쿠폰 중 최소 주문 금액이 가장 작은 값 (정렬·비교용) */

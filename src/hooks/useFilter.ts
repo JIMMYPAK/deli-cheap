@@ -2,6 +2,26 @@
 
 import { useState, useEffect } from 'react';
 import { FilterState, DEFAULT_FILTER, ALL_PLATFORMS, ALL_FILTER_METHODS } from '@/types/discount';
+import { isFilterMethod, isPlatform } from '@/utils/discounts';
+
+function normalizeSavedFilter(value: Partial<FilterState>): FilterState {
+  const platforms = Array.isArray(value.platforms)
+    ? value.platforms.filter(isPlatform)
+    : [];
+  const methods = Array.isArray(value.methods)
+    ? value.methods.filter(isFilterMethod)
+    : [];
+  const maxMinOrder =
+    typeof value.maxMinOrder === 'number' && value.maxMinOrder > 0
+      ? value.maxMinOrder
+      : null;
+
+  return {
+    platforms: platforms.length > 0 ? platforms : [...DEFAULT_FILTER.platforms],
+    methods: methods.length > 0 ? methods : [...DEFAULT_FILTER.methods],
+    maxMinOrder,
+  };
+}
 
 export function useFilter() {
   const [filter, setFilter] = useState<FilterState>(DEFAULT_FILTER);
@@ -13,11 +33,7 @@ export function useFilter() {
         const saved = localStorage.getItem('filterState');
         if (saved) {
           const parsed = JSON.parse(saved) as Partial<FilterState>;
-          setFilter({
-            platforms: Array.isArray(parsed.platforms) ? parsed.platforms : DEFAULT_FILTER.platforms,
-            methods: Array.isArray(parsed.methods) ? parsed.methods : DEFAULT_FILTER.methods,
-            maxMinOrder: parsed.maxMinOrder ?? null,
-          });
+          setFilter(normalizeSavedFilter(parsed));
         }
       } catch {
         // ignore parse errors
@@ -44,7 +60,5 @@ export function useFilter() {
     (filter.methods.length < ALL_FILTER_METHODS.length ? 1 : 0) +
     (filter.maxMinOrder !== null ? 1 : 0);
 
-  const resetFilter = () => setFilter(DEFAULT_FILTER);
-
-  return { filter, setFilter, isFilterActive, activeFilterCount, resetFilter };
+  return { filter, setFilter, isFilterActive, activeFilterCount };
 }

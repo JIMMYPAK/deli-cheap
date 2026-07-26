@@ -76,9 +76,30 @@
 
 .customForm {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 12px;
   padding: 0 4px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.customError {
+  flex-basis: 100%;
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 .customInput {
@@ -117,6 +138,7 @@
 }
 
 .categoryHeader {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -126,6 +148,9 @@
   margin-bottom: 6px;
   cursor: pointer;
   transition: background 0.2s;
+  border: 0;
+  font: inherit;
+  text-align: left;
 }
 
 .categoryHeader:hover {
@@ -185,7 +210,16 @@
 }
 
 .hiddenCheckbox {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.itemLabel:has(.hiddenCheckbox:focus-visible) {
+  outline: 3px solid rgba(42, 193, 188, 0.35);
+  outline-offset: 2px;
 }
 
 .itemName {
@@ -233,6 +267,12 @@
   box-shadow: 0 2px 0 #23a09b;
 }
 
+.spinButton:disabled {
+  cursor: not-allowed;
+  background: #cbd5e1;
+  box-shadow: 0 4px 0 #94a3b8;
+}
+
 /* Overlay and Wheel Styles */
 .overlay {
   position: absolute;
@@ -258,14 +298,6 @@
   width: 100%;
   text-align: center;
   padding: 6px 0;
-}
-
-.categoryCheck {
-  margin-left: auto;
-  font-size: 1.1rem;
-  color: #ccc;
-  font-weight: normal;
-  transition: all 0.2s;
 }
 
 .categoryCheck.checked {
@@ -345,42 +377,6 @@
   will-change: transform;
 }
 
-.wheelBg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(
-    #2ac1bc 0deg 45deg,
-    #fff 45deg 90deg,
-    #2ac1bc 90deg 135deg,
-    #fff 135deg 180deg,
-    #2ac1bc 180deg 225deg,
-    #fff 225deg 270deg,
-    #2ac1bc 270deg 315deg,
-    #fff 315deg 360deg
-  );
-  opacity: 0.3;
-}
-
-.wheelCenter {
-  width: 60%;
-  height: 60%;
-  background: white;
-  border-radius: 50%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid #2ac1bc;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
-}
-
-.wheelText {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #333;
-}
-
 .pointer {
   position: absolute;
   top: -14px;
@@ -443,4 +439,18 @@
   font-weight: 800;
   cursor: pointer;
   flex: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .resultBox {
+    animation: none;
+  }
+
+  .wheel,
+  .itemLabel,
+  .categoryHeader,
+  .spinButton {
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const platformMap = {
   '배달의민족': 'baemin',
@@ -53,6 +54,7 @@ const categoryMap = {
   '꾸브라꼬 숯불치킨': 'chicken',
   '바른치킨': 'chicken',
   '해두리치킨': 'chicken',
+  '노랑통닭': 'chicken',
   'BHC치킨': 'chicken',
   '치킨플러스&떡볶이': 'chicken',
   '꾸브라꼬숯불두마리치킨': 'chicken',
@@ -78,6 +80,8 @@ const categoryMap = {
   '맘스터치피자앤치킨': 'pizza',
   '맘스터치 피자앤치킨': 'pizza',
   '맘스피자': 'pizza',
+  '피자마루': 'pizza',
+  '선명희피자': 'pizza',
 
   // Burger
   '롯데리아': 'burger',
@@ -90,6 +94,7 @@ const categoryMap = {
   '버거리': 'burger',
   '다운타우너': 'burger',
   '왓더버거': 'burger',
+  '이삭토스트': 'burger',
 
   // Salad
   '샐러디': 'salad',
@@ -127,9 +132,16 @@ const categoryMap = {
   '기떡찜': 'bunsik',
   '강다짐': 'bunsik',
   '지지고': 'bunsik',
+  '감탄떡볶이': 'bunsik',
+  '삼첩분식': 'bunsik',
+  '죠스떡볶이': 'bunsik',
+  '응급실국물떡볶이': 'bunsik',
 
   // Meat
   '미스터보쌈&삼겹': 'meat',
+  '직구삼': 'meat',
+  '청년고기장수': 'meat',
+  '존가네': 'meat',
 
   // Chinese
   '마라공방': 'chinese',
@@ -161,11 +173,16 @@ const categoryMap = {
   '영커피': 'cafe',
   '요아잇': 'cafe',
   '카페인중독': 'cafe',
+  '공차': 'cafe',
+  '폴바셋': 'cafe',
+  '카페베네': 'cafe',
+  '디저트39': 'cafe',
 
   // Bakery
   '뚜레쥬르': 'bakery',
   '파리바게뜨': 'bakery',
   '오베이글하우스': 'bakery',
+  '던킨': 'bakery',
 };
 
 function readJson(filename) {
@@ -182,6 +199,26 @@ const yoData = readJson('YO.json');
 const ttangData = readJson('TTANG.json');
 
 const allRawData = [...bmData, ...coupData, ...yoData, ...ttangData];
+
+const unknownPlatforms = [...new Set(
+  allRawData.filter((item) => !platformMap[item.app]).map((item) => item.app)
+)];
+const unknownBrands = [...new Set(
+  allRawData.filter((item) => !categoryMap[item.brand]).map((item) => item.brand)
+)];
+const supportedMethods = new Set(['배달', '픽업', '포장', '전체']);
+const unknownMethods = [...new Set(
+  allRawData.filter((item) => !supportedMethods.has(item.method)).map((item) => item.method)
+)];
+
+if (unknownPlatforms.length || unknownBrands.length || unknownMethods.length) {
+  const details = [
+    unknownPlatforms.length ? `플랫폼: ${unknownPlatforms.join(', ')}` : null,
+    unknownBrands.length ? `브랜드 카테고리: ${unknownBrands.join(', ')}` : null,
+    unknownMethods.length ? `주문 방식: ${unknownMethods.join(', ')}` : null,
+  ].filter(Boolean).join(' / ');
+  throw new Error(`원본 데이터 매핑을 먼저 추가해야 합니다. ${details}`);
+}
 
 function toNumber(value) {
   if (typeof value === 'number') return value;
@@ -215,32 +252,62 @@ function normalizeValidUntil(raw) {
 
 function isExpired(validUntil) {
   if (!validUntil) return false;
-  return validUntil < new Date().toISOString().slice(0, 10);
+  return validUntil < getTodayInKorea();
+}
+
+function getTodayInKorea(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.year}-${values.month}-${values.day}`;
+}
+
+function createDiscountKey(item) {
+  return JSON.stringify([
+    item.brandName,
+    item.platform,
+    item.discountAmount,
+    item.minOrderAmount,
+    item.method,
+    [...item.deliveryTypes].sort(),
+    item.specialCondition,
+    item.category,
+  ]);
+}
+
+function createStableId(key) {
+  return `discount-${crypto.createHash('sha256').update(key).digest('hex').slice(0, 16)}`;
 }
 
 const convertedData = allRawData
-  .map((item, index) => {
+  .map((item) => {
     const isPercentDiscount = typeof item.discount === 'string' && item.discount.includes('%');
+    if (isPercentDiscount) {
+      throw new Error(`${item.brand}의 정률 할인(${item.discount})은 최대 할인액을 원 단위로 보정해야 합니다.`);
+    }
     let parsedDiscount = toNumber(item.discount);
 
     // 땡겨요: 화면에 표시되는 최대 할인액에는 첫 주문 5,000원이 포함되어 있음 → 항상 차감
     if (item.app === '땡겨요') {
       parsedDiscount = Math.max(0, parsedDiscount - 5000);
     }
-    const percentNote = isPercentDiscount ? `정률할인 ${item.discount}` : null;
-    const combinedSpecialCondition = [percentNote, item.special_condition || null]
-      .filter(Boolean)
-      .join(' / ') || null;
+    const combinedSpecialCondition = item.special_condition || null;
     const validUntil = normalizeValidUntil(item.valid_until || null);
+    if (item.valid_until && !validUntil) {
+      throw new Error(`${item.brand}의 종료일 형식을 확인해 주세요: ${item.valid_until}`);
+    }
 
     return {
-      id: `sync-${index}`,
       brandName: item.brand,
-      platform: platformMap[item.app] || (item.app === '쿠팡이츠' ? 'coupang' : item.app === '요기요' ? 'yogiyo' : item.app === '땡겨요' ? 'ttangyo' : 'baemin'),
+      platform: platformMap[item.app],
       discountAmount: parsedDiscount,
       minOrderAmount: toNumber(item.min_order),
       description: item.special_condition || (item.method === '전체' ? '모든 주문 할인' : `${item.method} 전용 할인`),
-      category: categoryMap[item.brand] || 'chicken',
+      category: categoryMap[item.brand],
       method: item.method === '픽업' ? '포장' : item.method,
       deliveryTypes: (item.delivery_types || []).map(t => t === '픽업' ? '포장' : t),
       specialCondition: combinedSpecialCondition,
@@ -250,45 +317,29 @@ const convertedData = allRawData
   // 만료일이 있으면 자동 제외
   .filter((item) => !isExpired(item.validUntil));
 
-// 한정수량 쿠폰 유효기간 보정:
-// valid_until이 오늘인 쿠폰은 같은 브랜드의 더 긴 유효기간으로 자동 대체
-const today = new Date().toISOString().slice(0, 10);
-
-const brandMaxValidUntil = {};
-convertedData.forEach(item => {
-  if (item.validUntil && item.validUntil > today) {
-    if (!brandMaxValidUntil[item.brandName] || item.validUntil > brandMaxValidUntil[item.brandName]) {
-      brandMaxValidUntil[item.brandName] = item.validUntil;
-    }
-  }
-});
-
-// 중복 제거: brandName, platform, discountAmount, minOrderAmount 기준
-// 같은 조건이면 validUntil이 더 긴 것을 우선함
+// 주문 방식·배달 유형·조건까지 같을 때만 중복으로 본다.
+// 동일 혜택의 종료일만 다르면 더 긴 값을 유지한다.
 const dedupedMap = new Map();
 convertedData.forEach(item => {
-  let validUntil = item.validUntil;
-  if (validUntil === today && brandMaxValidUntil[item.brandName]) {
-    validUntil = brandMaxValidUntil[item.brandName];
-  }
-  
-  const key = `${item.brandName}|${item.platform}|${item.discountAmount}|${item.minOrderAmount}`;
+  const key = createDiscountKey(item);
   const existing = dedupedMap.get(key);
-  
-  if (!existing || (validUntil && (!existing.validUntil || validUntil > existing.validUntil))) {
-    dedupedMap.set(key, { ...item, validUntil });
+
+  if (!existing || (item.validUntil && (!existing.validUntil || item.validUntil > existing.validUntil))) {
+    dedupedMap.set(key, item);
   }
 });
 
-const finalData = Array.from(dedupedMap.values());
+const finalData = Array.from(dedupedMap.entries())
+  .map(([key, item]) => ({ id: createStableId(key), ...item }))
+  .sort((a, b) =>
+    a.platform.localeCompare(b.platform) ||
+    a.brandName.localeCompare(b.brandName, 'ko-KR') ||
+    b.discountAmount - a.discountAmount
+  );
 
 fs.writeFileSync(
   path.join(process.cwd(), 'public/data/discounts.json'),
   JSON.stringify(finalData, null, 2)
 );
 
-const extended = finalData.filter(item => item.validUntil && brandMaxValidUntil[item.brandName] && convertedData.find(c => c.id === item.id)?.validUntil === today && item.validUntil !== today);
-if (extended.length > 0) {
-  console.log(`유효기간 보정: ${extended.length}개 쿠폰의 유효기간을 같은 브랜드 기준으로 연장`);
-}
 console.log(`Successfully merged ${finalData.length} items to public/data/discounts.json`);
